@@ -1,0 +1,127 @@
+{
+  "SIGNIN": {
+    "TITLE": "REGISTRARSE",
+    "HI": "Hola",
+    "WELCOME_BACK": "Dar una buena acogida",
+    "DONT_HAVE_AN_ACCOUNT": "No tengo una cuenta"
+  },
+  "SIGNUP": {
+    "TITLE": "REGÍSTRATE"
+  },
+  "FORGET_PASSWORD": {
+    "TITLE": "CONTRASEÑA OLVIDADA",
+    "SUB_TITLE": "Por favor, introduzca su dirección de correo electrónico. Recibirá un enlace para crear una nueva contraseña por correo electrónico."
+  },
+  "LANGUAGES": [
+    {
+      "lngCode": "en",
+      "language": "Inglés"
+    },
+    {
+      "lngCode": "es",
+      "language": "Español"
+    }
+  ],
+  "MENUS": [
+    {
+      "title": "Home",
+      "icon": "home",
+      "url": "tabs/home"
+    },
+    {
+      "title": "Buscar hoteles",
+      "icon": "business",
+      "url": "search"
+    },
+    {
+      "title": "Lista de hoteles",
+      "icon": "reorder-four",
+      "url": "hotel-list"
+    },
+    {
+      "title": "Detalles del hotel",
+      "icon": "layers",
+      "url": "hotel-details"
+    },
+    {
+      "title": "Filtros",
+      "icon": "filter",
+      "url": "filters"
+    },
+    {
+      "title": "Moneda",
+      "icon": "cash",
+      "url": "currency"
+    },
+    {
+      "title": "Excursiones",
+      "icon": "boat",
+      "url": "tabs/trips"
+    },
+    {
+      "title": "Perfil",
+      "icon": "person",
+      "url": "tabs/profile"
+    },
+    {
+      "title": "Editar perfil",
+      "icon": "create",
+      "url": "edit-profile"
+    },
+    {
+      "title": "Reseñas",
+      "icon": "chatbubble-ellipses",
+      "url": "reviews"
+    },
+    {
+      "title": "Confirmación de reserva",
+      "icon": "book",
+      "url": "booking-confirmation"
+    },
+    {
+      "title": "Aterrizaje",
+      "icon": "paper-plane",
+      "url": "landing"
+    },
+    {
+      "title": "Inducción",
+      "icon": "map",
+      "url": "onboarding"
+    },
+    {
+      "title": "Selección de tarjeta",
+      "icon": "card",
+      "url": "card-selection"
+    },
+    {
+      "title": "Compra",
+      "icon": "file-tray-full",
+      "url": "purchase"
+    },
+    {
+      "title": "Registrarse",
+      "icon": "log-in",
+      "url": "signin"
+    },
+    {
+      "title": "Regístrate",
+      "icon": "person",
+      "url": "signup"
+    },
+    {
+      "title": "Contraseña olvidada",
+      "icon": "key",
+      "url": "forget-password"
+    },
+    {
+      "title": "Configuraciones",
+      "icon": "settings",
+      "url": "settings"
+    },
+    {
+      "title": "Idiomas",
+      "icon": "language",
+      "url": "settings-language"
+    }
+  ]
+}

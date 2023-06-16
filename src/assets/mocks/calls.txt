@@ -1,0 +1,2 @@
+nearby services (restaurant):
+    https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=42.5634,-8.8739&radius=1000&keyword=restaurantes&key={{my google api}}

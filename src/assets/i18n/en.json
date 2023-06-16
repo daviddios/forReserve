@@ -1,0 +1,126 @@
+{
+  "SIGNIN": {
+    "TITLE": "LOG IN",
+    "FORGOT_PASSWORD": "Forgot your password",
+    "DONT_HAVE_AN_ACCOUNT": "Don't have an account"
+  },
+  "SIGNUP": {
+    "TITLE": "SIGN UP"
+  },
+  "FORGET_PASSWORD": {
+    "TITLE": "FORGET PASSWORD",
+    "SUB_TITLE": "Please enter your email address. You will receive a link to create a new password via email."
+  },
+  "LANGUAGES": [
+    {
+      "lngCode": "en",
+      "language": "English"
+    },
+    {
+      "lngCode": "es",
+      "language": "Spanish"
+    }
+  ],
+  "MENUS": [
+    {
+      "title": "Home",
+      "icon": "home",
+      "url": "tabs/home"
+    },
+    {
+      "title": "Search Hotels",
+      "icon": "business",
+      "url": "search"
+    },
+    {
+      "title": "Hotel List",
+      "icon": "reorder-four",
+      "url": "hotel-list"
+    },
+    {
+      "title": "Hotel Details",
+      "icon": "layers",
+      "url": "hotel-details"
+    },
+    {
+      "title": "Filters",
+      "icon": "filter",
+      "url": "filters"
+    },
+    {
+      "title": "Currency",
+      "icon": "cash",
+      "url": "currency"
+    },
+    {
+      "title": "Trips",
+      "icon": "boat",
+      "url": "tabs/trips"
+    },
+    {
+      "title": "Profile",
+      "icon": "person",
+      "url": "tabs/profile"
+    },
+    {
+      "title": "Edit Profile",
+      "icon": "create",
+      "url": "edit-profile"
+    },
+    {
+      "title": "Reviews",
+      "icon": "chatbubble-ellipses",
+      "url": "reviews"
+    },
+    {
+      "title": "Booking Confirmation",
+      "icon": "book",
+      "url": "booking-confirmation"
+    },
+    {
+      "title": "Landing",
+      "icon": "paper-plane",
+      "url": "landing"
+    },
+    {
+      "title": "Onboarding",
+      "icon": "map",
+      "url": "onboarding"
+    },
+    {
+      "title": "Card Selection",
+      "icon": "card",
+      "url": "card-selection"
+    },
+    {
+      "title": "Purchase",
+      "icon": "file-tray-full",
+      "url": "purchase"
+    },
+    {
+      "title": "Sign In",
+      "icon": "log-in",
+      "url": "signin"
+    },
+    {
+      "title": "Sign Up",
+      "icon": "person",
+      "url": "signup"
+    },
+    {
+      "title": "Forget Password",
+      "icon": "key",
+      "url": "forget-password"
+    },
+    {
+      "title": "Settings",
+      "icon": "settings",
+      "url": "settings"
+    },
+    {
+      "title": "Languages",
+      "icon": "language",
+      "url": "settings-language"
+    }
+  ]
+}

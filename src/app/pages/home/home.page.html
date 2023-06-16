@@ -1,0 +1,117 @@
+<!-- Header -->
+<ion-header [translucent]="false" class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content [fullscreen]="true" class="background">
+  <img class="top-img" src="assets/images/home.jpg" />
+
+  <div id="section1">
+    <ion-grid>
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col
+          class="ion-align-self-center"
+          size-md="6"
+          size-lg="5"
+          size-xs="12"
+        >
+          <ion-searchbar
+            animated="true"
+            placeholder="__ Search by location or service"
+          ></ion-searchbar>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-- Popular Hotels -->
+  <div id="popular_hotels">
+    <ion-list-header>
+      <ion-label color="dark">Popular Services</ion-label>
+      <ion-button color="color1" (click)="gotoHotelList()">See All</ion-button>
+    </ion-list-header>
+
+    <swiper-container #swiper [loop]="true" [slidesPerView]="2.2">
+      <swiper-slide
+        *ngFor="let item of items"
+        (click)="gotoHotelList()"
+        [ngStyle]="{'background' : 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(' + item.images[0] + ')'}"
+      >
+        <div class="section_1">
+          <ion-button size="small" color="color1">{{item.rating}}</ion-button>
+        </div>
+
+        <div class="section_2">
+          <h2>{{item.name}}</h2>
+        </div></swiper-slide
+      >
+      <swiper-slide>2</swiper-slide>
+      <swiper-slide>3</swiper-slide>
+      <swiper-slide>4</swiper-slide>
+      <swiper-slide>5</swiper-slide>
+    </swiper-container>
+
+    <!--    <ion-slides class="ion-padding slider" #slider [options]="slideOpts">-->
+    <!--      <ion-slide *ngFor="let item of items" (click)="gotoHotelList()"-->
+    <!--                 [ngStyle]="{'background' : 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(' + item.images[0] + ')'}">-->
+
+    <!--        <div class="section_1">-->
+    <!--          <ion-button size="small" color="color1">{{item.rating}}</ion-button>-->
+    <!--        </div>-->
+
+    <!--        <div class="section_2">-->
+    <!--          <h2>{{item.name}}</h2>-->
+    <!--        </div>-->
+    <!--      </ion-slide>-->
+    <!--    </ion-slides>-->
+  </div>
+
+  <!-- Hot Packages -->
+  <div id="hot_packages">
+    <ion-list-header>
+      <ion-label color="dark">Hot Packages</ion-label>
+      <ion-button color="color1" (click)="gotoHotelList()">See All</ion-button>
+    </ion-list-header>
+
+    <ion-card *ngFor="let item of items">
+      <ion-list lines="none">
+        <ion-item class="ion-no-padding border" (click)="gotoHotelList()">
+          <!-- Image -->
+          <ion-thumbnail slot="start">
+            <img
+              class="packages_thumbnail"
+              style="vertical-align: middle"
+              [src]="item.images[0]"
+            />
+          </ion-thumbnail>
+
+          <ion-label class="ion-text-wrap">
+            <h4 class="name">{{item.name}}</h4>
+            <ion-text color="medium">
+              <ion-icon color="medium" name="location"></ion-icon>
+              {{item.address}}
+            </ion-text>
+
+            <br />
+
+            <ion-text color="color1">{{item.type}}</ion-text>
+
+            <p class="ion-padding-top">
+              <ion-icon name="person"></ion-icon> {{item.totalPerson}} &nbsp;
+              <ion-icon name="briefcase"></ion-icon> {{item.suitcases}} &nbsp;
+              <ion-icon name="logo-slack"></ion-icon> {{item.seats}} &nbsp;
+              <ion-icon name="copy"></ion-icon> {{item.doorCount}}
+            </p>
+          </ion-label>
+
+          <ion-card> {{ 'BOOK_NOW'}} </ion-card>
+        </ion-item>
+      </ion-list>
+    </ion-card>
+  </div>
+</ion-content>
