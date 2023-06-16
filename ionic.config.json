@@ -1,0 +1,7 @@
+{
+  "name": "forReserve",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
