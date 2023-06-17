@@ -1,0 +1,126 @@
+<!-- Header -->
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar>
+    <!-- Back Button -->
+    <ion-buttons slot="start">
+      <ion-button color="color1" routerLink="/tabs/home" routerDirection="root">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" id="hotel-details">
+  <ion-slides pager="true">
+    <ion-slide *ngFor="let item of place.images">
+
+      <img [src]="item" />
+
+      <!-- Like/Dislike Button Option -->
+      <ion-fab vertical="top" horizontal="end">
+        <ion-fab-button color="light" class="ion-margin-top">
+          <ion-icon color="color1" name="heart-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-button color="light" class="ion-margin-top">
+          <ion-icon color="color1" name="share-social"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    </ion-slide>
+  </ion-slides>
+
+  <div class="ion-padding">
+
+    <!-- Hotel Name -->
+    <h1 class="hotel-name">{{place.name}}</h1>
+
+    <ion-row class="row-1">
+      <!-- Location -->
+      <ion-col size="8">
+        <ion-item lines="none" class="ion-no-padding">
+          <ion-label>
+            <ion-icon name="location" slot="start" color="medium"></ion-icon> &nbsp;
+            <ion-text color="medium" class="ion-text-wrap">{{place.address}}</ion-text>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+
+      <!-- Price -->
+      <ion-col>
+        <ion-item lines="none" class="hotel-price ion-no-padding">
+          <ion-label>
+            <h1>${{place.rate}}</h1>
+            <ion-text color="medium">/per night</ion-text>
+          </ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+    <!-- Hotel Overview -->
+    <ion-row>
+      <ion-list-header class="ion-no-padding">
+        <ion-label>
+          <ion-text color="medium">Overview</ion-text>
+        </ion-label>
+      </ion-list-header>
+
+      <ion-text>{{place.name}}</ion-text>
+    </ion-row>
+
+    <!-- Photos -->
+    <div id="photos">
+      <ion-list-header class="ion-no-padding">
+        <ion-label>
+          <ion-text color="medium">Photos</ion-text>
+        </ion-label>
+        <ion-button color="color1">See All</ion-button>
+      </ion-list-header>
+
+      <ion-slides class="ion-padding slider" #slider>
+        <ion-slide *ngFor="let item of place.photos[0]" [ngStyle]="{'background' : 'url(' + item.images[0] + ')'}">
+        </ion-slide>
+      </ion-slides>
+    </div>
+
+
+    <!-- Hotel Amenities -->
+    <ion-list-header class="ion-no-padding">
+      <ion-label color="medium">Amenities</ion-label>
+    </ion-list-header>
+
+    <ion-chip *ngFor="let item of place.photos" color="medium">
+      <i class="{{item.icon}}" aria-hidden="true"></i> &nbsp;
+      <ion-label>{{item.name}}</ion-label>
+    </ion-chip>
+
+    <!-- Hotel Description -->
+    <ion-list-header class="ion-no-padding">
+      <ion-label color="medium">Description</ion-label>
+    </ion-list-header>
+
+    <ion-text color="medium">{{place.description}}</ion-text>
+
+    <!-- Map -->
+    <ion-list-header class="ion-no-padding">
+      <ion-label color="medium">Location</ion-label>
+    </ion-list-header>
+
+    <ion-label>
+<!--      <p><strong>Address:</strong> {{hotelDetails.address}}</p>-->
+<!--      <p><strong>Website:</strong> <a href="#"> {{hotelDetails.website}}</a></p>-->
+<!--      <p><strong>Phone:</strong> <i>{{hotelDetails.phone}}</i></p>-->
+    </ion-label>
+
+    <!-- Map -->
+    <img class="location-img ion-no-padding" src="assets/images/navigation-map.png">
+  </div>
+
+</ion-content>
+
+
+<ion-footer class="ion-no-border">
+  <div class="ion-padding">
+    <ion-button color="color1" expand="full" shape="round">
+      Book A Hotel
+    </ion-button>
+  </div>
+</ion-footer>

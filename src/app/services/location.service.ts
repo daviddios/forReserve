@@ -1,13 +1,16 @@
 import { Injectable } from '@angular/core';
-import {GeolocationWeb} from "@capacitor/geolocation/dist/esm/web";
+import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs";
 
 
 @Injectable({
   providedIn: 'root',
 })
+
 export class LocationService {
-  public userLocation?: [number, number];
 
   constructor() {}
   public getUserLocation() {}
+
 }
+

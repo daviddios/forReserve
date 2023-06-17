@@ -1,295 +1,208 @@
-
 {
   "html_attributions": [],
-  "next_page_token": "AZose0ka25Qq6jg9V-0ASufvLrflUE2uAmxxIwyAxHH81TxOLgf4F-9YyG8tCC5Pl6VS4-5eRLJnDbfzhJQypDIDFNjL3Ir0x_KliWTBngFjdfda3iwxRfiDhEQFoTAWyGVnC3tjxx8-ysrXVc-8iF7qNaW1bg3E76e9xv8LwKT2yBD1-nuREOuz6j7Q31MbzHTPf4i9Web2iBAJKcm8Y8mKJG1b-tjmjjU5_tcxNaf7Wp0DKGNCG26ZZ_X3BeMbDBlmtwweOv86eDgAxp9yFQm_GRL5-9DeUKu4quumVSk2r7Z9OEvMf-1PTH0FYwuyNXttTttgQRULXrl7KWGHDcixr18p-cGJ9_buWT0x63tringVzE0K5JDVhEn9cotTYIILPFJb_p9K28I2j_5fS9toiVw2XCmau7crFQGS_ZQTKP0DKqK8m6v5ngdK0qlOzSQ",
+  "next_page_token": "AZose0k-LBl5Z6n1obCyYE5J4nmT9St9mA8Tz3Y0DgOFDpzew2V2RruD9ShjNsup95HGKlRo8-4nT5s6JVp9Bbot8A48SmvAu2vCgfUW68KfPiZ6ZVLB8Rk1h4FVkN-jWVtSq1NyP64NLEW-IDm6JRcHVAfwWKM0B2moURxHdo_L2lTebA0rQErAVmjxVel4pWiyEm2pqE_tGCVuU-WkW_GDfRY4QABN8DkukJORNQxdA41FN-ehHNf68dFIiuS_cP9eMsanHdHz202Qm6xhAyKAC0Zi1lGHpbF8VMt9RTEDYq9zfJiE5IVx2c_ua2z47VcfCp8e5O8iRPehUXVNRvOLlrXq4V_k9fd6hktRhGAQDBfj3PAMknvvSiG80N1YfxNyIKFXmvBGOAZhkn7IYSmfDhTQho8242_fb76g5e4ToCSj",
   "results": [
     {
-      "business_status": "OPERATIONAL",
       "geometry": {
         "location": {
-          "lat": 42.56164440000001,
-          "lng": -8.8688749
+          "lat": 42.5617975,
+          "lng": -8.8681527
         },
         "viewport": {
           "northeast": {
-            "lat": 42.56298242989272,
-            "lng": -8.867535920107278
+            "lat": 42.57178371989743,
+            "lng": -8.857434281682524
           },
           "southwest": {
-            "lat": 42.56028277010727,
-            "lng": -8.870235579892721
+            "lat": 42.54991041958709,
+            "lng": -8.883941066516027
           }
         }
       },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "Restaurante Xorna",
-      "opening_hours": {
-        "open_now": false
-      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Illa de Arousa",
       "photos": [
         {
-          "height": 1600,
+          "height": 3024,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/103551862718683805581\">A Google User</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/116348394753240952733\">Vicente Navarrete</a>"
           ],
-          "photo_reference": "AZose0naBWKsdUTBQGVvRDlNOSobGXh8imoyIUumPuy1xuYT7gf-p2eRzbSpFYAtLb7yZMguX5QdWxIGZ1LtxED-xw0jUR4EFbCpy4SYl5FKPlurq6gnXWiMXH8q6IkpuRV748jhNkByA3iGh7eVLxC9DHKUiEiIcrqcomBxShQ5aRtWhwHK",
-          "width": 1200
+          "photo_reference": "AZose0mWYvcDXaXjgW3UUVJBgkA8YVyPaDJnfu35gSraJqY_NZJRfY5aNU2DNSfRm_m1dO0FziCk-mQnKzxyEHI8KHJBj2G9gjoqQ7ocQYcJinVp8KL-O5Y_zzIyM7r_0Dr3UpAFH13vko4DiyyZ-anpqNgd81sOMlyF-B-Sdj1gUpEEBg_l",
+          "width": 4032
         }
       ],
-      "place_id": "ChIJQyydJ7E_Lw0RAOqp1O5ESao",
+      "place_id": "ChIJN3Wdb7E_Lw0RQywbvdKYVt0",
+      "reference": "ChIJN3Wdb7E_Lw0RQywbvdKYVt0",
+      "scope": "GOOGLE",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "vicinity": "Illa de Arousa"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.5644113,
+          "lng": -8.872980799999997
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.5657496802915,
+            "lng": -8.871651169708496
+          },
+          "southwest": {
+            "lat": 42.5630517197085,
+            "lng": -8.874349130291501
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Apartamentos Arosa I",
+      "place_id": "ChIJ1QIFW0w-Lw0Rh48Uo6L7Kco",
       "plus_code": {
-        "compound_code": "H46J+MF Illa de Arousa",
-        "global_code": "8CJHH46J+MF"
+        "compound_code": "H47G+QR Illa de Arousa, Spain",
+        "global_code": "8CJHH47G+QR"
       },
       "rating": 4.9,
-      "reference": "ChIJQyydJ7E_Lw0RAOqp1O5ESao",
+      "reference": "ChIJ1QIFW0w-Lw0Rh48Uo6L7Kco",
       "scope": "GOOGLE",
       "types": [
-        "restaurant",
-        "food",
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "user_ratings_total": 30,
-      "vicinity": "Rua, Rúa Torre, 13, Illa de Arousa"
+      "user_ratings_total": 7,
+      "vicinity": "Rua Naval, 3, Arousa"
+    },
+    {
+      "business_status": "CLOSED_TEMPORARILY",
+      "geometry": {
+        "location": {
+          "lat": 42.5608827,
+          "lng": -8.869602100000002
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.56223093029149,
+            "lng": -8.868275519708499
+          },
+          "southwest": {
+            "lat": 42.5595329697085,
+            "lng": -8.870973480291504
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+      "icon_background_color": "#4B96F3",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+      "name": "Pesqueras Illa de Arousa",
+      "permanently_closed": true,
+      "photos": [
+        {
+          "height": 2322,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117603716470966542968\">Susana Balmisa</a>"
+          ],
+          "photo_reference": "AZose0mGN-aBIahVHnbU-zhAfHrEUA4e17xfEckvY5jWiPbQ2J1CP_cDxWW_ONTPHg3UvQhdOYrUWpapH1KIXIsQ2uT6kigbMtLriVZSWruQh5sE3mKO4py_I-tGbnMqPVNPOeC5hICur5L7CbJoHDB0W28cOG1NBlu6aFIbvurAe-fmdg7D",
+          "width": 4128
+        }
+      ],
+      "place_id": "ChIJD7AJn1I-Lw0Rws3HZ9aqays",
+      "plus_code": {
+        "compound_code": "H46J+95 Illa de Arousa, Spain",
+        "global_code": "8CJHH46J+95"
+      },
+      "rating": 5,
+      "reference": "ChIJD7AJn1I-Lw0Rws3HZ9aqays",
+      "scope": "GOOGLE",
+      "types": [
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 2,
+      "vicinity": "Rúa do Charco, 20, Illa de Arousa"
     },
     {
       "business_status": "OPERATIONAL",
       "geometry": {
         "location": {
-          "lat": 42.5618767,
-          "lng": -8.8697119
+          "lat": 42.56460329999999,
+          "lng": -8.873648400000002
         },
         "viewport": {
           "northeast": {
-            "lat": 42.56321527989272,
-            "lng": -8.868369070107279
+            "lat": 42.56598973029151,
+            "lng": -8.872295019708501
           },
           "southwest": {
-            "lat": 42.56051562010728,
-            "lng": -8.871068729892723
+            "lat": 42.56329176970851,
+            "lng": -8.874992980291506
           }
         }
       },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "O Triskel",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/civic-bldg_pinlet",
+      "name": "Biblioteca Pública Municipal de A Illa de Arousa",
       "opening_hours": {
         "open_now": false
       },
       "photos": [
         {
-          "height": 1172,
+          "height": 3264,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/103096812420744766613\">José Alberto Fuentes Darder</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/100417607957617067758\">Rosa</a>"
           ],
-          "photo_reference": "AZose0lDSRnSUz6KhHYGwykHoX_d_MUP6dBpDOSN2w0PXokSmYapXYQe4MLUha2W8Ov_n1RGUhf7JKAilu3QffePwpF6MwLX7Yago642caiYGhsUlK78NPoLVHdKYOqRKaNLBOtCu8BqZk4KUEI4-_p9AIl0QvQduPvQKWrBJg3GLL1e4MRM",
-          "width": 1172
+          "photo_reference": "AZose0l1ZXlzw1bFx5JeDCeVwx9PTKzJckst7k2qGDuhFcTY1Nsq2pEDJMTBYnzHYgb8wq9jDODH7lFcgG1skDDf-bgAAy8RbeIWm9hwdfs_8tTg3HlnusbB310sYrTla-YbTLH_Gqjp0K3P1L_eh1Sar6YvUhXHwcYaOlsJqRUyWbPwRqGF",
+          "width": 2448
         }
       ],
-      "place_id": "ChIJH9AZfFI-Lw0RqPph2Yggs60",
+      "place_id": "ChIJb-_rd1I-Lw0RVp-vQT7MC1Y",
       "plus_code": {
-        "compound_code": "H46J+Q4 Illa de Arousa",
-        "global_code": "8CJHH46J+Q4"
+        "compound_code": "H47G+RG Illa de Arousa, Spain",
+        "global_code": "8CJHH47G+RG"
       },
-      "price_level": 1,
-      "rating": 4.6,
-      "reference": "ChIJH9AZfFI-Lw0RqPph2Yggs60",
+      "rating": 3,
+      "reference": "ChIJb-_rd1I-Lw0RVp-vQT7MC1Y",
       "scope": "GOOGLE",
       "types": [
-        "restaurant",
-        "food",
+        "library",
         "point_of_interest",
         "establishment"
       ],
-      "user_ratings_total": 920,
-      "vicinity": "Rúa Torre, 1, Illa de Arousa"
+      "user_ratings_total": 4,
+      "vicinity": "Rúa Marqués de Bradomín, 3, Illa de Arousa"
     },
     {
       "business_status": "OPERATIONAL",
       "geometry": {
         "location": {
-          "lat": 42.5724069,
-          "lng": -8.8839507
+          "lat": 42.56271529999999,
+          "lng": -8.8706771
         },
         "viewport": {
           "northeast": {
-            "lat": 42.57357327989271,
-            "lng": -8.882350970107279
+            "lat": 42.5640487302915,
+            "lng": -8.869275019708496
           },
           "southwest": {
-            "lat": 42.57087362010727,
-            "lng": -8.885050629892723
+            "lat": 42.5613507697085,
+            "lng": -8.871972980291501
           }
         }
       },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "Restaurante punta do cabalo",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 1080,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/103739127310562099358\">guillermo nogueira Nogueira</a>"
-          ],
-          "photo_reference": "AZose0l-K7H1qMMv_UB6ALzn7CID5P3zI6025op6k9iynrpu1zEsjLg0qo4E3MHi6kB6_Cg7Z8zC6VMCT-VwfKjSh8Ws6KpsDMfJxSKnJAP0lEbgNsUjWaUqSAGWnwPcGs3o2sypl378xg32WRGep1HKdEQTLgqmXoyshOPVVVGhFedyFoMx",
-          "width": 1920
-        }
-      ],
-      "place_id": "ChIJBR6InPY-Lw0R3wRoxF9_Jg4",
-      "plus_code": {
-        "compound_code": "H4C8+X9 Illa de Arousa",
-        "global_code": "8CJHH4C8+X9"
-      },
-      "rating": 3.7,
-      "reference": "ChIJBR6InPY-Lw0R3wRoxF9_Jg4",
-      "scope": "GOOGLE",
-      "types": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 170,
-      "vicinity": "A, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5588646,
-          "lng": -8.864668499999999
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56021072989272,
-            "lng": -8.863353020107278
-          },
-          "southwest": {
-            "lat": 42.55751107010727,
-            "lng": -8.866052679892721
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "Restaurante-Bar López",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 1836,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/103300983430201376915\">A Google User</a>"
-          ],
-          "photo_reference": "AZose0lRWgu4tx7rcco6PAAUuZh_FVKGb7Os1PYn2GjquSUc2fATaCmuc8vwMasBwCPADndVj9EDtfAwtGpCHSiPLXmZ3qdBCm6EGWQDNOx-agE9D_VkfnjLfdNDSHVUs6ra8XczN2BfRqM1xjPSOH5kwA6omAWgFGonS_U-NLR8_zyf4epX",
-          "width": 3264
-        }
-      ],
-      "place_id": "ChIJNdQkT7M_Lw0RycemERhO81Q",
-      "plus_code": {
-        "compound_code": "H45P+G4 Illa de Arousa",
-        "global_code": "8CJHH45P+G4"
-      },
-      "price_level": 1,
-      "rating": 4.1,
-      "reference": "ChIJNdQkT7M_Lw0RycemERhO81Q",
-      "scope": "GOOGLE",
-      "types": [
-        "restaurant",
-        "bar",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 309,
-      "vicinity": "Av. da Ponte, 45, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5673398,
-          "lng": -8.862164099999999
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56866957989272,
-            "lng": -8.860827070107279
-          },
-          "southwest": {
-            "lat": 42.56596992010728,
-            "lng": -8.863526729892722
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "Tapería A Chabola Illa de arousa",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 1960,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/102742011662918526793\">luis alonso ovejero</a>"
-          ],
-          "photo_reference": "AZose0kELr823dWnP8TZVwE7_Izpo7Vn-8G1lejrj7e7BR4ACqGJZzcwbjRN9Y9X7f7cBhdqziAJ6E2kWxLlnMy0u0ijsot6oHQHfp6HxjekUep8OsKrO83LO9cTl3-mV8tGrQM0dbXWR0KLjk6KhM7MdNOJP-aTce4zW7WsZUDPivE-8WA",
-          "width": 4032
-        }
-      ],
-      "place_id": "ChIJiyg7LLQ_Lw0R2omSNx9-KG0",
-      "plus_code": {
-        "compound_code": "H48Q+W4 Illa de Arousa",
-        "global_code": "8CJHH48Q+W4"
-      },
-      "price_level": 1,
-      "rating": 4.5,
-      "reference": "ChIJiyg7LLQ_Lw0R2omSNx9-KG0",
-      "scope": "GOOGLE",
-      "types": [
-        "restaurant",
-        "bar",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 701,
-      "vicinity": "Camiño Aguiuncho, s/n, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.563123,
-          "lng": -8.8693612
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56454542989272,
-            "lng": -8.867981370107278
-          },
-          "southwest": {
-            "lat": 42.56184577010728,
-            "lng": -8.870681029892722
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "Restaurante A Meca",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Pensión Rey",
       "opening_hours": {
         "open_now": true
       },
@@ -297,716 +210,306 @@
         {
           "height": 3024,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/105383432973125013805\">María Sanjurjo</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/106689341419845080482\">Pensión Rey</a>"
           ],
-          "photo_reference": "AZose0kvw3AC_fHx3-gazXpIpPiHcNgG3erbHo1oQLpVpvxlus_1xI9f9EXUuPzgo-R3H2BXwwuzMcYFwUoANU17rsbehmRcLXr1bCgaDX-Vmt-nXJp5Mr2_AxIZqVMx7lTKH4922H56G6huKE_Sa4AcA-wH07Leix2eaIHMJi2C9Q2scgwP",
+          "photo_reference": "AZose0n0yNAgFAS6FmxLT2Q-bv99xXl-20kyv1uoyYaq6BRqJYggnyns6ziTsxMPWMmPCy-RVNruk619PeNlf6JzGBXEYPRN3ZvEKz9enVZbFFlE1s15A81_i3zZCpY-0_OOEMM70LizrvfV32JWJQzC3BBCFQQyKMJsdC6ZxeRab4nhSaYW",
           "width": 4032
         }
       ],
-      "place_id": "ChIJBcutuMl2XEARAPRjlBuk168",
+      "place_id": "ChIJcx8NalI-Lw0RhZssslshrD8",
       "plus_code": {
-        "compound_code": "H47J+87 Illa de Arousa",
-        "global_code": "8CJHH47J+87"
-      },
-      "price_level": 2,
-      "rating": 4.3,
-      "reference": "ChIJBcutuMl2XEARAPRjlBuk168",
-      "scope": "GOOGLE",
-      "types": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 2597,
-      "vicinity": "Paseo o Cantiño, 12, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5654634,
-          "lng": -8.874092599999999
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56687792989273,
-            "lng": -8.872708720107278
-          },
-          "southwest": {
-            "lat": 42.56417827010728,
-            "lng": -8.875408379892722
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "A Salga",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
-        {
-          "height": 2976,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/102350242700548563019\">Manuel Lopez Blasco</a>"
-          ],
-          "photo_reference": "AZose0kfRMMc3VcKbLQvXpipjDV0zIDZ34LfCT60g6yhUlPO3GUG24kZQ0Av33a-7Arbe2Ji5dkaTo6qswA6sRHqgcMPuLW_ckt3_Do39m38cwdoVM9LED6UU0hL7lv9kjnILqddil0no0dW-J0N9mnIDBlCmgZY5kdAyuTOEssZ_c9M_n1H",
-          "width": 3968
-        }
-      ],
-      "place_id": "ChIJL2EkcFE-Lw0RTeO3H5KD9kc",
-      "plus_code": {
-        "compound_code": "H48G+59 Illa de Arousa",
-        "global_code": "8CJHH48G+59"
-      },
-      "price_level": 1,
-      "rating": 4.2,
-      "reference": "ChIJL2EkcFE-Lw0RTeO3H5KD9kc",
-      "scope": "GOOGLE",
-      "types": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 1108,
-      "vicinity": "Paseo Naval, 7, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5632477,
-          "lng": -8.8690236
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56465077989272,
-            "lng": -8.867718170107276
-          },
-          "southwest": {
-            "lat": 42.56195112010727,
-            "lng": -8.87041782989272
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "O Novo Tuno",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 1080,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/117176508373285618982\">Jose Manuel Ibañez Dacosta</a>"
-          ],
-          "photo_reference": "AZose0nnHx1JegFoWyn543y-OXy4BnxLwNurUSg4EQspGPnqCVtS4x6OvWSFQutC2R0ekKyzPUTe9965X8lE3nTFthWZxT3EbIVgIbnYbRjFs9qYQ4V4-vSE2M7_NiFq6do4VR2amES6fdxszF62cK0Ydu9bCQBtCqdF81BqgMOEvk_TXfGD",
-          "width": 1620
-        }
-      ],
-      "place_id": "ChIJQ3Q29k0-Lw0RT889nNQZh1U",
-      "plus_code": {
-        "compound_code": "H47J+89 Illa de Arousa",
-        "global_code": "8CJHH47J+89"
-      },
-      "price_level": 1,
-      "rating": 4.2,
-      "reference": "ChIJQ3Q29k0-Lw0RT889nNQZh1U",
-      "scope": "GOOGLE",
-      "types": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 1286,
-      "vicinity": "Paseo o Cantiño, 21, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5629749,
-          "lng": -8.871367099999999
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56428887989273,
-            "lng": -8.87006232010728
-          },
-          "southwest": {
-            "lat": 42.56158922010729,
-            "lng": -8.872761979892724
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "Bar Restaurante La Perla",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 4032,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/116439639463458743798\">Patricia Esquivel</a>"
-          ],
-          "photo_reference": "AZose0kbgyohIaLKXCaDg0ONehbj-1OLd5um7xGXoLMpSBREI1KQ6BfpRcQnKaL7VwmISQxb_Q6uHbYkM1prS5yc_DvNt-PfAGx3nKr6EqXdsvayz7-WRh1XhaZSD3DvE0l1ChGkpivpYeu9RHJO35K1lH_sfVRccopFL7wP5wtZvuUp_icM",
-          "width": 3024
-        }
-      ],
-      "place_id": "ChIJNy193XM_Lw0RVPDiNTbmVvs",
-      "plus_code": {
-        "compound_code": "H47H+5F Illa de Arousa",
-        "global_code": "8CJHH47H+5F"
+        "compound_code": "H47H+3P Illa de Arousa, Spain",
+        "global_code": "8CJHH47H+3P"
       },
       "rating": 4.4,
-      "reference": "ChIJNy193XM_Lw0RVPDiNTbmVvs",
+      "reference": "ChIJcx8NalI-Lw0RhZssslshrD8",
       "scope": "GOOGLE",
       "types": [
-        "restaurant",
-        "food",
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "user_ratings_total": 50,
-      "vicinity": "Rúa Ribeira do Chazo, 16, Illa de Arousa"
+      "user_ratings_total": 187,
+      "vicinity": "Rúa Fondo do Cruceiro, Illa de Arousa"
     },
     {
       "business_status": "OPERATIONAL",
       "geometry": {
         "location": {
-          "lat": 42.5620651,
-          "lng": -8.8703184
+          "lat": 42.5628806,
+          "lng": -8.868434499999999
         },
         "viewport": {
           "northeast": {
-            "lat": 42.56344537989272,
-            "lng": -8.868976920107277
+            "lat": 42.5641879302915,
+            "lng": -8.867016669708498
           },
           "southwest": {
-            "lat": 42.56074572010728,
-            "lng": -8.871676579892721
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "Aldea",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 2448,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/103278863591998125572\">Pili A. Bastidas</a>"
-          ],
-          "photo_reference": "AZose0kHD5VKDsL0HUX6zU7LTbnrrTvmcayab8dGc0oL8WqS-f8a7uCZhF7SY7ySOx5JmdSHX8S2WYmGCf1r4NN6CAMEBK7FxelX0IqXhin0LLrUdhHbUSPbNq_1iQwH2H0NUOIjAQ_TISMWy3kUQFR1gaGIFdabi7khaXzb_vrjKoZGYVDQ",
-          "width": 3264
-        }
-      ],
-      "place_id": "ChIJe9iSZVI-Lw0RIKGW9Vn8MHY",
-      "plus_code": {
-        "compound_code": "H46H+RV Illa de Arousa",
-        "global_code": "8CJHH46H+RV"
-      },
-      "rating": 4.1,
-      "reference": "ChIJe9iSZVI-Lw0RIKGW9Vn8MHY",
-      "scope": "GOOGLE",
-      "types": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 274,
-      "vicinity": "Travesía Cruceiro, 2, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5635018,
-          "lng": -8.8719772
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56488467989272,
-            "lng": -8.870691870107278
-          },
-          "southwest": {
-            "lat": 42.56218502010728,
-            "lng": -8.873391529892722
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
-      "name": "Cafe Bar Saratoga",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 3024,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/117176803155842489526\">Nuria Tain Novo</a>"
-          ],
-          "photo_reference": "AZose0nSZaOr-39gH3QdDCJVQsvJAMc4Fml2A2JBKzn8OJl77T-hblaWPFqQb2cmGuwJ4EjmjZ1OUcopzVTT7toX5kYO0pVdYsbcsp1npXvVfgj8iKrqs9B5Nb8pIh79wa6zTinFAVKY_j6kj20KDKsRptmO6_E1HoviTmzYFmFy_ZHpYbZa",
-          "width": 4032
-        }
-      ],
-      "place_id": "ChIJHe8GK1I-Lw0R-cknRLVC8Ek",
-      "plus_code": {
-        "compound_code": "H47H+C6 Illa de Arousa",
-        "global_code": "8CJHH47H+C6"
-      },
-      "price_level": 1,
-      "rating": 4.2,
-      "reference": "ChIJHe8GK1I-Lw0R-cknRLVC8Ek",
-      "scope": "GOOGLE",
-      "types": [
-        "bar",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 1143,
-      "vicinity": "Av. Castelao, 2, Pontevedra"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5631228,
-          "lng": -8.867758499999999
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56452602989273,
-            "lng": -8.866443670107278
-          },
-          "southwest": {
-            "lat": 42.56182637010728,
-            "lng": -8.869143329892722
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "Restaurante ENNO’S",
-      "photos": [
-        {
-          "height": 1024,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/105201419739844362697\">A Google User</a>"
-          ],
-          "photo_reference": "AZose0lsFmCqk9KmM4T0gpINtkuDOQRyIcoCoQmcHmAXZsi4i46pnxcbYdQSOy2my3b03bU6yXVoMX8utNzmDBuqk344bbzNEQ41TpAe0egQrNSLIewYsa86zv6DhCoX6vazpZHCIUjkx3KOF3OpBtaH-YwGgacjNK3uQHPPgTubXH9OHHQt",
-          "width": 768
-        }
-      ],
-      "place_id": "ChIJC1ln9fk_Lw0RmDW77aZRETk",
-      "plus_code": {
-        "compound_code": "H47J+6V Illa de Arousa",
-        "global_code": "8CJHH47J+6V"
-      },
-      "rating": 0,
-      "reference": "ChIJC1ln9fk_Lw0RmDW77aZRETk",
-      "scope": "GOOGLE",
-      "types": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 0,
-      "vicinity": "Paseo o Cantiño, 11, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5634495,
-          "lng": -8.8673384
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56479137989272,
-            "lng": -8.86605177010728
-          },
-          "southwest": {
-            "lat": 42.56209172010728,
-            "lng": -8.868751429892724
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
-      "name": "Bar O Porto",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 1600,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/114509155880887862033\">jose martinez lopez</a>"
-          ],
-          "photo_reference": "AZose0li4pOcDHLUQjW0Ug0i_DLDgBHYOahD1mw5j4CtJhaqNxD-6y3jbCOqLJcUWU4htXVJAKI0MffmO0LVeQzK-mI5TVEqjmWs0ZgwXvlkCHZvmX1PCfD47mXWBSN5zM6hxuWHxTgKuPNI7dwk1j5uIu0wgSAKteGkQyWefa1n1ZmEoqos",
-          "width": 1200
-        }
-      ],
-      "place_id": "ChIJL5jCxU0-Lw0RV_zS6x_-ZYo",
-      "plus_code": {
-        "compound_code": "H47M+93 Illa de Arousa",
-        "global_code": "8CJHH47M+93"
-      },
-      "price_level": 1,
-      "rating": 4.1,
-      "reference": "ChIJL5jCxU0-Lw0RV_zS6x_-ZYo",
-      "scope": "GOOGLE",
-      "types": [
-        "cafe",
-        "bar",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 865,
-      "vicinity": "Paseo o Cantiño, 5, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5628392,
-          "lng": -8.8681629
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56417862989272,
-            "lng": -8.866880020107278
-          },
-          "southwest": {
-            "lat": 42.56147897010728,
-            "lng": -8.869579679892722
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "Pizzería Salva",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
-        {
-          "height": 1067,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/108503596257612800184\">Pizzeria Salva</a>"
-          ],
-          "photo_reference": "AZose0lm_BCFzM0213iiH7CouWfFmwrpcpNVRmjNFv9lreUiZ4oFi807QIwESgl9U0tqKArf5YLJR8g8_QC3h7qrGU1GF8m15-E0eQ_hfe3X-qeOPp8om5UVIIoeKv7y3TIloM5-sHy8YXUJ__bIt4Uajqq5QBwB-PgVuyYRpRuk4ZcUYHby",
-          "width": 1600
-        }
-      ],
-      "place_id": "ChIJQShri00-Lw0RIPnJWmPJhKQ",
-      "plus_code": {
-        "compound_code": "H47J+4P Illa de Arousa",
-        "global_code": "8CJHH47J+4P"
-      },
-      "price_level": 1,
-      "rating": 4.3,
-      "reference": "ChIJQShri00-Lw0RIPnJWmPJhKQ",
-      "scope": "GOOGLE",
-      "types": [
-        "bar",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 319,
-      "vicinity": "Av. Castelao, 45, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5632108,
-          "lng": -8.8699545
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56451717989273,
-            "lng": -8.868608970107278
-          },
-          "southwest": {
-            "lat": 42.56181752010728,
-            "lng": -8.871308629892722
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "Marisco de a illa",
-      "place_id": "ChIJ___vDVI-Lw0R8EsOlB5idiA",
-      "plus_code": {
-        "compound_code": "H47H+6X Illa de Arousa",
-        "global_code": "8CJHH47H+6X"
-      },
-      "rating": 0,
-      "reference": "ChIJ___vDVI-Lw0R8EsOlB5idiA",
-      "scope": "GOOGLE",
-      "types": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 0,
-      "vicinity": "Av. Castelao, 32, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5636419,
-          "lng": -8.870373499999999
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56506162989272,
-            "lng": -8.869062020107277
-          },
-          "southwest": {
-            "lat": 42.56236197010727,
-            "lng": -8.871761679892721
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
-      "name": "O Novo Ribeirán",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 1600,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/106071089850483627305\">A Google User</a>"
-          ],
-          "photo_reference": "AZose0khQlB5AzfkN2BFb4scDovFE3Wy2WLaWZWMfgAzuLlwR7eaCRauWJItMxjSWzMJhFW4LRPZnUv7ebQ2tO0TDnuA7SofcqZ0DUEqMDkZu0dQQAOaqG5M5pYYAmpOC1E1HbwQw8u7CtYa8vNa_sVpqeBSuzmCV0P40yN1MxITsN9qEVeW",
-          "width": 720
-        }
-      ],
-      "place_id": "ChIJxwM9LMY_Lw0RUH8PMsnuh6M",
-      "plus_code": {
-        "compound_code": "H47H+FV Illa de Arousa",
-        "global_code": "8CJHH47H+FV"
-      },
-      "rating": 4.1,
-      "reference": "ChIJxwM9LMY_Lw0RUH8PMsnuh6M",
-      "scope": "GOOGLE",
-      "types": [
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 24,
-      "vicinity": "Paseo do, Paseo o Cantiño, 28, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5707224,
-          "lng": -8.8830244
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.57231127989272,
-            "lng": -8.881405770107277
-          },
-          "southwest": {
-            "lat": 42.56961162010728,
-            "lng": -8.88410542989272
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
-      "name": "Chiringuito O Faro",
-      "photos": [
-        {
-          "height": 2448,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/104799809022613325250\">A Google User</a>"
-          ],
-          "photo_reference": "AZose0m-ZX1KiFmvBpNsDGuUuH4ICY_R-mW8yqGZGYZ06hPC6HtmnhE3pgtMYnbyLrXwHKtbgtEPpFRrUy6EuXfaOfttIZYhDvineatNeRUPTY2wO1QtwGXaVyxOfyA7IW-LQOzaeHXBVsb3D_kVK7cSEn7OvY-vNqU_Al2SBGUt8a4wgeSJ",
-          "width": 3264
-        }
-      ],
-      "place_id": "ChIJ73UkLAQ_Lw0RwksQnM91hIk",
-      "plus_code": {
-        "compound_code": "H4C8+7Q Illa de Arousa",
-        "global_code": "8CJHH4C8+7Q"
-      },
-      "rating": 4.4,
-      "reference": "ChIJ73UkLAQ_Lw0RwksQnM91hIk",
-      "scope": "GOOGLE",
-      "types": [
-        "bar",
-        "restaurant",
-        "food",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 1459,
-      "vicinity": "Rúa do Faro, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.56366389999999,
-          "lng": -8.8727739
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56500942989272,
-            "lng": -8.871412420107278
-          },
-          "southwest": {
-            "lat": 42.56230977010727,
-            "lng": -8.874112079892722
+            "lat": 42.5614899697085,
+            "lng": -8.869714630291503
           }
         }
       },
       "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
       "icon_background_color": "#7B9EB0",
       "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-      "name": "Café - Bar Fina Viñas",
+      "name": "NB21",
       "opening_hours": {
-        "open_now": true
+        "open_now": false
       },
       "photos": [
         {
-          "height": 2604,
+          "height": 1080,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/108687961253570445771\">Francisco Lopez</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/113819822915466206396\">NB21</a>"
           ],
-          "photo_reference": "AZose0kfLmWZH1HhFjvfjB6mYE0vHIP2UgpLXhSEJelPnpNoJGmzMUMpzo3Yh_2h3tcmVCqbbHWs7onMSBmpaw3cGn6SEOU5ZZRqkyrXDWuVlQHpr-3RCzv1UCJ_48vOr0WFHKyQhT5ThYZoj8-NYN_d7GorKXREKYRvMzLnqs_Hj8QwxcA",
-          "width": 4624
+          "photo_reference": "AZose0lBCA4INTN23jVlvf-OKjHeyrDt-WzXV-8wcG8KSwHbNAvlL8_u0uvcC05WBC8zyGT32ouhQljpen741Khlzy_-KIZMcSEVNN28YB8yscZ_qvp50i1w3IjN7cmvJft7CuI9lp1tQ6dwn1t_oaShvNFST9C6NEF8PCnQpQsNx_BMyrg6",
+          "width": 1080
         }
       ],
-      "place_id": "ChIJ9_qZ11M-Lw0RdfnN583SXSM",
+      "place_id": "ChIJKep2lU0-Lw0RI2mDkZPfR8w",
       "plus_code": {
-        "compound_code": "H47G+FV Illa de Arousa",
-        "global_code": "8CJHH47G+FV"
+        "compound_code": "H47J+5J Illa de Arousa, Spain",
+        "global_code": "8CJHH47J+5J"
       },
-      "price_level": 1,
-      "rating": 4.4,
-      "reference": "ChIJ9_qZ11M-Lw0RdfnN583SXSM",
+      "reference": "ChIJKep2lU0-Lw0RI2mDkZPfR8w",
       "scope": "GOOGLE",
       "types": [
-        "bar",
-        "store",
-        "food",
+        "insurance_agency",
         "point_of_interest",
         "establishment"
       ],
-      "user_ratings_total": 534,
-      "vicinity": "Rúa Valle Inclán, 4, Illa de Arousa"
+      "vicinity": "Avenida Castelao, 43, Illa de Arousa"
     },
     {
       "business_status": "OPERATIONAL",
       "geometry": {
         "location": {
-          "lat": 42.5629946,
-          "lng": -8.8608197
+          "lat": 42.5631806,
+          "lng": -8.870380900000001
         },
         "viewport": {
           "northeast": {
-            "lat": 42.56427652989272,
-            "lng": -8.859386570107278
+            "lat": 42.5646242302915,
+            "lng": -8.868975269708498
           },
           "southwest": {
-            "lat": 42.56157687010727,
-            "lng": -8.862086229892721
+            "lat": 42.5619262697085,
+            "lng": -8.871673230291503
           }
         }
       },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
-      "name": "Bar Pescador",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Asociación de Mejilloneros Illa de Arousa",
       "opening_hours": {
-        "open_now": true
+        "open_now": false
       },
-      "photos": [
-        {
-          "height": 2250,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/100603468969248979372\">FRANCISCO CENITAGOYA NUÑEZ</a>"
-          ],
-          "photo_reference": "AZose0ndqDvkdoAgTCffjXGHaxcOnXPeEkX_x-GgP1tUqzRoCf1ztYTheQP5DuY3zSwI7SLvGKxhnqm-uYdPMt_W2-obABFR25TKtgcMHkIgUPQPatz_8qRb1buFV4iFtysVZZmRZbl6SwPOxwq4Df2MW1hxt2pT6kvnFjLwtq03NfUObOd-",
-          "width": 4000
-        }
-      ],
-      "place_id": "ChIJXwbhTUo-Lw0RKuqIJJCi76Q",
+      "place_id": "ChIJO2bOD1I-Lw0RExaYbqJP6Kw",
       "plus_code": {
-        "compound_code": "H47Q+5M Illa de Arousa",
-        "global_code": "8CJHH47Q+5M"
+        "compound_code": "H47H+7R Illa de Arousa, Spain",
+        "global_code": "8CJHH47H+7R"
       },
-      "price_level": 1,
-      "rating": 4.3,
-      "reference": "ChIJXwbhTUo-Lw0RKuqIJJCi76Q",
+      "reference": "ChIJO2bOD1I-Lw0RExaYbqJP6Kw",
       "scope": "GOOGLE",
       "types": [
-        "bar",
-        "restaurant",
-        "food",
         "point_of_interest",
         "establishment"
       ],
-      "user_ratings_total": 559,
-      "vicinity": "Rúa do Cabodeiro, 41, Illa de Arousa"
+      "vicinity": "Avenida Castelao, 26, Illa de Arousa"
     },
     {
       "business_status": "OPERATIONAL",
       "geometry": {
         "location": {
-          "lat": 42.5629876,
-          "lng": -8.8715046
+          "lat": 42.56494840000001,
+          "lng": -8.873004600000002
         },
         "viewport": {
           "northeast": {
-            "lat": 42.56434607989272,
-            "lng": -8.87014192010728
+            "lat": 42.5663230302915,
+            "lng": -8.8716957197085
           },
           "southwest": {
-            "lat": 42.56164642010728,
-            "lng": -8.872841579892723
+            "lat": 42.5636250697085,
+            "lng": -8.874393680291504
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+      "icon_background_color": "#4B96F3",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shoppingcart_pinlet",
+      "name": "Supermercados Froiz",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2592,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115355258805332106781\">José Antonio de Santiago de Santiago</a>"
+          ],
+          "photo_reference": "AZose0lcFW2BK7gBTMeK2ME-rBTjvMuAiwzI_C5KzvtsaNODhfIt109YLQbhJW7mHVVMueuGMc90jTOe1b1qxONaH35c1AgJLa9c0p_SOyHw_mSEJHddP8udSsCiomOsFw9n0FlcCSXLzrCtG1LAXNnpU-4lxKMLXl8SNb8-rF7zzAsvxKUK",
+          "width": 4608
+        }
+      ],
+      "place_id": "ChIJr1IAwU0-Lw0Rkq7jH1yimGc",
+      "plus_code": {
+        "compound_code": "H47G+XQ Illa de Arousa, Spain",
+        "global_code": "8CJHH47G+XQ"
+      },
+      "rating": 4,
+      "reference": "ChIJr1IAwU0-Lw0Rkq7jH1yimGc",
+      "scope": "GOOGLE",
+      "types": [
+        "supermarket",
+        "grocery_or_supermarket",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 276,
+      "vicinity": "C/Travessia do, Paseo Naval, 4, Arousa"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.56049650000001,
+          "lng": -8.8796114
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.56187043029151,
+            "lng": -8.878288569708497
+          },
+          "southwest": {
+            "lat": 42.55917246970851,
+            "lng": -8.880986530291501
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/civic-bldg_pinlet",
+      "name": "Concello de A Illa de Arousa",
+      "place_id": "ChIJLWvHcFU-Lw0Rjh0-nXE5dV4",
+      "reference": "ChIJLWvHcFU-Lw0Rjh0-nXE5dV4",
+      "scope": "GOOGLE",
+      "types": [
+        "local_government_office",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Lugar Barrio Testos, 13"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.564017,
+          "lng": -8.873851999999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.5653659802915,
+            "lng": -8.872503019708496
+          },
+          "southwest": {
+            "lat": 42.5626680197085,
+            "lng": -8.875200980291501
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Residencial Goday/ Piso Isla de Arosa/ Promotora de Viviendas Isla de Arosa S.L.",
+      "place_id": "ChIJaX5TWVE-Lw0RQcmRb5rVlH4",
+      "plus_code": {
+        "compound_code": "H47G+JF Illa de Arousa, Spain",
+        "global_code": "8CJHH47G+JF"
+      },
+      "reference": "ChIJaX5TWVE-Lw0RQcmRb5rVlH4",
+      "scope": "GOOGLE",
+      "types": [
+        "real_estate_agency",
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Spain"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.56490499999999,
+          "lng": -8.872917099999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.56631678029149,
+            "lng": -8.871668769708497
+          },
+          "southwest": {
+            "lat": 42.56361881970849,
+            "lng": -8.8743667302915
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+      "icon_background_color": "#4B96F3",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shoppingcart_pinlet",
+      "name": "Coviran",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2268,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108455472443239719948\">Veni Souto</a>"
+          ],
+          "photo_reference": "AZose0l44qECOgpgoduvMMxWpMiZzj54Cx5qP3SxszBNs2A1XeYldCe5xDMtwZKu_Lph5nWMPT_CJnC83gjumyoExQBw8WBx9OPhPGGPTqP9D1rGeS0Ck7fHl4dRj7Lfnmnl7i4u6JkTxde90_V_nOT9JmoCY0wEVZwt6eXWxzdrfyVchFOL",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJ66qpbFE-Lw0Rd2q1fncJuhI",
+      "plus_code": {
+        "compound_code": "H47G+XR Illa de Arousa, Spain",
+        "global_code": "8CJHH47G+XR"
+      },
+      "rating": 3.8,
+      "reference": "ChIJ66qpbFE-Lw0Rd2q1fncJuhI",
+      "scope": "GOOGLE",
+      "types": [
+        "supermarket",
+        "grocery_or_supermarket",
+        "food",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 120,
+      "vicinity": "Paseo Naval, 2, Arousa"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.5630337,
+          "lng": -8.8714447
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.5643452302915,
+            "lng": -8.870142769708497
+          },
+          "southwest": {
+            "lat": 42.5616472697085,
+            "lng": -8.872840730291502
           }
         }
       },
@@ -1019,17 +522,17 @@
       },
       "photos": [
         {
-          "height": 3000,
+          "height": 2988,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/104172835435423871774\">A Google User</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/114731224970613913874\">Cafe Moderno</a>"
           ],
-          "photo_reference": "AZose0mO09Kt_76_L8HE9IVLTyYujCJjOsak2XfbXWB9hYLI8kS6e9e8llKbkmm-BHZ0lP0577UK7gVZjgq7AicYMruDGdeKsN8WRwaB2vFb_Z-sWOihoqSZO7HYw8jn-t2YooXh6nV4Ecs7fAynUlleea-G-vmUeLipzNQR7VXDcvE4lDJK",
-          "width": 4000
+          "photo_reference": "AZose0nm4sr9Gj3Bx4gKAKELBdSI-vp7Ufxs-UA_-X5khlJ5zgRWFaBTf0VR5eXl0ksVWIKMkXzQ18Ov8kcDpWa_8ACybADj-zC-xQqpmunhJ2tLwB4AYfHKLyYtgQtMg5j3BcJuNYAP_tItPBkGtdHrWa9JjhSw9vVw-9PeKf0_2gLdZU00",
+          "width": 5312
         }
       ],
       "place_id": "ChIJP7a1MFI-Lw0RmfedUeo3q54",
       "plus_code": {
-        "compound_code": "H47H+6C Illa de Arousa",
+        "compound_code": "H47H+6C Illa de Arousa, Spain",
         "global_code": "8CJHH47H+6C"
       },
       "price_level": 1,
@@ -1038,15 +541,376 @@
       "scope": "GOOGLE",
       "types": [
         "bar",
-        "cafe",
-        "store",
         "restaurant",
+        "cafe",
         "food",
+        "store",
         "point_of_interest",
         "establishment"
       ],
       "user_ratings_total": 189,
       "vicinity": "Rúa Ribeira do Chazo, 18, Illa de Arousa"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.5621439,
+          "lng": -8.870384399999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.5634826802915,
+            "lng": -8.869007319708498
+          },
+          "southwest": {
+            "lat": 42.5607847197085,
+            "lng": -8.871705280291502
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "San Xulian",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 768,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105804932214834161588\">Mardeapuestas. Sanxulián Loterías</a>"
+          ],
+          "photo_reference": "AZose0m4qtC5taNotBAoY5cqU2TMNG5RXVE88ZSLqC_Zf2DUGjzPvp2pW9bjQu_NbfXQYeXf4ymFHiktWjdYnir9WM-KNJe1q0PS2_y33FQGoou_zbJrBtVRdKj-qgwPZ1n5q8a1yp6QCcq-cHQTuSIUnDRX0CMBJ5nY2Kn1_WL_mfrlE0vh",
+          "width": 1024
+        }
+      ],
+      "place_id": "ChIJtc_iZVI-Lw0RHC7xaXwesTE",
+      "plus_code": {
+        "compound_code": "H46H+VR Illa de Arousa, Spain",
+        "global_code": "8CJHH46H+VR"
+      },
+      "rating": 4.6,
+      "reference": "ChIJtc_iZVI-Lw0RHC7xaXwesTE",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 28,
+      "vicinity": "Travesía Cruceiro, 2, Illa de Arousa"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.5622624,
+          "lng": -8.8693224
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.5636361802915,
+            "lng": -8.868000869708498
+          },
+          "southwest": {
+            "lat": 42.5609382197085,
+            "lng": -8.870698830291502
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+      "icon_background_color": "#4B96F3",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+      "name": "Villafarma Pontevedra S.L.",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 2988,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104938347241322134299\">Manuel Cores</a>"
+          ],
+          "photo_reference": "AZose0npP3F7KpqOsCAw6xmwlbSu_6Tq_VsmCM-XWbiqcyd5spYPk7Qorb-DhN_nSs9b-nphv6Vh_H9PfxNIYtiYJWTLiKv7ZRkopZSRVfhlrzfrRklZB0G_aukovredNa7muV478b2DAYZaPN-WfdqGHoRmFJQB6o6Q2e1z-mvVa7YF2oKw",
+          "width": 5312
+        }
+      ],
+      "place_id": "ChIJOX79h00-Lw0Ra5rx4k9n_3U",
+      "plus_code": {
+        "compound_code": "H46J+W7 Illa de Arousa, Spain",
+        "global_code": "8CJHH46J+W7"
+      },
+      "rating": 5,
+      "reference": "ChIJOX79h00-Lw0Ra5rx4k9n_3U",
+      "scope": "GOOGLE",
+      "types": [
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 7,
+      "vicinity": "A Torre, Rúa do Castro, 1, Arousa"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.5614402,
+          "lng": -8.869724400000001
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.5627895302915,
+            "lng": -8.868366319708496
+          },
+          "southwest": {
+            "lat": 42.5600915697085,
+            "lng": -8.871064280291501
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
+      "name": "Barley",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 720,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115506867828069555928\">Barley</a>"
+          ],
+          "photo_reference": "AZose0lMZYcNgKKxLUYU03LDoBye78xqHBTLxcUrf_5WFeRSFVr0yeHfwD_HU3FliL61u9WF0yKqfiEPzzOKmtyi5A9NCvxM-bd9YUQKRtoCfVOeWraVZM0b8mrintqwO_7AWVEG-5XUl-UbnjPNx85hifwin92qODuzsc_RDpA_9resyA5p",
+          "width": 1080
+        }
+      ],
+      "place_id": "ChIJgzLShlI-Lw0RyOMmgCLnUbY",
+      "plus_code": {
+        "compound_code": "H46J+H4 Illa de Arousa, Spain",
+        "global_code": "8CJHH46J+H4"
+      },
+      "price_level": 1,
+      "rating": 4.1,
+      "reference": "ChIJgzLShlI-Lw0RyOMmgCLnUbY",
+      "scope": "GOOGLE",
+      "types": [
+        "night_club",
+        "bar",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 83,
+      "vicinity": "Praza do Regueiro, 19, Illa de Arousa"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.56318319999999,
+          "lng": -8.868915699999997
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.5645876802915,
+            "lng": -8.867540069708497
+          },
+          "southwest": {
+            "lat": 42.5618897197085,
+            "lng": -8.870238030291501
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bank-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bank-intl_pinlet",
+      "name": "ABANCA",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 1080,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114734735937436689359\">ABANCA</a>"
+          ],
+          "photo_reference": "AZose0msOe60xEmdSea-n7RIBGGm6hAIMoelWCoDCkS3FxmmZINTf9ivCRcwOBUiqKLlSbrP1JXwvyNcIYaMWQOG9vlYNUnefrzKDfJmRfOTvTH5qmFbINYzA1UGMa11LxS3hhUFzhbj0czRrVeYz4IYxL91KUoMqPttDq_7PskgkwGr05uo",
+          "width": 1920
+        }
+      ],
+      "place_id": "ChIJHXgf8k0-Lw0RSCLxs0dK8Gg",
+      "plus_code": {
+        "compound_code": "H47J+7C Illa de Arousa, Spain",
+        "global_code": "8CJHH47J+7C"
+      },
+      "rating": 2.8,
+      "reference": "ChIJHXgf8k0-Lw0RSCLxs0dK8Gg",
+      "scope": "GOOGLE",
+      "types": [
+        "bank",
+        "atm",
+        "accounting",
+        "finance",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 6,
+      "vicinity": "Paseo o Cantiño, 20, Illa de Arousa"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.5616202,
+          "lng": -8.8689628
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.5629504802915,
+            "lng": -8.867627169708497
+          },
+          "southwest": {
+            "lat": 42.56025251970851,
+            "lng": -8.870325130291501
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Materiales de Const. Otero S.L. OTERO GAMMA Illa de Arousa",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 811,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111518837816547129171\">Materiales de Const. Otero S.L. OTERO GAMMA Illa de Arousa</a>"
+          ],
+          "photo_reference": "AZose0lb2EnOCUjJ8vwJAdHVSpxBRBQFMc-U0TQvBudYLaBX4-czbcNvQ3-5xekuFdq4-CVsoDWgdmO80W4Zg5DWmsHoHDr0D-QZPozSlTOzVKu6X13mtIM41boKWXTddHm94_eIvT2isqGedEDZJqp6_benU3Cf4rwMT-weUrCbsJhgPQJk",
+          "width": 1574
+        }
+      ],
+      "place_id": "ChIJLS_mFLM_Lw0RqsybP7yOJgs",
+      "plus_code": {
+        "compound_code": "H46J+JC Illa de Arousa, Spain",
+        "global_code": "8CJHH46J+JC"
+      },
+      "rating": 4.4,
+      "reference": "ChIJLS_mFLM_Lw0RqsybP7yOJgs",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 15,
+      "vicinity": "Rúa Torre, 14, Illa de Arousa"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.5618072,
+          "lng": -8.868699300000001
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.5631604302915,
+            "lng": -8.867307069708499
+          },
+          "southwest": {
+            "lat": 42.5604624697085,
+            "lng": -8.870005030291503
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "EN CLAVE DE AZUL",
+      "place_id": "ChIJSzrMgk0-Lw0RC1l9aY3QV3k",
+      "plus_code": {
+        "compound_code": "H46J+PG Illa de Arousa, Spain",
+        "global_code": "8CJHH46J+PG"
+      },
+      "reference": "ChIJSzrMgk0-Lw0RC1l9aY3QV3k",
+      "scope": "GOOGLE",
+      "types": [
+        "point_of_interest",
+        "establishment"
+      ],
+      "vicinity": "Rúa do Piorno, 12, Illa de Arousa"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 42.5619205,
+          "lng": -8.8685317
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.5632672302915,
+            "lng": -8.867176969708497
+          },
+          "southwest": {
+            "lat": 42.5605692697085,
+            "lng": -8.869874930291502
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Mar Ceibe",
+      "place_id": "ChIJ0elZnE0-Lw0RuhXVKQOyr5k",
+      "plus_code": {
+        "compound_code": "H46J+QH Illa de Arousa, Spain",
+        "global_code": "8CJHH46J+QH"
+      },
+      "rating": 5,
+      "reference": "ChIJ0elZnE0-Lw0RuhXVKQOyr5k",
+      "scope": "GOOGLE",
+      "types": [
+        "food",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1,
+      "vicinity": "Terceira Travesía o Castro, 3, Illa de Arousa"
+    },
+    {
+      "geometry": {
+        "location": {
+          "lat": 42.5651887,
+          "lng": -8.8735059
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 42.57340610943143,
+            "lng": -8.857498476228582
+          },
+          "southwest": {
+            "lat": 42.55697020801646,
+            "lng": -8.889513323771418
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
+      "icon_background_color": "#7B9EB0",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+      "name": "Urbanización Praia Naval",
+      "place_id": "ChIJI90gPlE-Lw0R-rSRgvZx2Rg",
+      "reference": "ChIJI90gPlE-Lw0R-rSRgvZx2Rg",
+      "scope": "GOOGLE",
+      "types": [
+        "neighborhood",
+        "political"
+      ],
+      "vicinity": "Illa de Arousa"
     }
   ],
   "status": "OK"

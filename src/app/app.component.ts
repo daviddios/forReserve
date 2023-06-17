@@ -5,6 +5,7 @@ import { Router, RouterLink } from '@angular/router';
 import { SplashScreenWeb } from '@capacitor/splash-screen/dist/esm/web';
 import { StatusBarPlugin } from '@capacitor/status-bar';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule} from "@angular/common/http";
 
 register();
 
@@ -13,13 +14,13 @@ register();
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
   standalone: true,
-  imports: [CommonModule, IonicModule, RouterLink],
+  imports: [CommonModule, IonicModule, RouterLink, HttpClientModule],
 })
 export class AppComponent {
   menus: any = [];
   selectedMenu: any;
 
-  constructor(private platform: Platform, private router: Router) {
+  constructor(private router: Router) {
     this.initializeApp();
   }
 

@@ -1,0 +1,68 @@
+<!-- Header -->
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="color1">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <!-- Page Title -->
+    <ion-title>Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content [fullscreen]="true" class="background">
+  <!-- Profile Details -->
+  <ion-list lines="none" class="ion-padding-top">
+    <ion-item>
+      <!-- User Image -->
+      <ion-avatar slot="start">
+        <img style="vertical-align: middle;" src="assets/images/avatar_2_bigger.png">
+      </ion-avatar>
+
+      <!-- Details -->
+      <ion-label class="ion-text-wrap">
+        <h4 class="name">Walter White</h4>
+        <ion-text class="edit-profile" (click)="gotoEditProfile()">__Edit profile</ion-text>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <!-- End Profile Details Section -->
+
+  <ion-list lines="full" class="ion-padding-top">
+    <ion-item>
+      <ion-icon color="medium" slot="end" name="key-outline"></ion-icon>
+      <ion-label class="ion-padding">__Change Password</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon color="medium" slot="end" name="heart"></ion-icon>
+      <ion-label class="ion-padding">__Your Favourites</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon color="medium" slot="end" name="card"></ion-icon>
+      <ion-label class="ion-padding">__Payments</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon color="medium" slot="end" name="pricetags"></ion-icon>
+      <ion-label class="ion-padding">__Promotions</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon color="medium" slot="end" name="trophy"></ion-icon>
+      <ion-label class="ion-padding">__Reward</ion-label>
+    </ion-item>
+
+    <ion-item (click)="gotoSettingsPage()">
+      <ion-icon color="medium" slot="end" name="settings"></ion-icon>
+      <ion-label class="ion-padding">__Settings</ion-label>
+    </ion-item>
+
+    <ion-item (click)="logout()">
+      <ion-icon color="medium" slot="end" name="log-out"></ion-icon>
+      <ion-label class="ion-padding">__Logout</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,52 @@
+<!-- Header -->
+<ion-header [translucent]="true" class="ion-no-border">
+  <ion-toolbar color="color1">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <!-- Page Title -->
+    <ion-title>Trips</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Contents -->
+<ion-content [fullscreen]="true" class="background">
+  <ion-card *ngFor="let item of hotels" (click)="gotoHotelDetails()">
+    <!-- Discount Offer -->
+    <ion-fab vertical="top" horizontal="start">
+      <ion-button size="small" color="warning">
+        10% off
+      </ion-button>
+    </ion-fab>
+
+    <!-- Like Button -->
+    <ion-fab vertical="top" horizontal="end">
+      <ion-fab-button size="small">
+        <ion-icon color="light" name="heart"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+    <!-- Hotel Image -->
+    <img [src]="item.images[0]" />
+
+    <ion-list lines="none">
+      <ion-item>
+        <ion-label class="ion-text-wrap">
+
+          <!-- Hotel Name -->
+          <h4 class="name">{{item.name}}</h4>
+
+          <!-- Reviews -->
+          <ion-text color="medium"> {{item.rating}}/({{item.totalReviews | number}} reviews)</ion-text>
+        </ion-label>
+
+        <!-- price -->
+        <ion-button class="price" color="color1" slot="end">
+          ${{item.price}}
+        </ion-button>
+
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>

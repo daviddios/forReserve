@@ -75,40 +75,52 @@ ion-content.background {
   }
 
   #hot_packages {
-    .item {
-      ion-thumbnail {
-        width: 100px;
-        height: 120px;
+    .flex-container {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
 
-        .packages_thumbnail {
+
+      .flex-card {
+        width: 420px; /* Ajusta este valor según tus necesidades */
+        margin: 10px;
+        /* Otros estilos para el card */
+
+        ion-thumbnail {
           width: 100px;
           height: 120px;
-          border-radius: 5px;
+
+          .packages_thumbnail {
+            width: 100px;
+            height: 120px;
+            border-radius: 5px;
+          }
         }
-      }
 
-      .name {
-        font-size: 14px;
-        font-weight: 500;
-      }
+        .name {
+          font-size: 14px;
+          font-weight: 500;
+        }
 
-      ion-icon {
-        color: var(--ion-color-color1);
-        padding-right: 10px;
-      }
+        ion-icon {
+          color: var(--ion-color-color1);
+          padding-right: 10px;
+        }
 
-      ion-note {
-        font-size: 1.3rem;
-        font-weight: 600;
-      }
+        ion-note {
+          font-size: 1.3rem;
+          font-weight: 600;
+        }
 
-      ion-card {
-        writing-mode: tb-rl;
-        padding: 10px;
-        background: var(--ion-color-color1);
-        color: white;
-        font-size: 16px;
-        font-weight: 700;
+        ion-card {
+          writing-mode: tb-rl;
+          padding: 10px;
+          background: var(--ion-color-color1);
+          color: white;
+          font-size: 16px;
+          font-weight: 700;
+        }
       }
     }
   }
