@@ -1,916 +1,1034 @@
 {
   "html_attributions": [],
-  "next_page_token": "AZose0k-LBl5Z6n1obCyYE5J4nmT9St9mA8Tz3Y0DgOFDpzew2V2RruD9ShjNsup95HGKlRo8-4nT5s6JVp9Bbot8A48SmvAu2vCgfUW68KfPiZ6ZVLB8Rk1h4FVkN-jWVtSq1NyP64NLEW-IDm6JRcHVAfwWKM0B2moURxHdo_L2lTebA0rQErAVmjxVel4pWiyEm2pqE_tGCVuU-WkW_GDfRY4QABN8DkukJORNQxdA41FN-ehHNf68dFIiuS_cP9eMsanHdHz202Qm6xhAyKAC0Zi1lGHpbF8VMt9RTEDYq9zfJiE5IVx2c_ua2z47VcfCp8e5O8iRPehUXVNRvOLlrXq4V_k9fd6hktRhGAQDBfj3PAMknvvSiG80N1YfxNyIKFXmvBGOAZhkn7IYSmfDhTQho8242_fb76g5e4ToCSj",
+  "next_page_token": "AZose0liIWSa4x6CB5pCuH6KP3qyUR6smeGrAR0QRYAMsFzY8lW-vZpDXMByYu5Gvob6mWAatljHqUtGXGO69lKsG4yArA0_T5YcS11k8lLOFl43XisTD0qP2N0Yh5P3J7y4W327IvJXqhkxXcEvbQQFK-59OXNDqAlEIpzc4BNxaa2DXTY0CWt0YXnaydwqoznRiLH7uSgCtdbc02BGBAfyn2XSxzKeNwx1bKvZpq8rcLItWJMWknCEoBS_4C06s1Ld8VwcZd3sgXWwcn4xH_-269eHKGhGfPZHm10a13COe2IFqy8Xgl3HtLrjVU1HgOkkwzMlas-3d8juVu6U9O8bPQKAxQpoUp0B77pdPu63zG5oFhtEOcY8khI_kponjy8FfivqZJ2q-uIBQwgHxOUPkMR2Fmmo9Tan58uik7bgNjeK",
   "results": [
     {
+      "address_components": [
+        {
+          "long_name": "6th Avenue",
+          "short_name": "6th Ave",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Manhattan",
+          "short_name": "Manhattan",
+          "types": [
+            "political",
+            "sublocality",
+            "sublocality_level_1"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "New York",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York County",
+          "short_name": "New York County",
+          "types": [
+            "administrative_area_level_2",
+            "political"
+          ]
+        },
+        {
+          "long_name": "New York",
+          "short_name": "NY",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "United States",
+          "short_name": "US",
+          "types": [
+            "country",
+            "political"
+          ]
+        },
+        {
+          "long_name": "10019",
+          "short_name": "10019",
+          "types": [
+            "postal_code"
+          ]
+        }
+      ],
+      "formatted_address": "54 W 56th St, 2F (bet 5Ave and, 6th Ave, New York, NY 10019, USA",
       "geometry": {
         "location": {
-          "lat": 42.5617975,
-          "lng": -8.8681527
+          "lat": 40.7632109,
+          "lng": -73.9769826
         },
+        "location_type": "GEOMETRIC_CENTER",
         "viewport": {
           "northeast": {
-            "lat": 42.57178371989743,
-            "lng": -8.857434281682524
+            "lat": 40.7646135802915,
+            "lng": -73.97558971970848
           },
           "southwest": {
-            "lat": 42.54991041958709,
-            "lng": -8.883941066516027
+            "lat": 40.7619156197085,
+            "lng": -73.9782876802915
           }
         }
       },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
-      "icon_background_color": "#7B9EB0",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-      "name": "Illa de Arousa",
-      "photos": [
-        {
-          "height": 3024,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/116348394753240952733\">Vicente Navarrete</a>"
-          ],
-          "photo_reference": "AZose0mWYvcDXaXjgW3UUVJBgkA8YVyPaDJnfu35gSraJqY_NZJRfY5aNU2DNSfRm_m1dO0FziCk-mQnKzxyEHI8KHJBj2G9gjoqQ7ocQYcJinVp8KL-O5Y_zzIyM7r_0Dr3UpAFH13vko4DiyyZ-anpqNgd81sOMlyF-B-Sdj1gUpEEBg_l",
-          "width": 4032
-        }
-      ],
-      "place_id": "ChIJN3Wdb7E_Lw0RQywbvdKYVt0",
-      "reference": "ChIJN3Wdb7E_Lw0RQywbvdKYVt0",
-      "scope": "GOOGLE",
+      "partial_match": true,
+      "place_id": "ChIJuT5oHvpYwokRKHivYz01paI",
+      "plus_code": {
+        "compound_code": "Q27F+76 New York, NY",
+        "global_code": "87G8Q27F+76"
+      },
       "types": [
-        "locality",
-        "political"
-      ],
-      "vicinity": "Illa de Arousa"
+        "establishment",
+        "hair_care",
+        "health",
+        "point_of_interest"
+      ]
     },
     {
       "business_status": "OPERATIONAL",
       "geometry": {
         "location": {
-          "lat": 42.5644113,
-          "lng": -8.872980799999997
+          "lat": 40.4174939,
+          "lng": -3.703499199999999
         },
         "viewport": {
           "northeast": {
-            "lat": 42.5657496802915,
-            "lng": -8.871651169708496
+            "lat": 40.4187536302915,
+            "lng": -3.702697499999999
           },
           "southwest": {
-            "lat": 42.5630517197085,
-            "lng": -8.874349130291501
+            "lat": 40.4160556697085,
+            "lng": -3.705904300000001
           }
         }
       },
       "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       "icon_background_color": "#909CE1",
       "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-      "name": "Apartamentos Arosa I",
-      "place_id": "ChIJ1QIFW0w-Lw0Rh48Uo6L7Kco",
-      "plus_code": {
-        "compound_code": "H47G+QR Illa de Arousa, Spain",
-        "global_code": "8CJHH47G+QR"
+      "name": "Hotel Europa",
+      "opening_hours": {
+        "open_now": true
       },
-      "rating": 4.9,
-      "reference": "ChIJ1QIFW0w-Lw0Rh48Uo6L7Kco",
+      "photos": [
+        {
+          "height": 3622,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102954749350346905187\">Hotel Europa Madrid</a>"
+          ],
+          "photo_reference": "AZose0m9jvFvjmJhzyD56Ga9IFEtD_xUxJsYItxiHDj5fpW2sr0iXqsZkB5-0kVKS3y1OjJ067bDWP-iArRZolWSU-5akoMo7dyg19GTxo0bAGXQKXSfAQ5Qmw_bZeTNF4nWRSb4BOaKZaNia8HuH1Tm0TBl7At2oOAEqyIz_Hay0HvSH5gw",
+          "width": 5467
+        }
+      ],
+      "place_id": "ChIJA6qiBX4oQg0RMNeuHkeyP0Y",
+      "plus_code": {
+        "compound_code": "C78W+XJ Madrid, Spain",
+        "global_code": "8CGRC78W+XJ"
+      },
+      "rating": 4.3,
+      "reference": "ChIJA6qiBX4oQg0RMNeuHkeyP0Y",
       "scope": "GOOGLE",
       "types": [
         "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "user_ratings_total": 7,
-      "vicinity": "Rua Naval, 3, Arousa"
-    },
-    {
-      "business_status": "CLOSED_TEMPORARILY",
-      "geometry": {
-        "location": {
-          "lat": 42.5608827,
-          "lng": -8.869602100000002
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56223093029149,
-            "lng": -8.868275519708499
-          },
-          "southwest": {
-            "lat": 42.5595329697085,
-            "lng": -8.870973480291504
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
-      "icon_background_color": "#4B96F3",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
-      "name": "Pesqueras Illa de Arousa",
-      "permanently_closed": true,
-      "photos": [
-        {
-          "height": 2322,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/117603716470966542968\">Susana Balmisa</a>"
-          ],
-          "photo_reference": "AZose0mGN-aBIahVHnbU-zhAfHrEUA4e17xfEckvY5jWiPbQ2J1CP_cDxWW_ONTPHg3UvQhdOYrUWpapH1KIXIsQ2uT6kigbMtLriVZSWruQh5sE3mKO4py_I-tGbnMqPVNPOeC5hICur5L7CbJoHDB0W28cOG1NBlu6aFIbvurAe-fmdg7D",
-          "width": 4128
-        }
-      ],
-      "place_id": "ChIJD7AJn1I-Lw0Rws3HZ9aqays",
-      "plus_code": {
-        "compound_code": "H46J+95 Illa de Arousa, Spain",
-        "global_code": "8CJHH46J+95"
-      },
-      "rating": 5,
-      "reference": "ChIJD7AJn1I-Lw0Rws3HZ9aqays",
-      "scope": "GOOGLE",
-      "types": [
-        "food",
-        "store",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 2,
-      "vicinity": "Rúa do Charco, 20, Illa de Arousa"
+      "user_ratings_total": 1462,
+      "vicinity": "Calle del Carmen, 4, Madrid"
     },
     {
       "business_status": "OPERATIONAL",
       "geometry": {
         "location": {
-          "lat": 42.56460329999999,
-          "lng": -8.873648400000002
+          "lat": 40.416379,
+          "lng": -3.701742399999999
         },
         "viewport": {
           "northeast": {
-            "lat": 42.56598973029151,
-            "lng": -8.872295019708501
+            "lat": 40.4173577802915,
+            "lng": -3.700350219708497
           },
           "southwest": {
-            "lat": 42.56329176970851,
-            "lng": -8.874992980291506
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
-      "icon_background_color": "#7B9EB0",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/civic-bldg_pinlet",
-      "name": "Biblioteca Pública Municipal de A Illa de Arousa",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
-        {
-          "height": 3264,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/100417607957617067758\">Rosa</a>"
-          ],
-          "photo_reference": "AZose0l1ZXlzw1bFx5JeDCeVwx9PTKzJckst7k2qGDuhFcTY1Nsq2pEDJMTBYnzHYgb8wq9jDODH7lFcgG1skDDf-bgAAy8RbeIWm9hwdfs_8tTg3HlnusbB310sYrTla-YbTLH_Gqjp0K3P1L_eh1Sar6YvUhXHwcYaOlsJqRUyWbPwRqGF",
-          "width": 2448
-        }
-      ],
-      "place_id": "ChIJb-_rd1I-Lw0RVp-vQT7MC1Y",
-      "plus_code": {
-        "compound_code": "H47G+RG Illa de Arousa, Spain",
-        "global_code": "8CJHH47G+RG"
-      },
-      "rating": 3,
-      "reference": "ChIJb-_rd1I-Lw0RVp-vQT7MC1Y",
-      "scope": "GOOGLE",
-      "types": [
-        "library",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 4,
-      "vicinity": "Rúa Marqués de Bradomín, 3, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.56271529999999,
-          "lng": -8.8706771
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.5640487302915,
-            "lng": -8.869275019708496
-          },
-          "southwest": {
-            "lat": 42.5613507697085,
-            "lng": -8.871972980291501
+            "lat": 40.4146598197085,
+            "lng": -3.703048180291502
           }
         }
       },
       "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       "icon_background_color": "#909CE1",
       "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-      "name": "Pensión Rey",
-      "opening_hours": {
-        "open_now": true
-      },
+      "name": "Hotel Victoria 4",
       "photos": [
         {
-          "height": 3024,
+          "height": 4000,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/106689341419845080482\">Pensión Rey</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/107958036170732818767\">Mr. Walka</a>"
           ],
-          "photo_reference": "AZose0n0yNAgFAS6FmxLT2Q-bv99xXl-20kyv1uoyYaq6BRqJYggnyns6ziTsxMPWMmPCy-RVNruk619PeNlf6JzGBXEYPRN3ZvEKz9enVZbFFlE1s15A81_i3zZCpY-0_OOEMM70LizrvfV32JWJQzC3BBCFQQyKMJsdC6ZxeRab4nhSaYW",
-          "width": 4032
+          "photo_reference": "AZose0mnSPnQmwGFu0PdtTPTlNoqLlgmWp2OeIU4yv0IRyv6pN3F-NSJQ0u8wG6Q3gg6LKtY-MrFE3VsY1sSSUFATqr70h3EqZSmtbsWxQErbHFburDRXn6Ew0FJnhVosb49xGXe39bYT01abEhxMkdLPqCcai_1ltxS6zz1-EDOam83ndco",
+          "width": 3000
         }
       ],
-      "place_id": "ChIJcx8NalI-Lw0RhZssslshrD8",
+      "place_id": "ChIJZZfGkoAoQg0RHKhODVpsn4o",
       "plus_code": {
-        "compound_code": "H47H+3P Illa de Arousa, Spain",
-        "global_code": "8CJHH47H+3P"
-      },
-      "rating": 4.4,
-      "reference": "ChIJcx8NalI-Lw0RhZssslshrD8",
-      "scope": "GOOGLE",
-      "types": [
-        "lodging",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 187,
-      "vicinity": "Rúa Fondo do Cruceiro, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5628806,
-          "lng": -8.868434499999999
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.5641879302915,
-            "lng": -8.867016669708498
-          },
-          "southwest": {
-            "lat": 42.5614899697085,
-            "lng": -8.869714630291503
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-      "icon_background_color": "#7B9EB0",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-      "name": "NB21",
-      "opening_hours": {
-        "open_now": false
-      },
-      "photos": [
-        {
-          "height": 1080,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/113819822915466206396\">NB21</a>"
-          ],
-          "photo_reference": "AZose0lBCA4INTN23jVlvf-OKjHeyrDt-WzXV-8wcG8KSwHbNAvlL8_u0uvcC05WBC8zyGT32ouhQljpen741Khlzy_-KIZMcSEVNN28YB8yscZ_qvp50i1w3IjN7cmvJft7CuI9lp1tQ6dwn1t_oaShvNFST9C6NEF8PCnQpQsNx_BMyrg6",
-          "width": 1080
-        }
-      ],
-      "place_id": "ChIJKep2lU0-Lw0RI2mDkZPfR8w",
-      "plus_code": {
-        "compound_code": "H47J+5J Illa de Arousa, Spain",
-        "global_code": "8CJHH47J+5J"
-      },
-      "reference": "ChIJKep2lU0-Lw0RI2mDkZPfR8w",
-      "scope": "GOOGLE",
-      "types": [
-        "insurance_agency",
-        "point_of_interest",
-        "establishment"
-      ],
-      "vicinity": "Avenida Castelao, 43, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5631806,
-          "lng": -8.870380900000001
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.5646242302915,
-            "lng": -8.868975269708498
-          },
-          "southwest": {
-            "lat": 42.5619262697085,
-            "lng": -8.871673230291503
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-      "icon_background_color": "#7B9EB0",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-      "name": "Asociación de Mejilloneros Illa de Arousa",
-      "opening_hours": {
-        "open_now": false
-      },
-      "place_id": "ChIJO2bOD1I-Lw0RExaYbqJP6Kw",
-      "plus_code": {
-        "compound_code": "H47H+7R Illa de Arousa, Spain",
-        "global_code": "8CJHH47H+7R"
-      },
-      "reference": "ChIJO2bOD1I-Lw0RExaYbqJP6Kw",
-      "scope": "GOOGLE",
-      "types": [
-        "point_of_interest",
-        "establishment"
-      ],
-      "vicinity": "Avenida Castelao, 26, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.56494840000001,
-          "lng": -8.873004600000002
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.5663230302915,
-            "lng": -8.8716957197085
-          },
-          "southwest": {
-            "lat": 42.5636250697085,
-            "lng": -8.874393680291504
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
-      "icon_background_color": "#4B96F3",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shoppingcart_pinlet",
-      "name": "Supermercados Froiz",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 2592,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/115355258805332106781\">José Antonio de Santiago de Santiago</a>"
-          ],
-          "photo_reference": "AZose0lcFW2BK7gBTMeK2ME-rBTjvMuAiwzI_C5KzvtsaNODhfIt109YLQbhJW7mHVVMueuGMc90jTOe1b1qxONaH35c1AgJLa9c0p_SOyHw_mSEJHddP8udSsCiomOsFw9n0FlcCSXLzrCtG1LAXNnpU-4lxKMLXl8SNb8-rF7zzAsvxKUK",
-          "width": 4608
-        }
-      ],
-      "place_id": "ChIJr1IAwU0-Lw0Rkq7jH1yimGc",
-      "plus_code": {
-        "compound_code": "H47G+XQ Illa de Arousa, Spain",
-        "global_code": "8CJHH47G+XQ"
+        "compound_code": "C78X+H8 Madrid, Spain",
+        "global_code": "8CGRC78X+H8"
       },
       "rating": 4,
-      "reference": "ChIJr1IAwU0-Lw0Rkq7jH1yimGc",
+      "reference": "ChIJZZfGkoAoQg0RHKhODVpsn4o",
       "scope": "GOOGLE",
       "types": [
-        "supermarket",
-        "grocery_or_supermarket",
-        "food",
-        "store",
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "user_ratings_total": 276,
-      "vicinity": "C/Travessia do, Paseo Naval, 4, Arousa"
+      "user_ratings_total": 894,
+      "vicinity": "Calle de la Victoria, 4, Madrid"
     },
     {
       "business_status": "OPERATIONAL",
       "geometry": {
         "location": {
-          "lat": 42.56049650000001,
-          "lng": -8.8796114
+          "lat": 40.41571,
+          "lng": -3.7060284
         },
         "viewport": {
           "northeast": {
-            "lat": 42.56187043029151,
-            "lng": -8.878288569708497
+            "lat": 40.4169281802915,
+            "lng": -3.704859869708497
           },
           "southwest": {
-            "lat": 42.55917246970851,
-            "lng": -8.880986530291501
+            "lat": 40.4142302197085,
+            "lng": -3.707557830291502
           }
         }
       },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/civic_building-71.png",
-      "icon_background_color": "#7B9EB0",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/civic-bldg_pinlet",
-      "name": "Concello de A Illa de Arousa",
-      "place_id": "ChIJLWvHcFU-Lw0Rjh0-nXE5dV4",
-      "reference": "ChIJLWvHcFU-Lw0Rjh0-nXE5dV4",
-      "scope": "GOOGLE",
-      "types": [
-        "local_government_office",
-        "point_of_interest",
-        "establishment"
-      ],
-      "vicinity": "Lugar Barrio Testos, 13"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.564017,
-          "lng": -8.873851999999999
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.5653659802915,
-            "lng": -8.872503019708496
-          },
-          "southwest": {
-            "lat": 42.5626680197085,
-            "lng": -8.875200980291501
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-      "icon_background_color": "#7B9EB0",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-      "name": "Residencial Goday/ Piso Isla de Arosa/ Promotora de Viviendas Isla de Arosa S.L.",
-      "place_id": "ChIJaX5TWVE-Lw0RQcmRb5rVlH4",
-      "plus_code": {
-        "compound_code": "H47G+JF Illa de Arousa, Spain",
-        "global_code": "8CJHH47G+JF"
-      },
-      "reference": "ChIJaX5TWVE-Lw0RQcmRb5rVlH4",
-      "scope": "GOOGLE",
-      "types": [
-        "real_estate_agency",
-        "point_of_interest",
-        "establishment"
-      ],
-      "vicinity": "Spain"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.56490499999999,
-          "lng": -8.872917099999999
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.56631678029149,
-            "lng": -8.871668769708497
-          },
-          "southwest": {
-            "lat": 42.56361881970849,
-            "lng": -8.8743667302915
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
-      "icon_background_color": "#4B96F3",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shoppingcart_pinlet",
-      "name": "Coviran",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 2268,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/108455472443239719948\">Veni Souto</a>"
-          ],
-          "photo_reference": "AZose0l44qECOgpgoduvMMxWpMiZzj54Cx5qP3SxszBNs2A1XeYldCe5xDMtwZKu_Lph5nWMPT_CJnC83gjumyoExQBw8WBx9OPhPGGPTqP9D1rGeS0Ck7fHl4dRj7Lfnmnl7i4u6JkTxde90_V_nOT9JmoCY0wEVZwt6eXWxzdrfyVchFOL",
-          "width": 4032
-        }
-      ],
-      "place_id": "ChIJ66qpbFE-Lw0Rd2q1fncJuhI",
-      "plus_code": {
-        "compound_code": "H47G+XR Illa de Arousa, Spain",
-        "global_code": "8CJHH47G+XR"
-      },
-      "rating": 3.8,
-      "reference": "ChIJ66qpbFE-Lw0Rd2q1fncJuhI",
-      "scope": "GOOGLE",
-      "types": [
-        "supermarket",
-        "grocery_or_supermarket",
-        "food",
-        "store",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 120,
-      "vicinity": "Paseo Naval, 2, Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5630337,
-          "lng": -8.8714447
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.5643452302915,
-            "lng": -8.870142769708497
-          },
-          "southwest": {
-            "lat": 42.5616472697085,
-            "lng": -8.872840730291502
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
-      "name": "Café Moderno",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 2988,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/114731224970613913874\">Cafe Moderno</a>"
-          ],
-          "photo_reference": "AZose0nm4sr9Gj3Bx4gKAKELBdSI-vp7Ufxs-UA_-X5khlJ5zgRWFaBTf0VR5eXl0ksVWIKMkXzQ18Ov8kcDpWa_8ACybADj-zC-xQqpmunhJ2tLwB4AYfHKLyYtgQtMg5j3BcJuNYAP_tItPBkGtdHrWa9JjhSw9vVw-9PeKf0_2gLdZU00",
-          "width": 5312
-        }
-      ],
-      "place_id": "ChIJP7a1MFI-Lw0RmfedUeo3q54",
-      "plus_code": {
-        "compound_code": "H47H+6C Illa de Arousa, Spain",
-        "global_code": "8CJHH47H+6C"
-      },
-      "price_level": 1,
-      "rating": 4.1,
-      "reference": "ChIJP7a1MFI-Lw0RmfedUeo3q54",
-      "scope": "GOOGLE",
-      "types": [
-        "bar",
-        "restaurant",
-        "cafe",
-        "food",
-        "store",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 189,
-      "vicinity": "Rúa Ribeira do Chazo, 18, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5621439,
-          "lng": -8.870384399999999
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.5634826802915,
-            "lng": -8.869007319708498
-          },
-          "southwest": {
-            "lat": 42.5607847197085,
-            "lng": -8.871705280291502
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-      "icon_background_color": "#7B9EB0",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-      "name": "San Xulian",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 768,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/105804932214834161588\">Mardeapuestas. Sanxulián Loterías</a>"
-          ],
-          "photo_reference": "AZose0m4qtC5taNotBAoY5cqU2TMNG5RXVE88ZSLqC_Zf2DUGjzPvp2pW9bjQu_NbfXQYeXf4ymFHiktWjdYnir9WM-KNJe1q0PS2_y33FQGoou_zbJrBtVRdKj-qgwPZ1n5q8a1yp6QCcq-cHQTuSIUnDRX0CMBJ5nY2Kn1_WL_mfrlE0vh",
-          "width": 1024
-        }
-      ],
-      "place_id": "ChIJtc_iZVI-Lw0RHC7xaXwesTE",
-      "plus_code": {
-        "compound_code": "H46H+VR Illa de Arousa, Spain",
-        "global_code": "8CJHH46H+VR"
-      },
-      "rating": 4.6,
-      "reference": "ChIJtc_iZVI-Lw0RHC7xaXwesTE",
-      "scope": "GOOGLE",
-      "types": [
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 28,
-      "vicinity": "Travesía Cruceiro, 2, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5622624,
-          "lng": -8.8693224
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.5636361802915,
-            "lng": -8.868000869708498
-          },
-          "southwest": {
-            "lat": 42.5609382197085,
-            "lng": -8.870698830291502
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
-      "icon_background_color": "#4B96F3",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
-      "name": "Villafarma Pontevedra S.L.",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 2988,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/104938347241322134299\">Manuel Cores</a>"
-          ],
-          "photo_reference": "AZose0npP3F7KpqOsCAw6xmwlbSu_6Tq_VsmCM-XWbiqcyd5spYPk7Qorb-DhN_nSs9b-nphv6Vh_H9PfxNIYtiYJWTLiKv7ZRkopZSRVfhlrzfrRklZB0G_aukovredNa7muV478b2DAYZaPN-WfdqGHoRmFJQB6o6Q2e1z-mvVa7YF2oKw",
-          "width": 5312
-        }
-      ],
-      "place_id": "ChIJOX79h00-Lw0Ra5rx4k9n_3U",
-      "plus_code": {
-        "compound_code": "H46J+W7 Illa de Arousa, Spain",
-        "global_code": "8CJHH46J+W7"
-      },
-      "rating": 5,
-      "reference": "ChIJOX79h00-Lw0Ra5rx4k9n_3U",
-      "scope": "GOOGLE",
-      "types": [
-        "store",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 7,
-      "vicinity": "A Torre, Rúa do Castro, 1, Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5614402,
-          "lng": -8.869724400000001
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.5627895302915,
-            "lng": -8.868366319708496
-          },
-          "southwest": {
-            "lat": 42.5600915697085,
-            "lng": -8.871064280291501
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
-      "icon_background_color": "#FF9E67",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bar_pinlet",
-      "name": "Barley",
-      "opening_hours": {
-        "open_now": true
-      },
-      "photos": [
-        {
-          "height": 720,
-          "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/115506867828069555928\">Barley</a>"
-          ],
-          "photo_reference": "AZose0lMZYcNgKKxLUYU03LDoBye78xqHBTLxcUrf_5WFeRSFVr0yeHfwD_HU3FliL61u9WF0yKqfiEPzzOKmtyi5A9NCvxM-bd9YUQKRtoCfVOeWraVZM0b8mrintqwO_7AWVEG-5XUl-UbnjPNx85hifwin92qODuzsc_RDpA_9resyA5p",
-          "width": 1080
-        }
-      ],
-      "place_id": "ChIJgzLShlI-Lw0RyOMmgCLnUbY",
-      "plus_code": {
-        "compound_code": "H46J+H4 Illa de Arousa, Spain",
-        "global_code": "8CJHH46J+H4"
-      },
-      "price_level": 1,
-      "rating": 4.1,
-      "reference": "ChIJgzLShlI-Lw0RyOMmgCLnUbY",
-      "scope": "GOOGLE",
-      "types": [
-        "night_club",
-        "bar",
-        "point_of_interest",
-        "establishment"
-      ],
-      "user_ratings_total": 83,
-      "vicinity": "Praza do Regueiro, 19, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.56318319999999,
-          "lng": -8.868915699999997
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.5645876802915,
-            "lng": -8.867540069708497
-          },
-          "southwest": {
-            "lat": 42.5618897197085,
-            "lng": -8.870238030291501
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bank-71.png",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       "icon_background_color": "#909CE1",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/bank-intl_pinlet",
-      "name": "ABANCA",
-      "opening_hours": {
-        "open_now": false
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Petit Palace Posada del Peine",
+      "photos": [
+        {
+          "height": 3680,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110194059580645935732\">Petit Palace Posada del Peine</a>"
+          ],
+          "photo_reference": "AZose0n0tBXWLdhuZfUTcedfTen7XM_rM-fsDH9VX1h2J-LBhwKpiobNAtFZCX_mgkR9__aQ-3giVzUPWwWfc6Qu5mMRgZabMXOQXwNfjQlpszpQ22tBigUGGDs2V2AkMm4QDpjMfpNIDeAtQ6xJaDeoUv9sxofol98Cg0_gXY1mBiVrEC2J",
+          "width": 4998
+        }
+      ],
+      "place_id": "ChIJEVwG434oQg0Re5ogd4tCyNY",
+      "plus_code": {
+        "compound_code": "C78V+7H Madrid, Spain",
+        "global_code": "8CGRC78V+7H"
       },
+      "rating": 4.4,
+      "reference": "ChIJEVwG434oQg0Re5ogd4tCyNY",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 948,
+      "vicinity": "Calle de Postas, 17, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.4145638,
+          "lng": -3.7014472
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.4158677802915,
+            "lng": -3.700039219708498
+          },
+          "southwest": {
+            "lat": 40.4131698197085,
+            "lng": -3.702737180291503
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "ME Madrid Reina Victoria",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1192,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112160887640088276162\">ME Madrid Reina Victoria</a>"
+          ],
+          "photo_reference": "AZose0kCA5o_OKm4dCP4hfw-bKa_cZVZAYtX7rNfzl_UF8QZvVZTOtQNv5__WzLOGm7WNhPNAgL6QCCinL5IRAXIPDoVP9be43EJamkT57U1eR5ymkmIZBaD-t-ytrfSjhaURaU70FEYubx14gP-px9idkJN_zYoqAOSmx5UKYQscKZEkS16",
+          "width": 2118
+        }
+      ],
+      "place_id": "ChIJDWmWQ4AoQg0R9Irotf9ECnQ",
+      "plus_code": {
+        "compound_code": "C77X+RC Madrid, Spain",
+        "global_code": "8CGRC77X+RC"
+      },
+      "rating": 4.3,
+      "reference": "ChIJDWmWQ4AoQg0R9Irotf9ECnQ",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1884,
+      "vicinity": "Plaza de Santa Ana, 14, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.4170661,
+          "lng": -3.6999505
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.4183787802915,
+            "lng": -3.698631819708497
+          },
+          "southwest": {
+            "lat": 40.41568081970851,
+            "lng": -3.701329780291502
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Hotel Quatro Puerta Del Sol",
+      "photos": [
+        {
+          "height": 9000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104730111483205644519\">Darwiche Rayan</a>"
+          ],
+          "photo_reference": "AZose0mAc-8HpvZdR9sH3WNBM6_9yya-q_78u2-PhOtaPXoreqjimQr4MeNJQyWHa4d97rtOktYKspxpEU2mV_R7m_vMttx_iEweBN-fjS165R7t-JDF3fC423CtjiFUUhrz7cn99j6-xTl14nhYWijsoqOzd7FA_DyxHTvu5tRVIsOWxN-V",
+          "width": 12000
+        }
+      ],
+      "place_id": "ChIJGT6LI4EoQg0R-FqiUc0f3wM",
+      "plus_code": {
+        "compound_code": "C882+R2 Madrid, Spain",
+        "global_code": "8CGRC882+R2"
+      },
+      "rating": 4,
+      "reference": "ChIJGT6LI4EoQg0R-FqiUc0f3wM",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 910,
+      "vicinity": "Calle de Sevilla, 4, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.4179133,
+          "lng": -3.699877499999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.4191950302915,
+            "lng": -3.698484069708498
+          },
+          "southwest": {
+            "lat": 40.4164970697085,
+            "lng": -3.701182030291502
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Hotel Regina Madrid",
       "photos": [
         {
           "height": 1080,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/114734735937436689359\">ABANCA</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/101749400695445210960\">Hotel Regina Madrid</a>"
           ],
-          "photo_reference": "AZose0msOe60xEmdSea-n7RIBGGm6hAIMoelWCoDCkS3FxmmZINTf9ivCRcwOBUiqKLlSbrP1JXwvyNcIYaMWQOG9vlYNUnefrzKDfJmRfOTvTH5qmFbINYzA1UGMa11LxS3hhUFzhbj0czRrVeYz4IYxL91KUoMqPttDq_7PskgkwGr05uo",
+          "photo_reference": "AZose0lekQvYxcvujt4LNNI1eZrBrp8p1DQhmSBCahNPJJUaf87D__yFd6hYnHdYQTgNhy-LyFov9NJDfqR35TSEYsiA8Ry3-2Hs8CptYaHNvxbVimU0duE1BO4W95cHaXxkmOJZ1hjE9n4LdBlKjcviytLjl2NqDGF8ZkonwHKex_v32el_",
           "width": 1920
         }
       ],
-      "place_id": "ChIJHXgf8k0-Lw0RSCLxs0dK8Gg",
+      "place_id": "ChIJ_-t1LoEoQg0RNVeflHaTDZo",
       "plus_code": {
-        "compound_code": "H47J+7C Illa de Arousa, Spain",
-        "global_code": "8CJHH47J+7C"
+        "compound_code": "C892+52 Madrid, Spain",
+        "global_code": "8CGRC892+52"
       },
-      "rating": 2.8,
-      "reference": "ChIJHXgf8k0-Lw0RSCLxs0dK8Gg",
+      "rating": 4.5,
+      "reference": "ChIJ_-t1LoEoQg0RNVeflHaTDZo",
       "scope": "GOOGLE",
       "types": [
-        "bank",
-        "atm",
-        "accounting",
-        "finance",
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "user_ratings_total": 6,
-      "vicinity": "Paseo o Cantiño, 20, Illa de Arousa"
+      "user_ratings_total": 2355,
+      "vicinity": "Calle de Alcalá, 19, Madrid"
     },
     {
       "business_status": "OPERATIONAL",
       "geometry": {
         "location": {
-          "lat": 42.5616202,
-          "lng": -8.8689628
+          "lat": 40.4205878,
+          "lng": -3.7040355
         },
         "viewport": {
           "northeast": {
-            "lat": 42.5629504802915,
-            "lng": -8.867627169708497
+            "lat": 40.4219501302915,
+            "lng": -3.702603219708498
           },
           "southwest": {
-            "lat": 42.56025251970851,
-            "lng": -8.870325130291501
+            "lat": 40.4192521697085,
+            "lng": -3.705301180291503
           }
         }
       },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-      "icon_background_color": "#7B9EB0",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-      "name": "Materiales de Const. Otero S.L. OTERO GAMMA Illa de Arousa",
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "INNSiDE by Meliá Madrid Gran Vía",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 572,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109239340144506162064\">INNSiDE Madrid Gran Vía</a>"
+          ],
+          "photo_reference": "AZose0nq-FItaFFObC_VVEh6mP878_fQftjnGXkkH5JZ6ua5ksla76Lrc2jwBTCFT8m_834sdrbZt6YHfReuOj30MjZCirIxbXnolbp4o6IFdTF1C9z8EEfHvLHLw1fcVJTj5cevUKucrNhvhWYFjjMO7-0a8dG7lWWs15opypX7EjWYkrg",
+          "width": 800
+        }
+      ],
+      "place_id": "ChIJUUmYn30oQg0RHh1g5qeyy1o",
+      "plus_code": {
+        "compound_code": "C7CW+69 Madrid, Spain",
+        "global_code": "8CGRC7CW+69"
+      },
+      "rating": 4.2,
+      "reference": "ChIJUUmYn30oQg0RHh1g5qeyy1o",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1482,
+      "vicinity": "Calle de Mesonero Romanos, 13, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.42056549999999,
+          "lng": -3.7029078
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.4218576802915,
+            "lng": -3.701600969708498
+          },
+          "southwest": {
+            "lat": 40.4191597197085,
+            "lng": -3.704298930291503
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Petit Palace Triball",
+      "photos": [
+        {
+          "height": 3840,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101892896738182349200\">Petit Palace Triball</a>"
+          ],
+          "photo_reference": "AZose0mSYpO0uWRzE4oWiRkejlcpVKiy46xsnfeuJvHk4Y3rYANho4uzY1Ot4QMTjoL4i-1CNdXXtPGmggshlzLFTEG9nKKbsRMUvc-rGT8ZFL_7eu5mnbd0GSygFg8MYtz-xd-xgnyEYuY7qv7yjMBMwJ2y9g2p9R52Hmq6TUqPUp_UzkuV",
+          "width": 3840
+        }
+      ],
+      "place_id": "ChIJfaTYf30oQg0RRe-BL7LDMgg",
+      "plus_code": {
+        "compound_code": "C7CW+6R Madrid, Spain",
+        "global_code": "8CGRC7CW+6R"
+      },
+      "rating": 4.5,
+      "reference": "ChIJfaTYf30oQg0RRe-BL7LDMgg",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1458,
+      "vicinity": "Calle Gonzalo Jiménez de Quesada, 2, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.4164449,
+          "lng": -3.6986026
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.4176963302915,
+            "lng": -3.697391569708497
+          },
+          "southwest": {
+            "lat": 40.4149983697085,
+            "lng": -3.700089530291502
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Hotel Urban",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 363,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100896060332831262126\">Hotel Urban</a>"
+          ],
+          "photo_reference": "AZose0mWkwW_9VROdZzuXfFMQSU4voakDcWKvaXaW2NVOnCTYnrtRPsoaBCXRdjXAD3bdruLsCCQlQyMWG9_Evv17RxIYE-w0m1zzc28C8K1zgaXjO9U2_HwIp7fyE_-zZu4jV_NTIHjjpTsa1XNeWtAQ56EkBt40X9vZXdP1p6auSzsjVBh",
+          "width": 600
+        }
+      ],
+      "place_id": "ChIJgRC4boEoQg0Rl6-gmXVOYkY",
+      "plus_code": {
+        "compound_code": "C882+HH Madrid, Spain",
+        "global_code": "8CGRC882+HH"
+      },
+      "rating": 4.5,
+      "reference": "ChIJgRC4boEoQg0Rl6-gmXVOYkY",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1548,
+      "vicinity": "Carrera de San Jerónimo, 34, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.420444,
+          "lng": -3.706584
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.4217432302915,
+            "lng": -3.705192369708497
+          },
+          "southwest": {
+            "lat": 40.4190452697085,
+            "lng": -3.707890330291501
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Vincci Capitol Hotel",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 357,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117432237074402608406\">Vincci Capitol Hotel</a>"
+          ],
+          "photo_reference": "AZose0nLXdYR2ONZIA7IERRqbSzPBL-w4vOpTQsr7OFD-FNXS-vwMgc6wMu_hk759zcvTu8KM1VsjHzoqtAwisp-EfS8ZMmwmyot0XUPeJG606Exp0FfbJBxKRPiLwG5oGRVrtWVToW7vPS5CKz0bhITpNFW6XzT5uMn3Z6ONjbq-xepjT2c",
+          "width": 795
+        }
+      ],
+      "place_id": "ChIJy4P69HwoQg0R7aD4eSPBx7k",
+      "plus_code": {
+        "compound_code": "C7CV+59 Madrid, Spain",
+        "global_code": "8CGRC7CV+59"
+      },
+      "rating": 4.3,
+      "reference": "ChIJy4P69HwoQg0R7aD4eSPBx7k",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1988,
+      "vicinity": "Calle Gran Vía, 41, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.4201069,
+          "lng": -3.6970542
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.4214231802915,
+            "lng": -3.695732569708497
+          },
+          "southwest": {
+            "lat": 40.4187252197085,
+            "lng": -3.698430530291501
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Hotel Infantas by Mij",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1365,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106865128955815835710\">Hotel Infantas by MIJ</a>"
+          ],
+          "photo_reference": "AZose0mSGulSE2laGVDDefMGlEVn6rIknIYddYa2QGYjtWu6pPyOd0Fkzz85jW4_xEaqR3vPmvyQMIHa9UZhFLmpBIKtW8w-yBhyXr1leZiHoAWsCxMMAdOuvCLp3Iycd18YbKK221pkELaYbD6rymu5Te6SkzTS_Qq6_144xNSIj0E-DRX6",
+          "width": 2048
+        }
+      ],
+      "place_id": "ChIJ3_VsMIQoQg0RRIAmIZ2p-88",
+      "plus_code": {
+        "compound_code": "C8C3+25 Madrid, Spain",
+        "global_code": "8CGRC8C3+25"
+      },
+      "rating": 4.3,
+      "reference": "ChIJ3_VsMIQoQg0RRIAmIZ2p-88",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 706,
+      "vicinity": "Calle de las Infantas, 29, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.4212153,
+          "lng": -3.7099122
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.42257178029149,
+            "lng": -3.708513669708498
+          },
+          "southwest": {
+            "lat": 40.41987381970849,
+            "lng": -3.711211630291502
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Eurostars Madrid Gran Vía",
+      "photos": [
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109430093629164881648\">Eurostars Madrid Gran Vía</a>"
+          ],
+          "photo_reference": "AZose0niB4QR6GZRvCv_PgsJRsrOAUBQ8VpvKfiHTvYgCPQnvIDfho-q7_LMuyZM1Y0g4ftGXXGbgPM-6SkU6y1ewnSn0yfNYCOeroG0dZKHItQlXn6whZiCkOloeOuUlcYrggKK1uov8dxAETZHORs9jlveg_4VD-q8vf2-0Xv7WATbwrSw",
+          "width": 6000
+        }
+      ],
+      "place_id": "ChIJxceCEHsoQg0R9DxB0n-hWco",
+      "plus_code": {
+        "compound_code": "C7CR+F2 Madrid, Spain",
+        "global_code": "8CGRC7CR+F2"
+      },
+      "rating": 4.1,
+      "reference": "ChIJxceCEHsoQg0R9DxB0n-hWco",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1073,
+      "vicinity": "Calle de Leganitos, 13, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.4116079,
+          "lng": -3.6973791
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.4130041302915,
+            "lng": -3.696179319708498
+          },
+          "southwest": {
+            "lat": 40.4103061697085,
+            "lng": -3.698877280291502
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Hotel Madrid Atocha Affiliated by Meliá",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 1971,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108439009541205997377\">Hotel Madrid Atocha Affiliated by Meliá</a>"
+          ],
+          "photo_reference": "AZose0nNozG-4QK98re5RhBn7sALLvfHumVvENRw3ISRQBRpAXOIkycNnyAyZhyBd4hABvl07-8WE6T8SO2zpo-KY3dSwex_rbSjjs2pWTMj9GDF-fXlXSqpsNVrAmFbpvYElI4bD7Ir48Fae9lKeqvl-mDXaOH2sJOIiY4LI2Tjx82GTsEF",
+          "width": 2953
+        }
+      ],
+      "place_id": "ChIJn8FziykmQg0RW8duwoywhaY",
+      "plus_code": {
+        "compound_code": "C863+J2 Madrid, Spain",
+        "global_code": "8CGRC863+J2"
+      },
+      "rating": 4.1,
+      "reference": "ChIJn8FziykmQg0RW8duwoywhaY",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 1883,
+      "vicinity": "Calle de Atocha, 83, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.4227778,
+          "lng": -3.7094444
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.4240440302915,
+            "lng": -3.708182669708498
+          },
+          "southwest": {
+            "lat": 40.42134606970851,
+            "lng": -3.710880630291502
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Senator Gran Vía 70 Spa Hotel",
       "opening_hours": {
         "open_now": false
       },
       "photos": [
         {
-          "height": 811,
+          "height": 3456,
           "html_attributions": [
-            "<a href=\"https://maps.google.com/maps/contrib/111518837816547129171\">Materiales de Const. Otero S.L. OTERO GAMMA Illa de Arousa</a>"
+            "<a href=\"https://maps.google.com/maps/contrib/106539534668486890509\">Senator Gran Vía 70 Spa Hotel</a>"
           ],
-          "photo_reference": "AZose0lb2EnOCUjJ8vwJAdHVSpxBRBQFMc-U0TQvBudYLaBX4-czbcNvQ3-5xekuFdq4-CVsoDWgdmO80W4Zg5DWmsHoHDr0D-QZPozSlTOzVKu6X13mtIM41boKWXTddHm94_eIvT2isqGedEDZJqp6_benU3Cf4rwMT-weUrCbsJhgPQJk",
-          "width": 1574
+          "photo_reference": "AZose0kqVM_53davuEX8mfpXN15KQuORuvIlHhxLy8wfhhOutS9gFFvsmqnJNOS2zMJ0U4gvVxoKe4MkAem9ruP2g9cM9Mv121V-Osm6dRhWrm0Ve5mwzyCg04_7lmGdy8H7tOKNlUN-Gb3OSPylq2I6jkF5asIwh9drQfGoVaOs0jetVB76",
+          "width": 5184
         }
       ],
-      "place_id": "ChIJLS_mFLM_Lw0RqsybP7yOJgs",
+      "place_id": "ChIJZVySNHsoQg0REOWFykYAb10",
       "plus_code": {
-        "compound_code": "H46J+JC Illa de Arousa, Spain",
-        "global_code": "8CJHH46J+JC"
+        "compound_code": "C7FR+46 Madrid, Spain",
+        "global_code": "8CGRC7FR+46"
       },
-      "rating": 4.4,
-      "reference": "ChIJLS_mFLM_Lw0RqsybP7yOJgs",
+      "rating": 4.1,
+      "reference": "ChIJZVySNHsoQg0REOWFykYAb10",
       "scope": "GOOGLE",
       "types": [
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "user_ratings_total": 15,
-      "vicinity": "Rúa Torre, 14, Illa de Arousa"
+      "user_ratings_total": 1491,
+      "vicinity": "Calle Gran Vía, 70, Madrid"
     },
     {
       "business_status": "OPERATIONAL",
       "geometry": {
         "location": {
-          "lat": 42.5618072,
-          "lng": -8.868699300000001
+          "lat": 40.4157577,
+          "lng": -3.692606699999999
         },
         "viewport": {
           "northeast": {
-            "lat": 42.5631604302915,
-            "lng": -8.867307069708499
+            "lat": 40.4171865302915,
+            "lng": -3.691278769708497
           },
           "southwest": {
-            "lat": 42.5604624697085,
-            "lng": -8.870005030291503
+            "lat": 40.4144885697085,
+            "lng": -3.693976730291502
           }
         }
       },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-      "icon_background_color": "#7B9EB0",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-      "name": "EN CLAVE DE AZUL",
-      "place_id": "ChIJSzrMgk0-Lw0RC1l9aY3QV3k",
-      "plus_code": {
-        "compound_code": "H46J+PG Illa de Arousa, Spain",
-        "global_code": "8CJHH46J+PG"
-      },
-      "reference": "ChIJSzrMgk0-Lw0RC1l9aY3QV3k",
-      "scope": "GOOGLE",
-      "types": [
-        "point_of_interest",
-        "establishment"
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Mandarin Oriental Ritz, Madrid",
+      "photos": [
+        {
+          "height": 1292,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116406904649772959478\">Mandarin Oriental Ritz, Madrid</a>"
+          ],
+          "photo_reference": "AZose0lU9GSNzII0eoEgSw1955SK3eKGB5NkHw9zkIEhRnBOoJaGPhZVe1H20quSwlYkHJwNx7d8yNKSS_RYbgQKbCz3gTAezxw-HRyKZIjXxG_zQXhUAXCLLdyEDP8k6AJZVVGSoSkSVHm4sDIaFZiSmChIAwgIfpFs12pxk4X5vtXsvfSc",
+          "width": 2300
+        }
       ],
-      "vicinity": "Rúa do Piorno, 12, Illa de Arousa"
-    },
-    {
-      "business_status": "OPERATIONAL",
-      "geometry": {
-        "location": {
-          "lat": 42.5619205,
-          "lng": -8.8685317
-        },
-        "viewport": {
-          "northeast": {
-            "lat": 42.5632672302915,
-            "lng": -8.867176969708497
-          },
-          "southwest": {
-            "lat": 42.5605692697085,
-            "lng": -8.869874930291502
-          }
-        }
-      },
-      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
-      "icon_background_color": "#7B9EB0",
-      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-      "name": "Mar Ceibe",
-      "place_id": "ChIJ0elZnE0-Lw0RuhXVKQOyr5k",
+      "place_id": "ChIJYfC-KYMoQg0RhCEOyVqku7k",
       "plus_code": {
-        "compound_code": "H46J+QH Illa de Arousa, Spain",
-        "global_code": "8CJHH46J+QH"
+        "compound_code": "C884+8X Madrid, Spain",
+        "global_code": "8CGRC884+8X"
       },
-      "rating": 5,
-      "reference": "ChIJ0elZnE0-Lw0RuhXVKQOyr5k",
+      "rating": 4.6,
+      "reference": "ChIJYfC-KYMoQg0RhCEOyVqku7k",
       "scope": "GOOGLE",
       "types": [
+        "spa",
+        "lodging",
+        "point_of_interest",
         "food",
+        "establishment"
+      ],
+      "user_ratings_total": 2805,
+      "vicinity": "Plaza de la Lealtad, 5, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.4206587,
+          "lng": -3.7085482
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.4220179302915,
+            "lng": -3.707070769708498
+          },
+          "southwest": {
+            "lat": 40.4193199697085,
+            "lng": -3.709768730291503
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Hotel Santo Domingo",
+      "photos": [
+        {
+          "height": 4912,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112326540643061837437\">Hotel Santo Domingo Madrid</a>"
+          ],
+          "photo_reference": "AZose0k9B9_-VJcsxMQjOF4hpPUw3m68NPTw_yE-mcUtlYNWB_WeymncF6sjU2Ax6huJgcmcAPtmrAGSKtWCPttXIeakwZmFwJha9k6sg2W-kzQfTBqNMRw9J9Dgt0mB5iMD-4dPa1GdygW15PYzSKp9EKAhHhE4fHzcNh5tU4HAvjISovXY",
+          "width": 7360
+        }
+      ],
+      "place_id": "ChIJvRXhe3soQg0R6SU6s7IBEGg",
+      "plus_code": {
+        "compound_code": "C7CR+7H Madrid, Spain",
+        "global_code": "8CGRC7CR+7H"
+      },
+      "rating": 3.9,
+      "reference": "ChIJvRXhe3soQg0R6SU6s7IBEGg",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
         "point_of_interest",
         "establishment"
       ],
-      "user_ratings_total": 1,
-      "vicinity": "Terceira Travesía o Castro, 3, Illa de Arousa"
+      "user_ratings_total": 3994,
+      "vicinity": "Calle de San Bernardo, 1, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.41852529999999,
+          "lng": -3.6980617
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.41979698029149,
+            "lng": -3.696670019708498
+          },
+          "southwest": {
+            "lat": 40.41709901970849,
+            "lng": -3.699367980291502
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      "icon_background_color": "#FF9E67",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+      "name": "La Chulapa de Alcalá",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3096,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111573173953506653648\">Beatriz Priolo</a>"
+          ],
+          "photo_reference": "AZose0n1VQ05Wfrbp0Z_2IUciBJZQxmB1rDCT8OaGX_ipZEnd1lLpFWK6L1AiohgsYFxh9gwYPI7zjV-2XU9gvkqAYOy2f5C1lrPwgm2J_t1zHbXR3VdT_lqlcWW4zLw8-TDyHayEPCPtdy4etbWiTRJYnUw6HZf-E09N_bKjDhxOIqg7D24",
+          "width": 4128
+        }
+      ],
+      "place_id": "ChIJ56ScqYYoQg0RD0W0Y7SLgro",
+      "plus_code": {
+        "compound_code": "C892+CQ Madrid, Spain",
+        "global_code": "8CGRC892+CQ"
+      },
+      "price_level": 2,
+      "rating": 4,
+      "reference": "ChIJ56ScqYYoQg0RD0W0Y7SLgro",
+      "scope": "GOOGLE",
+      "types": [
+        "restaurant",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "user_ratings_total": 2528,
+      "vicinity": "Calle de Alcalá, 35, Madrid"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "geometry": {
+        "location": {
+          "lat": 40.42040529999999,
+          "lng": -3.7045863
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 40.4216655802915,
+            "lng": -3.703247769708498
+          },
+          "southwest": {
+            "lat": 40.4189676197085,
+            "lng": -3.705945730291502
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      "icon_background_color": "#909CE1",
+      "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
+      "name": "Hotel Atlántico",
+      "opening_hours": {
+        "open_now": true
+      },
+      "photos": [
+        {
+          "height": 3648,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103807597280524261743\">Hotel Atlántico Madrid</a>"
+          ],
+          "photo_reference": "AZose0nw4nQIIpJWZqcwOtmOcPZeH5S9ZH4qakTGcUkh_tFViqRxx9Q55m9TnzN75lKghqGTBUFbaEfSy1reMKKkbE_L3mcxfpbfzBB9MYG8mRmHzTHg3y4OKTtoyypVflSzvtORSOB-ikH947Bz89_dByfXPgrL7dyPY-AtVrWCSqkmAX8",
+          "width": 5472
+        }
+      ],
+      "place_id": "ChIJBeoTp30oQg0R7H98XNMITQ8",
+      "plus_code": {
+        "compound_code": "C7CW+55 Madrid, Spain",
+        "global_code": "8CGRC7CW+55"
+      },
+      "rating": 4.6,
+      "reference": "ChIJBeoTp30oQg0R7H98XNMITQ8",
+      "scope": "GOOGLE",
+      "types": [
+        "lodging",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 957,
+      "vicinity": "Calle Gran Vía, 38, Madrid"
     },
     {
       "geometry": {
         "location": {
-          "lat": 42.5651887,
-          "lng": -8.8735059
+          "lat": 40.4167234,
+          "lng": -3.7033851
         },
         "viewport": {
           "northeast": {
-            "lat": 42.57340610943143,
-            "lng": -8.857498476228582
+            "lat": 40.43061606023851,
+            "lng": -3.690288963431012
           },
           "southwest": {
-            "lat": 42.55697020801646,
-            "lng": -8.889513323771418
+            "lat": 40.40504105097957,
+            "lng": -3.72287807086027
           }
         }
       },
       "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/geocode-71.png",
       "icon_background_color": "#7B9EB0",
       "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
-      "name": "Urbanización Praia Naval",
-      "place_id": "ChIJI90gPlE-Lw0R-rSRgvZx2Rg",
-      "reference": "ChIJI90gPlE-Lw0R-rSRgvZx2Rg",
+      "name": "Centro",
+      "photos": [
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110831516290657520585\">Gilis Patrick L.</a>"
+          ],
+          "photo_reference": "AZose0ktzX-WNqToGNkDsOG9eiaoBILJCwHbb1wnHGG7FwRHcl7xvv8F1fwzT0qtE0xhiJCZFNurdt7l_JkM0MaJUpB0p80XW-EjSdejvZURZU286QjaMu3ppa7DB5tSCVxd3SJMeT614esvEve6g5VO1UBfiiGIGZCwvQ5SROhCaHRTFAfQ",
+          "width": 4000
+        }
+      ],
+      "place_id": "ChIJFWLQn34oQg0RwdDjI_8J4dU",
+      "reference": "ChIJFWLQn34oQg0RwdDjI_8J4dU",
       "scope": "GOOGLE",
       "types": [
-        "neighborhood",
+        "sublocality_level_1",
+        "sublocality",
         "political"
       ],
-      "vicinity": "Illa de Arousa"
+      "vicinity": "Centro"
     }
   ],
   "status": "OK"

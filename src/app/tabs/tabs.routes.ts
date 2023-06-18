@@ -22,15 +22,15 @@ export const routes: Routes = [
           import('../pages/profile/profile.page').then((m) => m.ProfilePage),
       },
       {
+        path: 'service-details/:place_id',
+        loadComponent: () =>
+          import('../pages/service-details/service-details.page').then( m => m.ServiceDetailsPage)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full',
       },
     ],
-  },
-  {
-    path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full',
   },
 ];

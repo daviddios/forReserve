@@ -2,12 +2,12 @@ import {Component, CUSTOM_ELEMENTS_SCHEMA, OnInit} from '@angular/core';
 import { IonicModule, IonicSlides } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { SliderInterface } from '../../interfaces/slider.interface';
+import { SliderInterface } from '../../shared/interfaces/slider.interface';
 import { Router } from '@angular/router';
-import { DataService } from '../../services/data.service';
-import { LocationService } from '../../services/location.service';
+import { DataService } from '../../shared/services/data.service';
+import { LocationService } from '../../shared/services/location.service';
 import { Geolocation } from '@capacitor/geolocation';
-import {PlaceInterface} from "../../interfaces/place.interface";
+import {PlaceInterface} from "../../shared/interfaces/place.interface";
 import {Observable} from "rxjs";
 import {HttpClient} from "@angular/common/http";
 
@@ -94,6 +94,6 @@ export class HomePage implements OnInit{
   protected readonly Router = Router;
 
   goToServicePage(place_id: string) {
-    this.router.navigate(['/service-details', place_id])
+    this.router.navigate(['/tabs/service-details', place_id])
   }
 }

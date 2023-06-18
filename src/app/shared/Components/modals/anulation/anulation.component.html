@@ -1,0 +1,13 @@
+    <ion-card>
+      <ion-card-content>
+        <p>¿Estás seguro de que deseas anular esta cita?</p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" color="light" (click)="dismissModal()">Cancelar</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button expand="block" color="danger" (click)="cancelAppointmentConfirmed()">Anular</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card>

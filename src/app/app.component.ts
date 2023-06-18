@@ -17,7 +17,22 @@ register();
   imports: [CommonModule, IonicModule, RouterLink, HttpClientModule],
 })
 export class AppComponent {
-  menus: any = [];
+  menus: any = [
+    {
+      title: 'Inicio',
+      url: '/inicio',
+      icon: 'home'
+    },
+    {
+      title: 'Perfil',
+      url: '/perfil',
+      icon: 'person'
+    },
+    {
+      title: 'Ajustes',
+      url: '/ajustes',
+      icon: 'settings'
+    }];
   selectedMenu: any;
 
   constructor(private router: Router) {

@@ -1,0 +1,16 @@
+{
+  "locations": [
+    {
+      "id": "1",
+      "name": "Vilagarcía de Arousa"
+    },
+    {
+      "id": "2",
+      "name": "Pontevedra"
+    },
+    {
+      "id": "3",
+      "name": "Ourense"
+    }
+  ]
+}
