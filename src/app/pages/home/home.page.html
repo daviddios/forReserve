@@ -23,8 +23,7 @@
           size-lg="5"
           size-xs="12"
         >
-          <ion-searchbar
-            animated="true"
+          <ion-searchbar color="light"
             placeholder="__ Search by location or service"
           ></ion-searchbar>
         </ion-col>
@@ -33,50 +32,14 @@
   </div>
 
   <!-- Popular Hotels -->
-  <div id="popular_hotels">
+  <div id="popular-hotels">
     <ion-list-header>
       <ion-label color="dark">Popular Services</ion-label>
       <ion-button color="color1" (click)="gotoHotelList()">See All</ion-button>
     </ion-list-header>
+    <div class="flex-container" *ngFor="let item of popularPlaces?.results">
 
-    <swiper-container #swiper [loop]="true" [slidesPerView]="2.2">
-      <swiper-slide
-        *ngFor="let item of items"
-        (click)="gotoHotelList()"
-        [ngStyle]="{'background' : 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(' + item.images[0] + ')'}"
-      >
-        <div class="section_1">
-          <ion-button size="small" color="color1">{{item.rating}}</ion-button>
-        </div>
-
-        <div class="section_2">
-          <h2>{{item.name}}</h2>
-        </div></swiper-slide>
-    </swiper-container>
-
-    <!--    <ion-slides class="ion-padding slider" #slider [options]="slideOpts">-->
-    <!--      <ion-slide *ngFor="let item of items" (click)="gotoHotelList()"-->
-    <!--                 [ngStyle]="{'background' : 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(' + item.images[0] + ')'}">-->
-
-    <!--        <div class="section_1">-->
-    <!--          <ion-button size="small" color="color1">{{item.rating}}</ion-button>-->
-    <!--        </div>-->
-
-    <!--        <div class="section_2">-->
-    <!--          <h2>{{item.name}}</h2>-->
-    <!--        </div>-->
-    <!--      </ion-slide>-->
-    <!--    </ion-slides>-->
-  </div>
-
-  <!-- Hot Packages -->
-  <div id="hot_packages">
-    <ion-list-header>
-      <ion-label color="dark">Hot Packages</ion-label>
-      <ion-button color="color1" (click)="gotoHotelList()">See All</ion-button>
-    </ion-list-header>
-    <div class="flex-container">
-    <ion-card *ngFor="let item of popularPlaces?.results" class="flex-card">
+    <ion-card class="flex-card" *ngIf="!checkHiddenChips(item.types)">
       <ion-list lines="none">
         <ion-item class="ion-no-padding border" (click)="goToServicePage(item.place_id)">
           <!-- Image -->
@@ -99,20 +62,21 @@
             </ion-text>
             <br>
             <ion-text color="medium" [ngStyle]="{ color: item.opening_hours?.open_now ? 'green' : 'red' }">
-              <ion-icon color="medium" name="time-outline"></ion-icon>
+              <ion-icon color="medium" name="tim e-outline"></ion-icon>
               {{item.opening_hours?.open_now ? '__Abierto' : '__Cerrado'}}
             </ion-text>
 
-            <br />
+            <ion-label>
 
-            <ion-text color="color1">{{item.types}}</ion-text>
-
-            <p class="ion-padding-top">
-              <ion-icon src=""></ion-icon>  &nbsp;
-            </p>
+            <ng-container *ngFor="let chip of item.types">
+              <ion-chip color="primary" *ngIf="shouldShowChip(chip)">
+                {{ chip }}
+              </ion-chip>
+            </ng-container>
+            </ion-label>
           </ion-label>
 
-          <ion-card> {{ 'BOOK_NOW'}} </ion-card>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
         </ion-item>
       </ion-list>
     </ion-card>

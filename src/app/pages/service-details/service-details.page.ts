@@ -2,11 +2,12 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { PlaceDetails} from '../../shared/interfaces/place-details.interface';
-import { IonicModule} from "@ionic/angular";
-import {FormsModule} from "@angular/forms";
-import {CommonModule} from "@angular/common";
-import {CallNumber} from "@awesome-cordova-plugins/call-number/ngx";
+import { PlaceDetails } from '../../shared/interfaces/place-details.interface';
+import { hiddenChips, hiddenServices } from '../../shared/constants/hiddens';
+import { IonicModule } from "@ionic/angular";
+import { FormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
+import { CallNumber } from "@awesome-cordova-plugins/call-number/ngx";
 
 
 @Component({
@@ -72,14 +73,14 @@ export class ServiceDetailsPage implements OnInit {
         console.log(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${this.placeId}&key=AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw`)
       });
   }
+  public shouldShowChip(chip: string): boolean {
+    return !hiddenChips.includes(chip);
+  }
   selectTime(time: string) {
     this.selectedTime = time;
-    // Aquí puedes manejar lo que sucede después de seleccionar una hora
   }
   createDayValues(dateAndHoursList: {date: Date, open: string, close: string}[]): string {
-    let dayValuesSet = new Set<number>();
-
-    // Añadir el día de cada fecha a un conjunto para eliminar duplicados
+    const dayValuesSet = new Set<number>();
     for (let item of dateAndHoursList) {
       dayValuesSet.add(item.date.getDate());
     }
@@ -89,11 +90,11 @@ export class ServiceDetailsPage implements OnInit {
   }
   onDateChange(event: any) {
     // Convertir la fecha seleccionada a un objeto Date
-    let selectedDateObj = new Date(event.detail.value);
+    const selectedDateObj = new Date(event.detail.value);
 
     // Buscar el objeto de fecha y horas que corresponde a la fecha seleccionada
-    let matchingDateAndHours = this.dateAndHoursList.find(x => {
-      let dateObj = new Date(x.date);
+    const matchingDateAndHours = this.dateAndHoursList.find(x => {
+      const dateObj = new Date(x.date);
       return dateObj.getDate() === selectedDateObj.getDate() &&
         dateObj.getMonth() === selectedDateObj.getMonth() &&
         dateObj.getFullYear() === selectedDateObj.getFullYear();
@@ -109,9 +110,9 @@ export class ServiceDetailsPage implements OnInit {
 
 
   getTimeOptions(openTime: string, closeTime: string): string[] {
-    let open = parseInt(openTime.split(':')[0]);
-    let close = parseInt(closeTime.split(':')[0]);
-    let options: string[] = [];
+    const open = parseInt(openTime.split(':')[0]);
+    const close = parseInt(closeTime.split(':')[0]);
+    const options: string[] = [];
     for(let i=open; i<=close; i++) {
       options.push(('0' + i).slice(-2) + ':00');
       options.push(('0' + i).slice(-2) + ':30');
@@ -119,8 +120,8 @@ export class ServiceDetailsPage implements OnInit {
     return options;
   }
   getDatesBetween(startDate: Date, endDate: Date): Date[] {
-    let dateArray: Date[] = [];
-    let currentDate: Date = startDate;
+    const dateArray: Date[] = [];
+    const currentDate: Date = startDate;
 
     while (currentDate <= endDate) {
       dateArray.push(new Date(currentDate));  // Asegúrate de que sea una copia del objeto de la fecha

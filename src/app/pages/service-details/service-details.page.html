@@ -30,10 +30,14 @@
   </swiper-container>
 
   <div class="ion-padding">
-    <ion-chip color="primary"*ngFor="let chip of place?.result?.types">{{chip}}</ion-chip>
+    <ng-container *ngFor="let chip of place?.result?.types">
+      <ion-chip color="primary" *ngIf="shouldShowChip(chip)">
+        {{ chip }}
+      </ion-chip>
+    </ng-container>
 
     <!-- Service Name -->
-    <h1 class="service-name">{{place?.result?.name}}</h1>
+    <h2 class="service-name">{{place?.result?.name}}</h2>
 
     <ion-row class="row-1">
       <!-- Location -->
@@ -52,11 +56,9 @@
     <ion-row>
       <ion-list-header class="ion-no-padding">
         <ion-label>
-          <ion-text color="medium">Overview</ion-text>
+          <ion-text color="medium">Reviews</ion-text>
         </ion-label>
       </ion-list-header>
-
-      <ion-text>Name</ion-text>
     </ion-row>
 
     <ion-accordion-group #accordionGroup>
@@ -73,17 +75,20 @@
         <div class="ion-padding" slot="content">{{review.text}}</div>
       </ion-accordion>
     </ion-accordion-group>
+  </div>
+<ion-item-divider></ion-item-divider>
+  <div class="ion-padding">
 
 
-
-
-    <div *ngIf="dateAndHoursList && dateAndHoursList.length > 0">
-      <!-- Aquí colocas tus componentes de ion-datetime y otros elementos relacionados con el horario -->
-
-
-
-
-    <ion-datetime [(ngModel)]="selectedDate" presentation="date" [dayValues]="dayValues" (ionChange)="onDateChange($event)"></ion-datetime>
+      <ion-row>
+        <ion-list-header class="ion-no-padding">
+          <ion-label>
+            <ion-text class="service-name">{{'Reservation zone:' }}</ion-text>
+          </ion-label>
+        </ion-list-header>
+      </ion-row>
+    <div *ngIf="dateAndHoursList && dateAndHoursList.length > 0" class="ion-padding">
+      <ion-datetime size ="cover" [(ngModel)]="selectedDate" presentation="date" [dayValues]="dayValues" (ionChange)="onDateChange($event)"></ion-datetime>
 
     <div class="time-cards-container">
       <ion-card *ngFor="let time of timeOptions" [ngClass]="{ 'selected': selectedTime === time }" (click)="selectTime(time)">
@@ -95,21 +100,20 @@
     </div>
   </div>
   <ng-template [ngIf]="!dateAndHoursList || dateAndHoursList.length === 0" [ngIfElse]="bookService" class="ion-padding">
-    <h2>__ No hay información de horario disponible</h2>
-    <ion-text>__ Infórmate por teléfono</ion-text>
-    <!-- Muestra el botón de llamada sólo si hay un número de teléfono disponible -->
+    <h3 class="ion-padding">__ No hay información de horario disponible</h3>
+    <ion-text class="ion-padding">__ Infórmate por teléfono</ion-text>
     <ion-button color="success" *ngIf="place?.result?.formatted_phone_number" (click)="callPlace(place?.result?.formatted_phone_number)" expand="full">
       <ion-icon name="call-outline" slot="start"></ion-icon> &nbsp;
       <ion-text class="ion-text-wrap">__ Call_Now</ion-text>
     </ion-button>
 
-    <!-- Muestra el enlace a la página web sólo si hay una URL disponible -->
+
     <ion-button color="success" *ngIf="place?.result?.website" expand="full">
       <ion-icon name="call-outline" slot="start"></ion-icon> &nbsp;
       <ion-text class="ion-text-wrap">__Visit Website </ion-text>
     </ion-button>
     <a *ngIf="place?.result?.website" [href]="place?.result?.website" target="_blank">
-      Visitar el sitio web
+      Visit web
     </a>
   </ng-template>
   <ng-template #bookService class="ion-padding">

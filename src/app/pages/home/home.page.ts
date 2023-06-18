@@ -2,7 +2,7 @@ import {Component, CUSTOM_ELEMENTS_SCHEMA, OnInit} from '@angular/core';
 import { IonicModule, IonicSlides } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { SliderInterface } from '../../shared/interfaces/slider.interface';
+import { hiddenChips, hiddenServices } from '../../shared/constants/hiddens';
 import { Router } from '@angular/router';
 import { DataService } from '../../shared/services/data.service';
 import { LocationService } from '../../shared/services/location.service';
@@ -24,14 +24,7 @@ export class HomePage implements OnInit{
   public items: any;
   public currentLocation: string;
   public popularPlaces: PlaceInterface | null = null;
-  public slideOpts: SliderInterface = {
-    initialSlide: 0,
-    speed: 400,
-    slidesPerView: 2.2,
-    spaceBetween: 10,
-    loop: true,
-    effect: 'slide',
-  };
+
   constructor(
     private router: Router,
     private readonly dataService: DataService,
@@ -46,6 +39,10 @@ export class HomePage implements OnInit{
     this._userLocation.getUserLocation();
     this.getPopularHotels();
   }
+   public shouldShowChip(chip: string): boolean {
+    return !hiddenChips.includes(chip);
+  }
+
 
   gotoSearchPage() {
     this.router.navigate(['/filters']);
@@ -91,9 +88,12 @@ export class HomePage implements OnInit{
 
   }
 
-  protected readonly Router = Router;
 
   goToServicePage(place_id: string) {
     this.router.navigate(['/tabs/service-details', place_id])
+  }
+
+  public checkHiddenChips(types: string[]) {
+    return types.some(type => hiddenServices.includes(type));
   }
 }
