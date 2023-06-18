@@ -8,39 +8,36 @@
         <ion-icon name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>{{place?.result?.name}}</ion-title>
+    <ion-title>__Service_Details</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" id="service-details">
+  <!-- Like/Dislike Button Option -->
+  <ion-fab vertical="top" horizontal="end">
+    <ion-fab-button color="light" class="ion-margin-top" (click)="toggleLike()">
+      <ion-icon [name]="isLiked ? 'heart' : 'heart-outline'" color="color1"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button color="light" class="ion-margin-top">
+      <ion-icon color="color1" name="share-social"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
   <swiper-container pager="true">
     <swiper-slide *ngFor="let item of place?.result?.photos">
 
       <img [src]="getPhotoUrl(item.photo_reference)"/>
-
-      <!-- Like/Dislike Button Option -->
-      <ion-fab vertical="top" horizontal="end">
-        <ion-fab-button color="light" class="ion-margin-top" (click)="toggleLike()">
-          <ion-icon [name]="isLiked ? 'heart' : 'heart-outline'" color="color1"></ion-icon>
-        </ion-fab-button>
-        <ion-fab-button color="light" class="ion-margin-top">
-          <ion-icon color="color1" name="share-social"></ion-icon>
-        </ion-fab-button>
-      </ion-fab>
     </swiper-slide>
   </swiper-container>
 
   <div class="ion-padding">
-
-
     <ion-chip color="primary"*ngFor="let chip of place?.result?.types">{{chip}}</ion-chip>
 
     <!-- Service Name -->
-    <h1 class="service-name">PLACE NAME</h1>
+    <h1 class="service-name">{{place?.result?.name}}</h1>
 
     <ion-row class="row-1">
       <!-- Location -->
-      <ion-col size="8">
+      <ion-col size="12">
         <ion-item lines="none" class="ion-no-padding">
           <ion-label>
             <ion-icon name="location" slot="start" color="medium"></ion-icon> &nbsp;
@@ -49,15 +46,6 @@
         </ion-item>
       </ion-col>
 
-      <!-- Price -->
-      <ion-col>
-        <ion-item lines="none" class="service-price ion-no-padding">
-          <ion-label>
-            <h1>$Rate</h1>
-            <ion-text color="medium">/per night</ion-text>
-          </ion-label>
-        </ion-item>
-      </ion-col>
     </ion-row>
 
     <!-- Service Overview -->
@@ -71,67 +59,67 @@
       <ion-text>Name</ion-text>
     </ion-row>
 
-    <!-- Photos -->
-    <div id="photos">
-      <ion-list-header class="ion-no-padding">
-        <ion-label>
-          <ion-text color="medium">Photos</ion-text>
-        </ion-label>
-        <ion-button color="color1">See All</ion-button>
-      </ion-list-header>
+    <ion-accordion-group #accordionGroup>
+      <ion-accordion *ngFor="let review of place?.result?.reviews">
+        <ion-item slot="header" color="light" *ngIf="review.text">
 
-<!--      <ion-slides class="ion-padding slider" #slider>-->
-<!--        <ion-slide *ngFor="let item of place.photos[0]" [ngStyle]="{'background' : 'url(' + item.images[0] + ')'}">-->
-<!--        </ion-slide>-->
-<!--      </ion-slides>-->
+          <ion-thumbnail slot="start">
+            <img class="circular-image" [src]="review.profile_photo_url" alt="Profile Photo">
+          </ion-thumbnail>
+          <ion-label>
+            <h2>{{ review.author_name + ' - ' + review.rating + '/5' }}</h2>
+          </ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">{{review.text}}</div>
+      </ion-accordion>
+    </ion-accordion-group>
+
+
+
+
+    <div *ngIf="dateAndHoursList && dateAndHoursList.length > 0">
+      <!-- Aquí colocas tus componentes de ion-datetime y otros elementos relacionados con el horario -->
+
+
+
+
+    <ion-datetime [(ngModel)]="selectedDate" presentation="date" [dayValues]="dayValues" (ionChange)="onDateChange($event)"></ion-datetime>
+
+    <div class="time-cards-container">
+      <ion-card *ngFor="let time of timeOptions" [ngClass]="{ 'selected': selectedTime === time }" (click)="selectTime(time)">
+        <ion-card-content [ngClass]="{ 'content-selected': selectedTime === time }">
+          {{time}}
+        </ion-card-content>
+      </ion-card>
     </div>
-
-
-    <!-- Service Amenities -->
-    <ion-list-header class="ion-no-padding">
-      <ion-label color="medium">Amenities</ion-label>
-    </ion-list-header>
-
-<!--    <ion-chip *ngFor="let item of place.photos" color="medium">-->
-<!--      <i class="{{item.icon}}" aria-hidden="true"></i> &nbsp;-->
-<!--      <ion-label>{{item.name}}</ion-label>-->
-<!--    </ion-chip>-->
-
-    <!-- Service Description -->
-    <ion-list-header class="ion-no-padding">
-      <ion-label color="medium"></ion-label>
-    </ion-list-header>
-
-    <ion-text color="medium">Description</ion-text>
-
-    <!-- Map -->
-    <ion-list-header class="ion-no-padding">
-      <ion-label color="medium">Location</ion-label>
-    </ion-list-header>
-
-<!--    <ion-label>-->
-<!--      <p><strong>Address:</strong> {{hotelDetails.address}}</p>-->
-<!--      <p><strong>Website:</strong> <a href="#"> {{hotelDetails.website}}</a></p>-->
-<!--      <p><strong>Phone:</strong> <i>{{hotelDetails.phone}}</i></p>-->
-<!--    </ion-label>-->
-<!---->
-    <!-- Map -->
-<!--    <img class="location-img ion-no-padding" src="assets/images/navigation-map.png">-->
-    <ion-datetime [(ngModel)]="selectedDate" [dayValues]="dayValues" (ionChange)="onDateChanged($event)"></ion-datetime>
-
-    <ion-select placeholder="Select Time">
-      <ion-select-option *ngFor="let time of timeOptions" [value]="time">{{time}}</ion-select-option>
-    </ion-select>
-
+    </div>
   </div>
+  <ng-template [ngIf]="!dateAndHoursList || dateAndHoursList.length === 0" [ngIfElse]="bookService" class="ion-padding">
+    <h2>__ No hay información de horario disponible</h2>
+    <ion-text>__ Infórmate por teléfono</ion-text>
+    <!-- Muestra el botón de llamada sólo si hay un número de teléfono disponible -->
+    <ion-button color="success" *ngIf="place?.result?.formatted_phone_number" (click)="callPlace(place?.result?.formatted_phone_number)" expand="full">
+      <ion-icon name="call-outline" slot="start"></ion-icon> &nbsp;
+      <ion-text class="ion-text-wrap">__ Call_Now</ion-text>
+    </ion-button>
+
+    <!-- Muestra el enlace a la página web sólo si hay una URL disponible -->
+    <ion-button color="success" *ngIf="place?.result?.website" expand="full">
+      <ion-icon name="call-outline" slot="start"></ion-icon> &nbsp;
+      <ion-text class="ion-text-wrap">__Visit Website </ion-text>
+    </ion-button>
+    <a *ngIf="place?.result?.website" [href]="place?.result?.website" target="_blank">
+      Visitar el sitio web
+    </a>
+  </ng-template>
+  <ng-template #bookService class="ion-padding">
+    <ion-button type="warning" expand="full" [disabled]="!selectedDate || selectedTime === ''">
+      Book Service
+    </ion-button>
+  </ng-template>
 </ion-content>
 
 
-<ion-footer class="ion-no-border">
-  <div class="ion-padding">
-    <ion-button color="color1" expand="full" shape="round">
-      Book Service
-    </ion-button>
-  </div>
+<ion-footer class="ion-no-border ion-padding">
 </ion-footer>
 </ng-container>

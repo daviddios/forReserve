@@ -163,7 +163,7 @@
       "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       "icon_background_color": "#909CE1",
       "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/hotel_pinlet",
-      "name": "Hotel Victoria 4",
+      "name": "Fontanero sin horario en pruebas pero con telefono",
       "photos": [
         {
           "height": 4000,
@@ -174,13 +174,13 @@
           "width": 3000
         }
       ],
-      "place_id": "ChIJZZfGkoAoQg0RHKhODVpsn4o",
+      "place_id": "ChIJAZ5aZsz-Lw0RsGQY9djZS40",
       "plus_code": {
         "compound_code": "C78X+H8 Madrid, Spain",
         "global_code": "8CGRC78X+H8"
       },
       "rating": 4,
-      "reference": "ChIJZZfGkoAoQg0RHKhODVpsn4o",
+      "reference": "ChIJAZ5aZsz-Lw0RsGQY9djZS40",
       "scope": "GOOGLE",
       "types": [
         "lodging",

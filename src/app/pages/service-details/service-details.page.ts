@@ -3,9 +3,11 @@ import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { PlaceDetails} from '../../shared/interfaces/place-details.interface';
-import {IonicModule} from "@ionic/angular";
+import { IonicModule} from "@ionic/angular";
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
+import {CallNumber} from "@awesome-cordova-plugins/call-number/ngx";
+
 
 @Component({
   selector: 'app-service-details',
@@ -20,18 +22,18 @@ import {CommonModule} from "@angular/common";
   ]
 })
 export class ServiceDetailsPage implements OnInit {
+
   public isLoading: boolean = true;
   public isLiked: boolean = false;
   public placeId!: string | null;
   public place: PlaceDetails | null = null;
-  public selectedDay: string = '';
-  public dateList: Date[] = [];  // Aquí almacenaremos las fechas
   public dateAndHoursList: {date: Date, open: string, close: string}[] = [];
   public selectedDate: Date | null = null;
   public timeOptions: string[] = [];
   public dayValues: string = ''
+  public selectedTime: string = '';
 
-  constructor(private route: ActivatedRoute, private http: HttpClient) { }
+  constructor(private route: ActivatedRoute, private http: HttpClient, private callNumber: CallNumber) { }
 
   ngOnInit(): void {
     // Obtener el ID del lugar de la URL
@@ -70,6 +72,10 @@ export class ServiceDetailsPage implements OnInit {
         console.log(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${this.placeId}&key=AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw`)
       });
   }
+  selectTime(time: string) {
+    this.selectedTime = time;
+    // Aquí puedes manejar lo que sucede después de seleccionar una hora
+  }
   createDayValues(dateAndHoursList: {date: Date, open: string, close: string}[]): string {
     let dayValuesSet = new Set<number>();
 
@@ -81,19 +87,26 @@ export class ServiceDetailsPage implements OnInit {
     // Convertir el conjunto a una cadena y devolverlo
     return Array.from(dayValuesSet).join(',');
   }
-  onDateChanged(event: any): void {
-    this.selectedDate = new Date(event.detail.value);
+  onDateChange(event: any) {
+    // Convertir la fecha seleccionada a un objeto Date
+    let selectedDateObj = new Date(event.detail.value);
 
-    let matchedItem = this.dateAndHoursList.find(item => {
-      return item.date.getDate() === this.selectedDate?.getDate() &&
-        item.date.getMonth() === this.selectedDate?.getMonth() &&
-        item.date.getFullYear() === this.selectedDate?.getFullYear();
+    // Buscar el objeto de fecha y horas que corresponde a la fecha seleccionada
+    let matchingDateAndHours = this.dateAndHoursList.find(x => {
+      let dateObj = new Date(x.date);
+      return dateObj.getDate() === selectedDateObj.getDate() &&
+        dateObj.getMonth() === selectedDateObj.getMonth() &&
+        dateObj.getFullYear() === selectedDateObj.getFullYear();
     });
 
-    if(matchedItem) {
-      this.timeOptions = this.getTimeOptions(matchedItem.open, matchedItem.close);
+    // Generar la lista de horas disponibles
+    if (matchingDateAndHours) {
+      this.timeOptions = this.getTimeOptions(matchingDateAndHours.open, matchingDateAndHours.close);
+    } else {
+      this.timeOptions = [];
     }
   }
+
 
   getTimeOptions(openTime: string, closeTime: string): string[] {
     let open = parseInt(openTime.split(':')[0]);
@@ -101,9 +114,7 @@ export class ServiceDetailsPage implements OnInit {
     let options: string[] = [];
     for(let i=open; i<=close; i++) {
       options.push(('0' + i).slice(-2) + ':00');
-      options.push(('0' + i).slice(-2) + ':15');
       options.push(('0' + i).slice(-2) + ':30');
-      options.push(('0' + i).slice(-2) + ':45');
     }
     return options;
   }
@@ -120,7 +131,7 @@ export class ServiceDetailsPage implements OnInit {
   }
   getPhotoUrl(photo_reference: string | undefined) {
     const apiKey: string = 'AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw'
-    const maxWidth: number = 800; // Tamaño máximo deseado para la imagen
+    const maxWidth: number = 800;
     const photoUrl: string = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=${maxWidth}&photoreference=${photo_reference}&key=${apiKey}`;
     return photoUrl;
 
@@ -131,4 +142,11 @@ export class ServiceDetailsPage implements OnInit {
     this.isLiked = !this.isLiked;
   }
 
+  callPlace(formatted_phone_number: string | undefined) {
+    if(formatted_phone_number !== undefined){
+      this.callNumber.callNumber(formatted_phone_number, true)
+        .then( res => console.log('Calling', res))
+        .catch( () => console.log('Call error'))
+    }
+  }
 }
