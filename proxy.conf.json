@@ -1,0 +1,15 @@
+{
+  "/maps/api": {
+    "target": "https://maps.googleapis.com",
+    "secure": true,
+    "changeOrigin": true
+  },
+  "/googleImages": {
+    "target": "https://lh3.googleusercontent.com",
+    "secure": true,
+    "changeOrigin": true,
+    "pathRewrite": {
+      "^/googleImages": ""
+    }
+  }
+}

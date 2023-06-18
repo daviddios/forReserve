@@ -41,7 +41,7 @@ export class ServiceDetailsPage implements OnInit {
     this.placeId = this.route.snapshot.paramMap.get('place_id');
 
     // Realizar la solicitud a la API Place Details de Google
-    this.http.get<PlaceDetails>(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${this.placeId}&key=AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw`)
+    this.http.get<PlaceDetails>(`/maps/api/place/details/json?place_id=${this.placeId}&key=AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw`)
       .subscribe((response) => {
         this.place = response;
 
@@ -149,5 +149,12 @@ export class ServiceDetailsPage implements OnInit {
         .then( res => console.log('Calling', res))
         .catch( () => console.log('Call error'))
     }
+  }
+
+  public redirectURLImage(profile_photo_url: string): string {
+    if (profile_photo_url !== null){
+      return profile_photo_url.replace('https://lh3.googleusercontent.com', '/googleImages');
+    }
+    return '/';
   }
 }

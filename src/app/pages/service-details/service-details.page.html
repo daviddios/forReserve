@@ -66,7 +66,7 @@
         <ion-item slot="header" color="light" *ngIf="review.text">
 
           <ion-thumbnail slot="start">
-            <img class="circular-image" [src]="review.profile_photo_url" alt="Profile Photo">
+            <img class="circular-image" [src]="redirectURLImage(review.profile_photo_url)" alt="Profile Photo">
           </ion-thumbnail>
           <ion-label>
             <h2>{{ review.author_name + ' - ' + review.rating + '/5' }}</h2>
