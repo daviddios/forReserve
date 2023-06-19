@@ -36,7 +36,7 @@ export class ServiceDetailsPage implements OnInit {
   public dayValues: string = ''
   public selectedTime: string = '';
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, private callNumber: CallNumber, private _dataService: DataService ) { }
+  constructor(private route: ActivatedRoute, private http: HttpClient, public callNumber: CallNumber, private _dataService: DataService ) { }
 
   ngOnInit(): void {
     // Obtener el ID del lugar de la URL

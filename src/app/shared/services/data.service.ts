@@ -12,11 +12,10 @@ export interface Appointments{
   providedIn: 'root',
 })
 export class DataService {
-  private apiKey = 'AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw';
   public appointments = new BehaviorSubject<Appointments>({appointments: []})
-  constructor() {}
+  constructor() { }
 
-  setData(selectedTime: string, selectDate: Date | null, name: string | undefined) {
+  public setData(selectedTime: string, selectDate: Date | null, name: string | undefined) {
     if (selectDate){
 
     const appointment: Appointment = {
@@ -32,4 +31,5 @@ export class DataService {
   public getData(): Observable<Appointments>{
     return this.appointments.asObservable()
   }
+
 }

@@ -1,12 +1,10 @@
 
 <!-- Header -->
-<ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar color="color1">
-    <ion-buttons slot="start">
+<ion-header [translucent]="false" class="ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons>
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-
-
   </ion-toolbar>
 </ion-header>
 
@@ -17,68 +15,54 @@
   <div id="section1">
     <ion-grid>
       <ion-row class="ion-align-items-center ion-justify-content-center">
-        <ion-col
-          class="ion-align-self-center"
-          size-md="6"
-          size-lg="5"
-          size-xs="12"
-        >
-          <ion-searchbar color="light"
-            placeholder="__ Search by location or service"
-          ></ion-searchbar>
+        <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
+          <ion-searchbar color="light" placeholder="__ Search by location or service"></ion-searchbar>
         </ion-col>
       </ion-row>
     </ion-grid>
   </div>
 
-  <!-- Popular Hotels -->
-  <div id="popular-hotels">
+  <!-- Popular Services -->
+  <div id="popular-services">
     <ion-list-header>
-      <ion-label color="dark">Popular Services</ion-label>
+      <ion-label color="dark">Popular Services in </ion-label>
       <ion-button color="color1">See All</ion-button>
     </ion-list-header>
-    <div class="flex-container" *ngFor="let item of popularPlaces?.results">
-      <div *ngIf="!checkHiddenChips(item.types)">
 
+    <div class="flex-container">
+      <ng-container *ngFor="let item of popularPlaces?.results">
+        <div class="flex-card" *ngIf="!checkHiddenChips(item.types) || !item.types">
+          <ion-card class="ion-padding-start" (click)="goToServicePage(item.place_id)">
+                <h3 class="name">{{item.name}}</h3>
 
-    <ion-card class="flex-card" >
-      <ion-list lines="none">
-        <ion-item class="ion-no-padding border" (click)="goToServicePage(item.place_id)">
-          <!-- Image -->
-          <ion-thumbnail>
-            <img *ngIf="item.photos?.[0]"
-                 [src]="getPhotoUrl(item.photos?.[0]?.photo_reference)"
-                 alt="{{item.types}} photo"
-            />
-          </ion-thumbnail>
+            <ion-item lines="none" class="ion-no-padding border" color="contrast">
+              <!-- Image -->
+              <ion-thumbnail>
+                <img *ngIf="item.photos?.[0]" [src]="getPhotoUrl(item.photos?.[0]?.photo_reference)" alt="{{item.types}} photo" />
+              </ion-thumbnail>
 
-          <ion-label class="ion-text-wrap">
-            <h4 class="name">{{item.name}}</h4>
-            <ion-text color="medium">
-              <ion-icon color="medium" name="location"></ion-icon>
-              {{item.vicinity}}
-            </ion-text>
-            <br>
-            <ion-text color="medium" [ngStyle]="{ color: item.opening_hours?.open_now ? 'green' : 'red' }">
-              <ion-icon color="medium" name="tim e-outline"></ion-icon>
-              {{item.opening_hours?.open_now ? '__Abierto' : '__Cerrado'}}
-            </ion-text>
+              <ion-label class="ion-text-wrap ion-padding" color="dark">
+                <ion-text color="medium">
+                  <ion-icon color="medium" name="location"></ion-icon>
+                  {{item.vicinity}}
+                </ion-text>
+                <br>
+                <ion-text color="medium" [ngStyle]="{ color: item.opening_hours?.open_now ? 'green' : 'red' }">
+                  <ion-icon color="medium" name="time-outline"></ion-icon>
+                  {{item.opening_hours?.open_now ? '__Abierto' : '__Cerrado'}}
+                </ion-text>
+              </ion-label>
 
-            <ion-label>
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </ion-item>
+                  <ng-container *ngFor="let chip of item.types" class="ion-wrap">
+                    <ion-chip color="primary" *ngIf="shouldShowChip(chip)">{{ chip | titlecase}}</ion-chip>
+                  </ng-container>
 
-            <ng-container *ngFor="let chip of item.types">
-              <ion-chip color="primary" *ngIf="shouldShowChip(chip)">
-                {{ chip }}
-              </ion-chip>
-            </ng-container>
-            </ion-label>
-          </ion-label>
-
-          <ion-icon name="chevron-forward-outline"></ion-icon>
-        </ion-item>
-      </ion-list>
-    </ion-card>
-      </div>
+        </ion-card>
     </div>
+
+      </ng-container>
+       </div>
   </div>
 </ion-content>

@@ -24,6 +24,7 @@ export class HomePage implements OnInit{
   public items: any;
   public currentLocation: string;
   public popularPlaces: PlaceInterface | null = null;
+  public coordinates: string = ''
 
   constructor(
     private router: Router,
@@ -36,8 +37,6 @@ export class HomePage implements OnInit{
   ngOnInit() {
     this._getLocation();
     this.getNearbyPopularServices()
-    this._userLocation.getUserLocation();
-
   }
    public shouldShowChip(chip: string): boolean {
     return !hiddenChips.includes(chip);
@@ -49,8 +48,24 @@ export class HomePage implements OnInit{
   }
 
   private _getLocation() {
-    const coordinates = Geolocation.getCurrentPosition();
-    console.log('Current position:', coordinates);
+    if(!sessionStorage.getItem('coordinates')){
+
+    if ('geolocation' in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const latitude = position.coords.latitude;
+          const longitude = position.coords.longitude;
+          const coordinates = (`${latitude}, ${longitude}`)
+          sessionStorage.setItem('coordinates', coordinates)
+        },
+        (error) => {
+          console.error('Error getting current position:', error);
+        }
+      );
+    } else {
+      console.error('Geolocation is not supported');
+    }
+    }
   }
 
   public getNearbyPopularServices(): Promise<PlaceInterface> {
@@ -68,20 +83,18 @@ export class HomePage implements OnInit{
   }
 
   public getPopularServices(): Observable<PlaceInterface> {
-    return this._http.get<PlaceInterface>(
-      '../assets/mocks/googleApiSearchCall.json'
-    );
+    const apiKey = 'AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw'
+    const url = `/maps/api/place/nearbysearch/json?location=${sessionStorage.getItem('coordinates')}&radius=5000&type=&key=${apiKey}`
+    return this._http.get<PlaceInterface>(url);
   }
 
   getPhotoUrl(photo_reference: string | undefined) {
     const apiKey = 'AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw'
     const maxWidth = 800; // Tamaño máximo deseado para la imagen
-    const photoUrl = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=${maxWidth}&photoreference=${photo_reference}&key=${apiKey}`;
+    const photoUrl = `/maps/api/place/photo?maxwidth=${maxWidth}&photoreference=${photo_reference}&key=${apiKey}`;
     return photoUrl;
 
   }
-
-
   goToServicePage(place_id: string) {
     this.router.navigate(['/tabs/service-details', place_id])
   }
