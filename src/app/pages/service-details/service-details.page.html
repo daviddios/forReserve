@@ -4,7 +4,7 @@
   <ion-toolbar>
     <!-- Back Button -->
     <ion-buttons slot="start">
-      <ion-button color="color1" routerDirection="back">
+      <ion-button color="color1" routerLink="/tabs/home">
         <ion-icon name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
@@ -117,7 +117,7 @@
     </a>
   </ng-template>
   <ng-template #bookService class="ion-padding">
-    <ion-button type="warning" expand="full" [disabled]="!selectedDate || selectedTime === ''">
+    <ion-button (click)="onSubmit()" type="warning" expand="full" [disabled]="!selectedDate || selectedTime === ''">
       Book Service
     </ion-button>
   </ng-template>

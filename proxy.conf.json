@@ -1,13 +1,21 @@
 {
   "/maps/api": {
     "target": "https://maps.googleapis.com",
-    "secure": true,
-    "changeOrigin": true
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "headers": {
+      "Connection": "keep-alive"
+    }
   },
   "/googleImages": {
     "target": "https://lh3.googleusercontent.com",
-    "secure": true,
+    "secure": false,
     "changeOrigin": true,
+    "logLevel": "debug",
+    "headers": {
+      "Connection": "keep-alive"
+    },
     "pathRewrite": {
       "^/googleImages": ""
     }

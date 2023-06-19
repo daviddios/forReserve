@@ -37,7 +37,7 @@ export class HomePage implements OnInit{
     this._getLocation();
     this.getNearbyPopularServices()
     this._userLocation.getUserLocation();
-    this.getPopularHotels();
+
   }
    public shouldShowChip(chip: string): boolean {
     return !hiddenChips.includes(chip);
@@ -48,13 +48,6 @@ export class HomePage implements OnInit{
     this.router.navigate(['/filters']);
   }
 
-  gotoHotelList() {
-    this.router.navigate(['/hotel-list']);
-  }
-
-  getPopularHotels() {
-    this.items = this.dataService.getPopularServices();
-  }
   private _getLocation() {
     const coordinates = Geolocation.getCurrentPosition();
     console.log('Current position:', coordinates);

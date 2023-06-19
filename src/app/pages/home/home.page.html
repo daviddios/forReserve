@@ -35,23 +35,21 @@
   <div id="popular-hotels">
     <ion-list-header>
       <ion-label color="dark">Popular Services</ion-label>
-      <ion-button color="color1" (click)="gotoHotelList()">See All</ion-button>
+      <ion-button color="color1">See All</ion-button>
     </ion-list-header>
     <div class="flex-container" *ngFor="let item of popularPlaces?.results">
+      <div *ngIf="!checkHiddenChips(item.types)">
 
-    <ion-card class="flex-card" *ngIf="!checkHiddenChips(item.types)">
+
+    <ion-card class="flex-card" >
       <ion-list lines="none">
         <ion-item class="ion-no-padding border" (click)="goToServicePage(item.place_id)">
           <!-- Image -->
-          <ion-thumbnail slot="start">
-
+          <ion-thumbnail>
             <img *ngIf="item.photos?.[0]"
-                 class="packages_thumbnail"
-                 style="vertical-align: middle"
                  [src]="getPhotoUrl(item.photos?.[0]?.photo_reference)"
                  alt="{{item.types}} photo"
             />
-
           </ion-thumbnail>
 
           <ion-label class="ion-text-wrap">
@@ -80,6 +78,7 @@
         </ion-item>
       </ion-list>
     </ion-card>
+      </div>
     </div>
   </div>
 </ion-content>

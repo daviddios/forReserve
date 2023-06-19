@@ -1,0 +1,52 @@
+ion-header {
+  z-index: auto;
+}
+
+ion-toolbar {
+  --background: transparent;
+  --ion-color-base: transparent !important;
+}
+
+ion-menu-button {
+  color: var(--ion-color-primary-contrast);
+}
+ion-content.background {
+  --background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../../assets/images/landing-background.jpg) no-repeat center center / cover;
+
+
+
+  .section1 {
+    height: 30%;
+    padding-top: 100px;
+
+    img {
+      border-radius: 10px;
+      width: 70%;
+    }
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    color: #000000;
+  }
+
+  .section2 {
+    bottom: 100px;
+    position: absolute;
+    width: 100%;
+    padding: 10%;
+
+    ion-button{
+      margin: 10px;
+      width: 150px
+    }
+  }
+
+  #section3 {
+    text-align: center;
+    bottom: 5px;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+  }
+}

@@ -1,6 +1,6 @@
 
 import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {ActivatedRoute, RouterLink, RouterModule} from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { PlaceDetails } from '../../shared/interfaces/place-details.interface';
 import { hiddenChips, hiddenServices } from '../../shared/constants/hiddens';
@@ -8,19 +8,21 @@ import { IonicModule } from "@ionic/angular";
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { CallNumber } from "@awesome-cordova-plugins/call-number/ngx";
+import {DataService} from "../../shared/services/data.service";
 
 
 @Component({
-  selector: 'app-service-details',
-  templateUrl: './service-details.page.html',
-  styleUrls: ['./service-details.page.scss'],
-  standalone: true,
-  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     IonicModule,
     FormsModule,
-    CommonModule
-  ]
+    CommonModule,
+    RouterLink,
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  selector: 'app-service-details',
+  standalone: true,
+  styleUrls: ['./service-details.page.scss'],
+  templateUrl: './service-details.page.html'
 })
 export class ServiceDetailsPage implements OnInit {
 
@@ -34,7 +36,7 @@ export class ServiceDetailsPage implements OnInit {
   public dayValues: string = ''
   public selectedTime: string = '';
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, private callNumber: CallNumber) { }
+  constructor(private route: ActivatedRoute, private http: HttpClient, private callNumber: CallNumber, private _dataService: DataService ) { }
 
   ngOnInit(): void {
     // Obtener el ID del lugar de la URL
@@ -156,5 +158,13 @@ export class ServiceDetailsPage implements OnInit {
       return profile_photo_url.replace('https://lh3.googleusercontent.com', '/googleImages');
     }
     return '/';
+  }
+
+  public onSubmit() {
+    if(this.selectedDate){
+
+    this._dataService.setData(this.selectedTime, this.selectedDate, this.place?.result.name);
+    console.log(this._dataService.getData())
+    }
   }
 }

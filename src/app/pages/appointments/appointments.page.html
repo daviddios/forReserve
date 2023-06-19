@@ -14,14 +14,15 @@
 <ion-content [fullscreen]="true" class="background">
   <div class="flex-container">
 
-  <ion-card *ngFor="let item of appointments" (click)="gotoAppointmentDetails(item)" class="flex-card">
+
+  <ion-card *ngFor="let item of userAppointments" class="flex-card">
     <ion-card-header>
-      <ion-card-title>{{ item.siteName }}</ion-card-title>
+      <ion-card-title>{{ item.name }}</ion-card-title>
     </ion-card-header>
 
     <ion-card-content>
       <ion-label class="ion-text-wrap">
-        <h6 class="service-type">{{ item.serviceType }}</h6>
+        <h6 class="service-type">{{ item.date }}</h6>
       </ion-label>
     </ion-card-content>
 
