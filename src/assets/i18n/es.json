@@ -12,122 +12,180 @@
     "DONT_HAVE_AN_ACCOUNT": "No tengo una cuenta"
   },
   "SIGNUP": {
-    "TITLE": "REGÍSTRATE"
+    "SOCIAL_TITLE": "Puedes hacerlo con tu red social",
+    "FIELDS_TITLE": "o crea tu cuenta",
+    "NAME": "Nombre",
+    "TITLE": "Regístrate",
+    "PASSWORD": "Contraseña",
+    "HAVE_AN_ACCOUNT": "Si ya tienes cuenta"
   },
   "FORGET_PASSWORD": {
-    "TITLE": "CONTRASEÑA OLVIDADA",
+    "BUTTON": "RECUPERAR CONTRASEÑA",
+    "TITLE": "¿CONTRASEÑA OLVIDADA?",
     "SUB_TITLE": "Por favor, introduzca su dirección de correo electrónico. Recibirá un enlace para crear una nueva contraseña por correo electrónico."
   },
-  "LANGUAGES": [
-    {
-      "lngCode": "en",
-      "language": "Inglés"
-    },
-    {
-      "lngCode": "es",
-      "language": "Español"
-    }
-  ],
-  "MENUS": [
-    {
-      "title": "Home",
-      "icon": "home",
-      "url": "tabs/home"
-    },
-    {
-      "title": "Buscar hoteles",
-      "icon": "business",
-      "url": "search"
-    },
-    {
-      "title": "Lista de hoteles",
-      "icon": "reorder-four",
-      "url": "hotel-list"
-    },
-    {
-      "title": "Detalles del hotel",
-      "icon": "layers",
-      "url": "hotel-details"
-    },
-    {
-      "title": "Filtros",
-      "icon": "filter",
-      "url": "filters"
-    },
-    {
-      "title": "Moneda",
-      "icon": "cash",
-      "url": "currency"
-    },
-    {
-      "title": "Excursiones",
-      "icon": "boat",
-      "url": "tabs/trips"
-    },
-    {
-      "title": "Perfil",
-      "icon": "person",
-      "url": "tabs/profile"
-    },
-    {
-      "title": "Editar perfil",
-      "icon": "create",
-      "url": "edit-profile"
-    },
-    {
-      "title": "Reseñas",
-      "icon": "chatbubble-ellipses",
-      "url": "reviews"
-    },
-    {
-      "title": "Confirmación de reserva",
-      "icon": "book",
-      "url": "booking-confirmation"
-    },
-    {
-      "title": "Aterrizaje",
-      "icon": "paper-plane",
-      "url": "landing"
-    },
-    {
-      "title": "Inducción",
-      "icon": "map",
-      "url": "onboarding"
-    },
-    {
-      "title": "Selección de tarjeta",
-      "icon": "card",
-      "url": "card-selection"
-    },
-    {
-      "title": "Compra",
-      "icon": "file-tray-full",
-      "url": "purchase"
-    },
-    {
-      "title": "Registrarse",
-      "icon": "log-in",
-      "url": "signin"
-    },
-    {
-      "title": "Regístrate",
-      "icon": "person",
-      "url": "signup"
-    },
-    {
-      "title": "Contraseña olvidada",
-      "icon": "key",
-      "url": "forget-password"
-    },
-    {
-      "title": "Configuraciones",
-      "icon": "settings",
-      "url": "settings"
-    },
-    {
-      "title": "Idiomas",
-      "icon": "language",
-      "url": "settings-language"
-    }
-  ]
+  "HOME":{
+    "TITLE": "Inicio",
+    "POPULAR_SERVICES": "Servicios Populares en tu zona:",
+    "SEARCH": "Buscar por localización o servicio",
+    "OPEN": "Abierto",
+    "CLOSE": "Cerrado ahora",
+    "OPEN": "Abierto ahora"
+  },
+  "TABS": {
+    "HOME": "Inicio",
+    "APPOINTMENTS": "Citas",
+    "PROFILE": "Perfil"
+  },
+  "APPOINTMENTS": {
+    "TITLE": "Citas",
+    "MODIFY": "Cambiar",
+    "CANCEL": "Anular"
+  },
+  "PROFILE": {
+    "TITLE": "Perfil",
+    "EDIT": "Editar perfil",
+    "RESET_PASSWORD": "Cambiar contraseña",
+    "LOCATIONS": "Lugares",
+    "FAVOURITES": "Servicios favoritos",
+    "PAYMENTS": "Métodos de pago",
+    "SIGN_OUT": "Cerrar Sesión"
+  },
+  "SERVICE_DETAILS": {
+    "TITLE": "Detalles",
+    "REVIEWS": "Opiniones",
+    "ZONE": "Zona de reserva",
+    "NO_SCHEDULE_AVAILABLE": "No hay información de horario disponible",
+    "CALL_INFO": "Infórmate por teléfono",
+    "CALL_NOW": "Llamar ahora",
+    "VISIT_WEB": "Visitar web",
+    "BOOK": "Reservar servicio"
+  },
+  "CHIPS": {
+    "accounting": "Contabilidad",
+    "administrative_area_level_1": "Nivel de área administrativa 1",
+    "administrative_area_level_2": "Nivel de área administrativa 2",
+    "administrative_area_level_3": "Nivel de área administrativa 3",
+    "administrative_area_level_4": "Nivel de área administrativa 4",
+    "administrative_area_level_5": "Nivel de área administrativa 5",
+    "administrative_area_level_6": "Nivel de área administrativa 6",
+    "administrative_area_level_7": "Nivel de área administrativa 7",
+    "airport": "Aeropuerto",
+    "amusement_park": "Parque de atracciones",
+    "aquarium": "Acuario",
+    "archipelago": "Archipiélago",
+    "art_gallery": "Galería de arte",
+    "atm": "Cajero automático",
+    "bakery": "Panadería",
+    "bank": "Banco",
+    "bar": "Bar",
+    "beauty_salon": "Salón de belleza",
+    "bicycle_store": "Tienda de bicicletas",
+    "book_store": "Librería",
+    "bowling_alley": "Bolera",
+    "bus_station": "Estación de autobús",
+    "cafe": "Cafetería",
+    "campground": "Camping",
+    "car_dealer": "Concesionario de coches",
+    "car_rental": "Alquiler de coches",
+    "car_repair": "Reparación de coches",
+    "car_wash": "Lavado de coches",
+    "casino": "Casino",
+    "cemetery": "Cementerio",
+    "church": "Iglesia",
+    "city_hall": "Ayuntamiento",
+    "clothing_store": "Tienda de ropa",
+    "colloquial_area": "Área coloquial",
+    "convenience_store": "Tienda de conveniencia",
+    "continent": "Continente",
+    "country": "País",
+    "establishment": "Establecimiento",
+    "finance": "Finanzas",
+    "fire_station": "Estación de bomberos",
+    "floor": "Piso",
+    "food": "Comida",
+    "funeral_home": "Funeraria",
+    "furniture_store": "Tienda de muebles",
+    "gas_station": "Gasolinera",
+    "general_contractor": "Contratista general",
+    "geocode": "Geocódigo",
+    "gym": "Gimnasio",
+    "hair_care": "Cuidado del cabello",
+    "hardware_store": "Tienda de ferretería",
+    "health": "Salud",
+    "hindu_temple": "Templo hindú",
+    "home_goods_store": "Tienda de artículos para el hogar",
+    "hospital": "Hospital",
+    "insurance_agency": "Agencia de seguros",
+    "intersection": "Intersección",
+    "jewelry_store": "Joyería",
+    "landmark": "Punto de referencia",
+    "laundry": "Lavandería",
+    "lawyer": "Abogado",
+    "library": "Biblioteca",
+    "light_rail_station": "Estación de tren ligero",
+    "liquor_store": "Tienda de licores",
+    "local_government_office": "Oficina de gobierno local",
+    "locality": "Localidad",
+    "locksmith": "Cerrajería",
+    "lodging": "Apartamentos",
+    "mosque": "Mezquita",
+    "movie_rental": "Alquiler de películas",
+    "movie_theater": "Cine",
+    "moving_company": "Empresa de mudanzas",
+    "museum": "Museo",
+    "natural_feature": "Característica natural",
+    "neighborhood": "Barrio",
+    "night_club": "Club nocturno",
+    "painter": "Pintor",
+    "park": "Parque",
+    "parking": "Aparcamiento",
+    "pet_store": "Tienda de mascotas",
+    "pharmacy": "Farmacia",
+    "physiotherapist": "Fisioterapeuta",
+    "plumber": "Fontanero",
+    "police": "Policía",
+    "point_of_interest": "Punto de interés",
+    "political": "Político",
+    "post_box": "Apartado de correos",
+    "postal_code": "Código postal",
+    "postal_code_prefix": "Prefijo de código postal",
+    "postal_code_suffix": "Sufijo de código postal",
+    "postal_town": "Ciudad postal",
+    "post_office": "Oficina de correos",
+    "premise": "Premisa",
+    "restaurant": "Restaurante",
+    "roofing_contractor": "Contratista de techos",
+    "room": "Habitación",
+    "route": "Ruta",
+    "rv_park": "Parque para vehículos recreativos",
+    "school": "Escuela",
+    "secondary_school": "Escuela secundaria",
+    "shoe_store": "Tienda de zapatos",
+    "shopping_mall": "Centro comercial",
+    "spa": "Spa",
+    "stadium": "Estadio",
+    "storage": "Almacenamiento",
+    "store": "Tienda",
+    "street_address": "Dirección",
+    "street_number": "Número de calle",
+    "sublocality": "Sublocalidad",
+    "sublocality_level_1": "Nivel de sublocalidad 1",
+    "sublocality_level_2": "Nivel de sublocalidad 2",
+    "sublocality_level_3": "Nivel de sublocalidad 3",
+    "sublocality_level_4": "Nivel de sublocalidad 4",
+    "sublocality_level_5": "Nivel de sublocalidad 5",
+    "subpremise": "Subpremisa",
+    "synagogue": "Sinagoga",
+    "taxi_stand": "Parada de taxis",
+    "tourist_attraction": "Atracción turística",
+    "town_square": "Plaza del pueblo",
+    "train_station": "Estación de tren",
+    "transit_station": "Estación de tránsito",
+    "travel_agency": "Agencia de viajes",
+    "university": "Universidad",
+    "veterinary_care": "Cuidado veterinario",
+    "zoo": "Zoológico"
+  }
+
 }

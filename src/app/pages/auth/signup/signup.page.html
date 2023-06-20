@@ -15,7 +15,7 @@
 
 
 <!-- Contents -->
-<ion-content id="login" [fullscreen]="true" class="ion-padding">
+<ion-content id="signup" [fullscreen]="true" class="ion-padding">
   <div id="section1">
     <!-- SignIn Form -->
     <form>
@@ -25,9 +25,11 @@
 
             <!-- Title -->
             <div class="ion-padding">
-              <h2>{{ 'LOGIN.TITLE' | translate }}</h2>
+              <h2>{{ 'SIGNUP.TITLE' | translate }}</h2>
             </div>
-
+            <div class="ion-padding">
+              <ion-text color="medium">{{ "SIGNUP.SOCIAL_TITLE" | translate }}:</ion-text>
+            </div>
             <ion-row>
               <ion-col>
                 <ion-button expand="full" color="primary" shape="round">
@@ -42,16 +44,25 @@
             </ion-row>
 
             <div class="ion-padding">
-              <ion-text color="medium">{{ "LOGIN.FIELDS_TITLE" | translate }}</ion-text>
+              <ion-text color="medium">{{ "SIGNUP.FIELDS_TITLE" | translate }}:</ion-text>
             </div>
 
-            <!-- Email -->
+            <!-- Name -->
             <div class="ion-padding-bottom ion-padding-top">
+              <ion-item lines="none">
+                <ion-label>
+                  <ion-icon name="name"></ion-icon>
+                </ion-label>
+                <ion-input aria-label="Name" type="text" [placeholder]=" 'SIGNUP.NAME' | translate" name="email"></ion-input>
+              </ion-item>
+            </div>
+            <!-- Email -->
+            <div class="ion-padding-bottom">
               <ion-item lines="none">
                 <ion-label>
                   <ion-icon name="mail"></ion-icon>
                 </ion-label>
-                <ion-input aria-label="Email" type="email" placeholder="Email" name="email"></ion-input>
+                <ion-input aria-label="mail" type="email" placeholder="Email" name="email"></ion-input>
               </ion-item>
             </div>
 
@@ -60,20 +71,14 @@
               <ion-label>
                 <ion-icon name="eye"></ion-icon>
               </ion-label>
-              <ion-input aria-label="Password" type="password" [placeholder]="'LOGIN.PASSWORD' | translate " name="password">
+              <ion-input aria-label="Password" type="password" [placeholder]="'SIGNUP.PASSWORD' | translate " name="password">
               </ion-input>
             </ion-item>
 
-            <!-- Forget Password Button -->
-            <ion-button expand="block" color="medium" fill="clear" (click)="gotoForgetPasswordPage()">
-              <span>{{ 'LOGIN.FORGOT_PASSWORD' | translate }}</span>
-            </ion-button>
-
-
-            <!-- Login Button -->
+            <!-- Sign Up Button -->
             <div class="buttons ion-padding">
               <ion-button expand="full" color="color1" shape="round" (click)="gotoHomePage()">
-                <ion-text><strong>{{ 'LOGIN.TITLE' | translate }}</strong></ion-text>
+                <ion-text><strong>{{ 'SIGNUP.TITLE' | translate }}</strong></ion-text>
               </ion-button>
             </div>
           </ion-col>
@@ -84,9 +89,9 @@
 
   <!-- SignUp Buttons -->
   <div id="section2">
-    <ion-button fill="clear" color="dark" (click)="goToSignUpPage()">
-      <ion-text color="medium">{{ 'LOGIN.DONT_HAVE_AN_ACCOUNT' | translate }} <ion-text color="color1">
-        <b>{{ 'SIGNUP.TITLE' | translate }}</b>
+    <ion-button fill="clear" color="dark">
+      <ion-text color="medium" (click)="goToSignInPage()">{{ 'SIGNUP.HAVE_AN_ACCOUNT' | translate }} <ion-text color="color1">
+        <b>{{ 'LANDING.SIGN_IN' | translate}}</b>
       </ion-text>
       </ion-text>
     </ion-button>

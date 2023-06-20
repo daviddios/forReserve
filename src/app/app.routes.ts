@@ -12,5 +12,13 @@ export const routes: Routes = [
   {
     path: 'landing',
     loadComponent: () => import('./pages/landing/landing.page').then( m => m.LandingPage)
+  },
+  {
+    path: 'signup',
+    loadComponent: () => import('./pages/auth/signup/signup.page').then( m => m.SignupPage)
+  },
+  {
+    path: 'forget-password',
+    loadComponent: () => import('./pages/auth/forget-password/forget-password.page').then( m => m.ForgetPasswordPage)
   }
 ];

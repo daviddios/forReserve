@@ -1,126 +1,190 @@
 {
-  "SIGNIN": {
-    "TITLE": "LOG IN",
-    "FORGOT_PASSWORD": "Forgot your password",
-    "DONT_HAVE_AN_ACCOUNT": "Don't have an account"
+  "LANDING": {
+    "TITLE": "Book everything you want",
+    "SIGN_IN": "SIGN IN",
+    "SIGN_UP": "SIGN UP"
+  },
+  "LOGIN": {
+    "FIELDS_TITLE": "or sign in with your account",
+    "TITLE": "Sign In",
+    "PASSWORD": "Password",
+    "FORGOT_PASSWORD": "Forgot your password?",
+    "DONT_HAVE_AN_ACCOUNT": "Don't have an account?"
   },
   "SIGNUP": {
-    "TITLE": "SIGN UP"
+    "SOCIAL_TITLE": "You can do it with your social network",
+    "FIELDS_TITLE": "or create your account",
+    "NAME": "Name",
+    "TITLE": "Sign Up",
+    "PASSWORD": "Password",
+    "HAVE_AN_ACCOUNT": "If you already have an account"
   },
   "FORGET_PASSWORD": {
-    "TITLE": "FORGET PASSWORD",
+    "BUTTON": "RECOVER PASSWORD",
+    "TITLE": "FORGOT PASSWORD?",
     "SUB_TITLE": "Please enter your email address. You will receive a link to create a new password via email."
   },
-  "LANGUAGES": [
-    {
-      "lngCode": "en",
-      "language": "English"
-    },
-    {
-      "lngCode": "es",
-      "language": "Spanish"
-    }
-  ],
-  "MENUS": [
-    {
-      "title": "Home",
-      "icon": "home",
-      "url": "tabs/home"
-    },
-    {
-      "title": "Search Hotels",
-      "icon": "business",
-      "url": "search"
-    },
-    {
-      "title": "Hotel List",
-      "icon": "reorder-four",
-      "url": "hotel-list"
-    },
-    {
-      "title": "Hotel Details",
-      "icon": "layers",
-      "url": "hotel-details"
-    },
-    {
-      "title": "Filters",
-      "icon": "filter",
-      "url": "filters"
-    },
-    {
-      "title": "Currency",
-      "icon": "cash",
-      "url": "currency"
-    },
-    {
-      "title": "Trips",
-      "icon": "boat",
-      "url": "tabs/trips"
-    },
-    {
-      "title": "Profile",
-      "icon": "person",
-      "url": "tabs/profile"
-    },
-    {
-      "title": "Edit Profile",
-      "icon": "create",
-      "url": "edit-profile"
-    },
-    {
-      "title": "Reviews",
-      "icon": "chatbubble-ellipses",
-      "url": "reviews"
-    },
-    {
-      "title": "Booking Confirmation",
-      "icon": "book",
-      "url": "booking-confirmation"
-    },
-    {
-      "title": "Landing",
-      "icon": "paper-plane",
-      "url": "landing"
-    },
-    {
-      "title": "Onboarding",
-      "icon": "map",
-      "url": "onboarding"
-    },
-    {
-      "title": "Card Selection",
-      "icon": "card",
-      "url": "card-selection"
-    },
-    {
-      "title": "Purchase",
-      "icon": "file-tray-full",
-      "url": "purchase"
-    },
-    {
-      "title": "Sign In",
-      "icon": "log-in",
-      "url": "signin"
-    },
-    {
-      "title": "Sign Up",
-      "icon": "person",
-      "url": "signup"
-    },
-    {
-      "title": "Forget Password",
-      "icon": "key",
-      "url": "forget-password"
-    },
-    {
-      "title": "Settings",
-      "icon": "settings",
-      "url": "settings"
-    },
-    {
-      "title": "Languages",
-      "icon": "language",
-      "url": "settings-language"
-    }
-  ]
+  "HOME":{
+    "TITLE": "Home",
+    "POPULAR_SERVICES": "Popular Services in Your Area:",
+    "SEARCH": "Search by location or service",
+    "OPEN": "Open",
+    "CLOSE": "Closed",
+    "OPEN": "Open Now"
+  },
+  "TABS": {
+    "HOME": "Home",
+    "APPOINTMENTS": "Appointments",
+    "PROFILE": "Profile"
+  },
+  "APPOINTMENTS": {
+    "TITLE": "Appointments",
+    "MODIFY": "Modify",
+    "CANCEL": "Cancel"
+  },
+  "PROFILE": {
+    "TITLE": "Profile",
+    "EDIT": "Edit Profile",
+    "RESET_PASSWORD": "Change Password",
+    "LOCATIONS": "Locations",
+    "FAVOURITES": "Favorite Services",
+    "PAYMENTS": "Payment Methods",
+    "SIGN_OUT": "Sign Out"
+  },
+  "SERVICE_DETAILS": {
+    "TITLE": "Details",
+    "REVIEWS": "Reviews",
+    "ZONE": "Booking Zone",
+    "NO_SCHEDULE_AVAILABLE": "No schedule information available",
+    "CALL_INFO": "Get information by phone",
+    "CALL_NOW": "Call Now",
+    "VISIT_WEB": "Visit Website",
+    "BOOK": "Book Service"
+  },
+  "CHIPS": {
+    "accounting": "Accounting",
+    "administrative_area_level_1": "Administrative Area Level 1",
+    "administrative_area_level_2": "Administrative Area Level 2",
+    "administrative_area_level_3": "Administrative Area Level 3",
+    "administrative_area_level_4": "Administrative Area Level 4",
+    "administrative_area_level_5": "Administrative Area Level 5",
+    "administrative_area_level_6": "Administrative Area Level 6",
+    "administrative_area_level_7": "Administrative Area Level 7",
+    "airport": "Airport",
+    "amusement_park": "Amusement Park",
+    "aquarium": "Aquarium",
+    "archipelago": "Archipelago",
+    "art_gallery": "Art Gallery",
+    "atm": "ATM",
+    "bakery": "Bakery",
+    "bank": "Bank",
+    "bar": "Bar",
+    "beauty_salon": "Beauty Salon",
+    "bicycle_store": "Bicycle Store",
+    "book_store": "Book Store",
+    "bowling_alley": "Bowling Alley",
+    "bus_station": "Bus Station",
+    "cafe": "Cafe",
+    "campground": "Campground",
+    "car_dealer": "Car Dealer",
+    "car_rental": "Car Rental",
+    "car_repair": "Car Repair",
+    "car_wash": "Car Wash",
+    "casino": "Casino",
+    "cemetery": "Cemetery",
+    "church": "Church",
+    "city_hall": "City Hall",
+    "clothing_store": "Clothing Store",
+    "colloquial_area": "Colloquial Area",
+    "convenience_store": "Convenience Store",
+    "continent": "Continent",
+    "country": "Country",
+    "establishment": "Establishment",
+    "finance": "Finance",
+    "fire_station": "Fire Station",
+    "floor": "Floor",
+    "food": "Food",
+    "funeral_home": "Funeral Home",
+    "furniture_store": "Furniture Store",
+    "gas_station": "Gas Station",
+    "general_contractor": "General Contractor",
+    "geocode": "Geocode",
+    "gym": "Gym",
+    "hair_care": "Hair Care",
+    "hardware_store": "Hardware Store",
+    "health": "Health",
+    "hindu_temple": "Hindu Temple",
+    "home_goods_store": "Home Goods Store",
+    "hospital": "Hospital",
+    "insurance_agency": "Insurance Agency",
+    "intersection": "Intersection",
+    "jewelry_store": "Jewelry Store",
+    "landmark": "Landmark",
+    "laundry": "Laundry",
+    "lawyer": "Lawyer",
+    "library": "Library",
+    "light_rail_station": "Light Rail Station",
+    "liquor_store": "Liquor Store",
+    "local_government_office": "Local Government Office",
+    "locality": "Locality",
+    "locksmith": "Locksmith",
+    "lodging": "Lodging",
+    "mosque": "Mosque",
+    "movie_rental": "Movie Rental",
+    "movie_theater": "Movie Theater",
+    "moving_company": "Moving Company",
+    "museum": "Museum",
+    "natural_feature": "Natural Feature",
+    "neighborhood": "Neighborhood",
+    "night_club": "Night Club",
+    "painter": "Painter",
+    "park": "Park",
+    "parking": "Parking",
+    "pet_store": "Pet Store",
+    "pharmacy": "Pharmacy",
+    "physiotherapist": "Physiotherapist",
+    "plumber": "Plumber",
+    "police": "Police",
+    "point_of_interest": "Point of Interest",
+    "political": "Political",
+    "post_box": "Post Box",
+    "postal_code": "Postal Code",
+    "postal_code_prefix": "Postal Code Prefix",
+    "postal_code_suffix": "Postal Code Suffix",
+    "postal_town": "Postal Town",
+    "post_office": "Post Office",
+    "premise": "Premise",
+    "restaurant": "Restaurant",
+    "roofing_contractor": "Roofing Contractor",
+    "room": "Room",
+    "route": "Route",
+    "rv_park": "RV Park",
+    "school": "School",
+    "secondary_school": "Secondary School",
+    "shoe_store": "Shoe Store",
+    "shopping_mall": "Shopping Mall",
+    "spa": "Spa",
+    "stadium": "Stadium",
+    "storage": "Storage",
+    "store": "Store",
+    "street_address": "Street Address",
+    "street_number": "Street Number",
+    "sublocality": "Sublocality",
+    "sublocality_level_1": "Sublocality Level 1",
+    "sublocality_level_2": "Sublocality Level 2",
+    "sublocality_level_3": "Sublocality Level 3",
+    "sublocality_level_4": "Sublocality Level 4",
+    "sublocality_level_5": "Sublocality Level 5",
+    "subpremise": "Subpremise",
+    "synagogue": "Synagogue",
+    "taxi_stand": "Taxi Stand",
+    "tourist_attraction": "Tourist Attraction",
+    "town_square": "Town Square",
+    "train_station": "Train Station",
+    "transit_station": "Transit Station",
+    "travel_agency": "Travel Agency",
+    "university": "University",
+    "veterinary_care": "Veterinary Care",
+    "zoo": "Zoo"
+  }
 }

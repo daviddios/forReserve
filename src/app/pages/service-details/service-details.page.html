@@ -1,14 +1,14 @@
 <ng-container *ngIf="!isLoading">
 <!-- Header -->
 <ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar>
+  <ion-toolbar color="light">
     <!-- Back Button -->
     <ion-buttons slot="start">
       <ion-button color="color1" routerLink="/tabs/home">
         <ion-icon name="arrow-back"></ion-icon>
       </ion-button>
     </ion-buttons>
-    <ion-title>__Service_Details</ion-title>
+    <ion-title>{{"SERVICE_DETAILS.TITLE" | translate}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -32,7 +32,7 @@
   <div class="ion-padding">
     <ng-container *ngFor="let chip of place?.result?.types">
       <ion-chip color="primary" *ngIf="shouldShowChip(chip)">
-        {{ chip }}
+        {{ "CHIPS." + chip | translate | titlecase }}
       </ion-chip>
     </ng-container>
 
@@ -56,7 +56,7 @@
     <ion-row>
       <ion-list-header class="ion-no-padding">
         <ion-label>
-          <ion-text color="medium">Reviews</ion-text>
+          <ion-text color="medium">{{"SERVICE_DETAILS.REVIEWS" | translate}}:</ion-text>
         </ion-label>
       </ion-list-header>
     </ion-row>
@@ -83,7 +83,7 @@
       <ion-row>
         <ion-list-header class="ion-no-padding">
           <ion-label>
-            <ion-text class="service-name">{{'Reservation zone:' }}</ion-text>
+            <ion-text class="service-name">{{'SERVICE_DETAILS.ZONE' | translate }}:</ion-text>
           </ion-label>
         </ion-list-header>
       </ion-row>
@@ -100,11 +100,11 @@
     </div>
   </div>
   <ng-template [ngIf]="!dateAndHoursList || dateAndHoursList.length === 0" [ngIfElse]="bookService" class="ion-padding">
-    <h3 class="ion-padding">__ No hay información de horario disponible</h3>
-    <ion-text class="ion-padding">__ Infórmate por teléfono</ion-text>
+    <h3 class="ion-padding">{{"SERVICE_DETAILS.NO_SCHEDULE_AVAILABLE" | translate}}</h3>
+    <ion-text class="ion-padding">{{"SERVICE_DETAILS.CALL_INFO"}}</ion-text>
     <ion-button color="success" *ngIf="place?.result?.formatted_phone_number" (click)="callPlace(place?.result?.formatted_phone_number)" expand="full">
       <ion-icon name="call-outline" slot="start"></ion-icon> &nbsp;
-      <ion-text class="ion-text-wrap">__ Call_Now</ion-text>
+      <ion-text class="ion-text-wrap">{{"SERVICE_DETAILS.CALL_NOW" | translate | uppercase}}</ion-text>
     </ion-button>
 
 
@@ -113,12 +113,12 @@
       <ion-text class="ion-text-wrap">__Visit Website </ion-text>
     </ion-button>
     <a *ngIf="place?.result?.website" [href]="place?.result?.website" target="_blank">
-      Visit web
+      {{"SERVICE_DETAILS.VISIT_WEB" | translate }}
     </a>
   </ng-template>
   <ng-template #bookService class="ion-padding">
     <ion-button (click)="onSubmit()" type="warning" expand="full" [disabled]="!selectedDate || selectedTime === ''">
-      Book Service
+      {{ "SERVICE_DETAILS.RESERVE" | translate }}
     </ion-button>
   </ng-template>
 </ion-content>

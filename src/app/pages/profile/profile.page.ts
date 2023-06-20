@@ -8,13 +8,14 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {Location, Locations} from "../../shared/interfaces/location.interface";
 import {first, firstValueFrom, lastValueFrom, Observable, timeout} from "rxjs";
 import {PlaceInterface} from "../../shared/interfaces/place.interface";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
   styleUrls: ['./profile.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule, HttpClientModule],
+  imports: [IonicModule, CommonModule, FormsModule, HttpClientModule, TranslateModule],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ProfilePage implements OnInit {
@@ -38,5 +39,9 @@ export class ProfilePage implements OnInit {
 
   logout() {
     this.router.navigate(['/landing']);
+  }
+
+  signout() {
+
   }
 }

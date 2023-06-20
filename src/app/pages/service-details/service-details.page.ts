@@ -8,6 +8,7 @@ import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { CallNumber } from "@awesome-cordova-plugins/call-number/ngx";
 import { DataService } from "../../shared/services/data.service";
+import {TranslateModule, TranslateService} from "@ngx-translate/core";
 
 
 @Component({
@@ -16,6 +17,7 @@ import { DataService } from "../../shared/services/data.service";
     FormsModule,
     CommonModule,
     RouterLink,
+    TranslateModule,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   selector: 'app-service-details',
@@ -34,14 +36,14 @@ export class ServiceDetailsPage implements OnInit {
   public timeOptions: string[] = [];
   public dayValues: string = ''
   public selectedTime: string = '';
+  public open: string = '';
+  public close: string = ''
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, private _dataService: DataService) { }
+  constructor(private route: ActivatedRoute, private http: HttpClient, private _dataService: DataService, private _translateService: TranslateService) { }
 
   ngOnInit(): void {
-    // Obtener el ID del lugar de la URL
     this.placeId = this.route.snapshot.paramMap.get('place_id');
 
-    // Realizar la solicitud a la API Place Details de Google
     this.http.get<PlaceDetails>(`/maps/api/place/details/json?place_id=${this.placeId}&key=AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw`)
       .subscribe((response) => {
         this.place = response;
@@ -55,7 +57,6 @@ export class ServiceDetailsPage implements OnInit {
               this.dateAndHoursList.push({ date: date, open: '00:00', close: '23:59' });
             }
           } else {
-            // Si hay horarios específicos para cada día
             for (let period of periods) {
               this.dateAndHoursList.push({
                 date: new Date(period.open.date),
@@ -65,12 +66,19 @@ export class ServiceDetailsPage implements OnInit {
             }
           }
 
-          // Crear la lista de días para ion-datetime después de procesar los períodos
           this.dayValues = this.createDayValues(this.dateAndHoursList);
         }
 
         this.isLoading = false;
       });
+    this._translateService.get('__Abierto').subscribe((translation: string) => {
+      this.open = translation;
+    });
+
+    this._translateService.get('__Cerrado').subscribe((translation: string) => {
+      this.close = translation;
+    });
+
   }
 
   public shouldShowChip(chip: string): boolean {

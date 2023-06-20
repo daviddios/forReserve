@@ -9,21 +9,23 @@ import { Geolocation } from '@capacitor/geolocation';
 import {PlaceInterface} from "../../shared/interfaces/place.interface";
 import {Observable} from "rxjs";
 import {HttpClient} from "@angular/common/http";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
   standalone: true,
-  imports: [IonicModule, FormsModule, CommonModule],
+  imports: [IonicModule, FormsModule, CommonModule, TranslateModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class HomePage implements OnInit{
-  SwiperModules = [IonicSlides];
   public items: any;
   public currentLocation: string;
   public popularPlaces: PlaceInterface | null = null;
   public coordinates: string = ''
+  public searchQuery: string = '';
+
 
   constructor(
     public router: Router,
@@ -95,5 +97,9 @@ export class HomePage implements OnInit{
 
   public checkHiddenChips(types: string[]) {
     return types.some(type => hiddenServices.includes(type));
+  }
+
+  translateOpenNow() {
+    return 'this.open'
   }
 }

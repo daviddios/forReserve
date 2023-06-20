@@ -5,13 +5,14 @@ import {IonicModule, ModalController, PopoverController, ToastController} from '
 import { AnulationModalComponent } from "../../shared/Components/modals/anulation/anulation.component";
 import {Appointment, Appointments, DataService} from "../../shared/services/data.service";
 import {Subscription} from "rxjs";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-appointments',
   templateUrl: './appointments.page.html',
   styleUrls: ['./appointments.page.scss'],
   standalone: true,
-  imports: [IonicModule, CommonModule, FormsModule, AnulationModalComponent]
+  imports: [IonicModule, CommonModule, FormsModule, AnulationModalComponent, TranslateModule]
 })
 export class AppointmentsPage implements OnInit, OnDestroy{
   public userAppointments: Appointment[] = [];

@@ -1,12 +1,12 @@
 <!-- Header -->
 <ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar color="color1">
+  <ion-toolbar color="light">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
 
     <!-- Page Title -->
-    <ion-title>__ APPOINTMENTS</ion-title>
+    <ion-title>{{ "APPOINTMENTS.TITLE" | translate }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -35,10 +35,10 @@
 
     <ion-row>
       <ion-col>
-        <ion-button expand="block" color="color1" class="super-guapo-button" (click)="changeAppointment(item)">Cambiar</ion-button>
+        <ion-button expand="block" color="color1" class="super-guapo-button" (click)="changeAppointment(item)">{{"APPOINTMENTS.MODIFY" | translate}}</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button expand="block" color="danger" class="super-guapo-button" (click)="cancelAppointment(item)">Anular</ion-button>
+        <ion-button expand="block" color="danger" class="super-guapo-button" (click)="cancelAppointment(item)">{{"APPOINTMENTS.CANCEL" | translate}}</ion-button>
       </ion-col>
     </ion-row>
   </ion-card>
