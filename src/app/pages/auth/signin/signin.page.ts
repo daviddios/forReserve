@@ -3,6 +3,7 @@ import {Router} from "@angular/router";
 import {IonicModule} from "@ionic/angular";
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-signin',
@@ -13,6 +14,7 @@ import {FormsModule} from "@angular/forms";
     IonicModule,
     CommonModule,
     FormsModule,
+    TranslateModule,
 
   ]
 })
@@ -24,10 +26,6 @@ export class SigninComponent implements OnInit {
 
   gotoHomePage() {
     this.router.navigate(['/tabs/home']);
-  }
-
-  gotoSignupPage() {
-    this.router.navigate(['/signup']);
   }
 
   gotoForgetPasswordPage() {

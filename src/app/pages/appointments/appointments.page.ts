@@ -18,8 +18,8 @@ export class AppointmentsPage implements OnInit, OnDestroy{
   public dataSubscription: Subscription | undefined
 
   constructor(
-    private popoverController: PopoverController,
-    private toastController: ToastController,
+    public popoverController: PopoverController,
+    public toastController: ToastController,
     private _dataService: DataService
   ) {
 
@@ -32,7 +32,6 @@ export class AppointmentsPage implements OnInit, OnDestroy{
   }
 
   changeAppointment(appointment: any) {
-    // Lógica para cambiar la cita
     console.log('Cambiando cita:', appointment);
   }
 
@@ -69,5 +68,4 @@ export class AppointmentsPage implements OnInit, OnDestroy{
       this.dataSubscription.unsubscribe();
     }
   }
-
 }

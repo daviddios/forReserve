@@ -5,7 +5,6 @@ import { CommonModule } from '@angular/common';
 import { hiddenChips, hiddenServices } from '../../shared/constants/hiddens';
 import { Router } from '@angular/router';
 import { DataService } from '../../shared/services/data.service';
-import { LocationService } from '../../shared/services/location.service';
 import { Geolocation } from '@capacitor/geolocation';
 import {PlaceInterface} from "../../shared/interfaces/place.interface";
 import {Observable} from "rxjs";
@@ -27,9 +26,8 @@ export class HomePage implements OnInit{
   public coordinates: string = ''
 
   constructor(
-    private router: Router,
+    public router: Router,
     private readonly dataService: DataService,
-    private readonly _userLocation: LocationService,
     private _http: HttpClient
   ) {
     this.currentLocation = '';
@@ -42,10 +40,6 @@ export class HomePage implements OnInit{
     return !hiddenChips.includes(chip);
   }
 
-
-  gotoSearchPage() {
-    this.router.navigate(['/filters']);
-  }
 
   private _getLocation() {
     if(!sessionStorage.getItem('coordinates')){

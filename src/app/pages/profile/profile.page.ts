@@ -39,18 +39,4 @@ export class ProfilePage implements OnInit {
   logout() {
     this.router.navigate(['/landing']);
   }
-
-  gotoSettingsPage() {
-    this.router.navigate(['/settings']);
-  }
-
-  gotoEditProfile() {
-    this.router.navigate(['/edit-profile']);
-  }
-
-  deleteLocation(locationId: string) {
-    // Implementa la lógica de eliminación de la ubicación
-  }
-
-
 }

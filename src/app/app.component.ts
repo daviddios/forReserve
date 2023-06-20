@@ -6,6 +6,7 @@ import { SplashScreenWeb } from '@capacitor/splash-screen/dist/esm/web';
 import { StatusBarPlugin } from '@capacitor/status-bar';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule} from "@angular/common/http";
+import {TranslateService} from "@ngx-translate/core";
 
 register();
 
@@ -35,7 +36,10 @@ export class AppComponent {
     }];
   selectedMenu: any;
 
-  constructor(private router: Router) {
+  constructor(private router: Router,
+              private _translate: TranslateService) {
+    this._translate.setDefaultLang('es')
+    this._translate.addLangs(['es', 'en'])
     this.initializeApp();
   }
 

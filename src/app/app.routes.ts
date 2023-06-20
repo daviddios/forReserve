@@ -11,6 +11,6 @@ export const routes: Routes = [
   },
   {
     path: 'landing',
-    loadComponent: () => import('./pages/landing/landing.page').then( m => m.LandingComponent)
+    loadComponent: () => import('./pages/landing/landing.page').then( m => m.LandingPage)
   }
 ];

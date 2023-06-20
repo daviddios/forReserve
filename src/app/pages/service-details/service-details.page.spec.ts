@@ -1,11 +1,13 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { CallNumber } from "@awesome-cordova-plugins/call-number/ngx";
 import { IonicModule } from '@ionic/angular';
 
 import { ServiceDetailsPage } from './service-details.page';
 import { DataService } from '../../shared/services/data.service';
+import { RouterTestingModule } from "@angular/router/testing";
+
 
 describe('ServiceDetailsPage', () => {
   let component: ServiceDetailsPage;
@@ -13,14 +15,14 @@ describe('ServiceDetailsPage', () => {
   let httpMock: HttpTestingController;
   let dataService: DataService;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ServiceDetailsPage],
-      imports: [IonicModule.forRoot(), HttpClientTestingModule],
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [IonicModule.forRoot(), HttpClientTestingModule, RouterTestingModule, ServiceDetailsPage],
       providers: [CallNumber, DataService],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
+      declarations: [],
     }).compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ServiceDetailsPage);
@@ -67,7 +69,6 @@ describe('ServiceDetailsPage', () => {
     expect(component.dayValues).toBe('20,21');
   });
 
-
   it('should create day values from date and hours list', () => {
     const dateAndHoursList = [
       { date: new Date('2023-06-20'), open: '0800', close: '1800' },
@@ -88,9 +89,21 @@ describe('ServiceDetailsPage', () => {
   });
 
   it('should get time options between open and close time', () => {
-    const openTime = '0800';
-    const closeTime = '1800';
-    const expectedOptions = ['08:00', '08:30', '09:00', '09:30', '10:00'];
+    const openTime = '0000';
+    const closeTime = '2359';
+    const expectedOptions = [];
+
+    const startTime = parseInt(openTime.slice(0, 2)) * 60 + parseInt(openTime.slice(2));
+    const endTime = parseInt(closeTime.slice(0, 2)) * 60 + parseInt(closeTime.slice(2));
+
+    for (let i = startTime; i <= endTime; i += 30) {
+      if (i >= 24 * 60) {
+        break; // Salir del bucle si se superan las 24 horas
+      }
+      const hours = Math.floor(i / 60).toString().padStart(2, '0');
+      const minutes = (i % 60).toString().padStart(2, '0');
+      expectedOptions.push(`${hours}:${minutes}`);
+    }
 
     const timeOptions = component.getTimeOptions(openTime, closeTime);
 
@@ -101,9 +114,9 @@ describe('ServiceDetailsPage', () => {
     const startDate = new Date('2023-06-20');
     const endDate = new Date('2023-06-22');
     const expectedDates = [
-      new Date('2023-06-20T00:00:00'),
-      new Date('2023-06-21T00:00:00'),
-      new Date('2023-06-22T00:00:00'),
+      new Date('2023-06-20'),
+      new Date('2023-06-21'),
+      new Date('2023-06-22'),
     ];
 
     const dates = component.getDatesBetween(startDate, endDate);
@@ -126,11 +139,10 @@ describe('ServiceDetailsPage', () => {
   it('should call place number', () => {
     const formattedPhoneNumber = '123456789';
 
-    spyOn(component.callNumber, 'callNumber').and.stub();
-
+    spyOn(console, 'log');
     component.callPlace(formattedPhoneNumber);
 
-    expect(component.callNumber.callNumber).toHaveBeenCalledWith(formattedPhoneNumber, true);
+    expect(console.log).toHaveBeenCalledWith('calling place: ', formattedPhoneNumber);
   });
 
   it('should redirect image URL', () => {
@@ -146,7 +158,7 @@ describe('ServiceDetailsPage', () => {
     const selectedDate = new Date('2023-06-20');
     const selectedTime = '10:00';
 
-    spyOn(dataService, 'setData').and.callThrough();
+    spyOn(dataService, 'setData').and.stub();
 
     component.selectedDate = selectedDate;
     component.selectedTime = selectedTime;

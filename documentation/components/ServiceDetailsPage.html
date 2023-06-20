@@ -1,0 +1,1971 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>forReserve documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+        <link rel="stylesheet" href="../styles/postmark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">forReserve documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  ServiceDetailsPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/pages/service-details/service-details.page.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-service-details</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">Standalone</td>
+                <td class="col-md-9"><code>true</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">imports</td>
+                <td class="col-md-9">
+                            <code>IonicModule</code>
+                            <code>FormsModule</code>
+                            <code>CommonModule</code>
+                            <code>RouterLink</code>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./service-details.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./service-details.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#callNumber" >callNumber</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dateAndHoursList" >dateAndHoursList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dayValues" >dayValues</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isLiked" >isLiked</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isLoading" >isLoading</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#place" >place</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#placeId" >placeId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedDate" >selectedDate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#selectedTime" >selectedTime</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#timeOptions" >timeOptions</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#callPlace" >callPlace</a>
+                            </li>
+                            <li>
+                                <a href="#createDayValues" >createDayValues</a>
+                            </li>
+                            <li>
+                                <a href="#getDatesBetween" >getDatesBetween</a>
+                            </li>
+                            <li>
+                                <a href="#getPhotoUrl" >getPhotoUrl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getTimeOptions" >getTimeOptions</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onDateChange" >onDateChange</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onSubmit" >onSubmit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#redirectURLImage" >redirectURLImage</a>
+                            </li>
+                            <li>
+                                <a href="#selectTime" >selectTime</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#shouldShowChip" >shouldShowChip</a>
+                            </li>
+                            <li>
+                                <a href="#toggleLike" >toggleLike</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(route: ActivatedRoute, http: HttpClient, callNumber: CallNumber, _dataService: <a href="../injectables/DataService.html" target="_self">DataService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/pages/service-details/service-details.page.ts:37</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                    <code>ActivatedRoute</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>http</td>
+                                                  
+                                                        <td>
+                                                                    <code>HttpClient</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>callNumber</td>
+                                                  
+                                                        <td>
+                                                                    <code>CallNumber</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_dataService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DataService.html" target="_self" >DataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="callPlace"></a>
+                    <span class="name">
+                        <span ><b>callPlace</b></span>
+                        <a href="#callPlace"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>callPlace(formatted_phone_number: string | undefined)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="153"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:153</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>formatted_phone_number</td>
+                                    <td>
+                                            <code>string | undefined</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createDayValues"></a>
+                    <span class="name">
+                        <span ><b>createDayValues</b></span>
+                        <a href="#createDayValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createDayValues(dateAndHoursList: literal type[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dateAndHoursList</td>
+                                    <td>
+                                            <code>literal type[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDatesBetween"></a>
+                    <span class="name">
+                        <span ><b>getDatesBetween</b></span>
+                        <a href="#getDatesBetween"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDatesBetween(startDate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank">Date</a>, endDate: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank">Date</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>startDate</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>endDate</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date" target="_blank" >Date</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Date[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPhotoUrl"></a>
+                    <span class="name">
+                        <span ><b>getPhotoUrl</b></span>
+                        <a href="#getPhotoUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getPhotoUrl(photo_reference: string | undefined)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>photo_reference</td>
+                                    <td>
+                                            <code>string | undefined</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTimeOptions"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>getTimeOptions</b></span>
+                        <a href="#getTimeOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getTimeOptions(openTime: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, closeTime: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>openTime</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>closeTime</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>string[]</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="41"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:41</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onDateChange"></a>
+                    <span class="name">
+                        <span ><b>onDateChange</b></span>
+                        <a href="#onDateChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onDateChange(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>onSubmit</b></span>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="168"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:168</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirectURLImage"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>redirectURLImage</b></span>
+                        <a href="#redirectURLImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>redirectURLImage(profile_photo_url: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="161"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:161</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile_photo_url</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectTime"></a>
+                    <span class="name">
+                        <span ><b>selectTime</b></span>
+                        <a href="#selectTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectTime(time: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>time</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shouldShowChip"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>shouldShowChip</b></span>
+                        <a href="#shouldShowChip"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>shouldShowChip(chip: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="78"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:78</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>chip</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleLike"></a>
+                    <span class="name">
+                        <span ><b>toggleLike</b></span>
+                        <a href="#toggleLike"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleLike()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/app/pages/service-details/service-details.page.ts:149</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="callNumber"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>callNumber</b></span>
+                        <a href="#callNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>CallNumber</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/pages/service-details/service-details.page.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dateAndHoursList"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dateAndHoursList</b></span>
+                        <a href="#dateAndHoursList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/pages/service-details/service-details.page.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dayValues"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dayValues</b></span>
+                        <a href="#dayValues"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/pages/service-details/service-details.page.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLiked"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isLiked</b></span>
+                        <a href="#isLiked"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/pages/service-details/service-details.page.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isLoading"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isLoading</b></span>
+                        <a href="#isLoading"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/pages/service-details/service-details.page.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="place"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>place</b></span>
+                        <a href="#place"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/PlaceDetails.html" target="_self" >PlaceDetails | null</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/pages/service-details/service-details.page.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="placeId"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>placeId</b></span>
+                        <a href="#placeId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string | null</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/pages/service-details/service-details.page.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedDate"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>selectedDate</b></span>
+                        <a href="#selectedDate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Date | null</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>null</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/pages/service-details/service-details.page.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedTime"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>selectedTime</b></span>
+                        <a href="#selectedTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/pages/service-details/service-details.page.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="timeOptions"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>timeOptions</b></span>
+                        <a href="#timeOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/pages/service-details/service-details.page.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from &#x27;@angular/core&#x27;;
+import {ActivatedRoute, RouterLink, RouterModule} from &#x27;@angular/router&#x27;;
+import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { PlaceDetails } from &#x27;../../shared/interfaces/place-details.interface&#x27;;
+import { hiddenChips, hiddenServices } from &#x27;../../shared/constants/hiddens&#x27;;
+import { IonicModule } from &quot;@ionic/angular&quot;;
+import { FormsModule } from &quot;@angular/forms&quot;;
+import { CommonModule } from &quot;@angular/common&quot;;
+import { CallNumber } from &quot;@awesome-cordova-plugins/call-number/ngx&quot;;
+import {DataService} from &quot;../../shared/services/data.service&quot;;
+
+
+@Component({
+  imports: [
+    IonicModule,
+    FormsModule,
+    CommonModule,
+    RouterLink,
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  selector: &#x27;app-service-details&#x27;,
+  standalone: true,
+  styleUrls: [&#x27;./service-details.page.scss&#x27;],
+  templateUrl: &#x27;./service-details.page.html&#x27;
+})
+export class ServiceDetailsPage implements OnInit {
+
+  public isLoading: boolean &#x3D; true;
+  public isLiked: boolean &#x3D; false;
+  public placeId!: string | null;
+  public place: PlaceDetails | null &#x3D; null;
+  public dateAndHoursList: {date: Date, open: string, close: string}[] &#x3D; [];
+  public selectedDate: Date | null &#x3D; null;
+  public timeOptions: string[] &#x3D; [];
+  public dayValues: string &#x3D; &#x27;&#x27;
+  public selectedTime: string &#x3D; &#x27;&#x27;;
+
+  constructor(private route: ActivatedRoute, private http: HttpClient, public callNumber: CallNumber, private _dataService: DataService ) { }
+
+  ngOnInit(): void {
+    // Obtener el ID del lugar de la URL
+    this.placeId &#x3D; this.route.snapshot.paramMap.get(&#x27;place_id&#x27;);
+
+    // Realizar la solicitud a la API Place Details de Google
+    this.http.get&lt;PlaceDetails&gt;(&#x60;/maps/api/place/details/json?place_id&#x3D;${this.placeId}&amp;key&#x3D;AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw&#x60;)
+      .subscribe((response) &#x3D;&gt; {
+        this.place &#x3D; response;
+
+        let periods &#x3D; this.place?.result.current_opening_hours?.periods;
+        if(periods){
+          if(periods[0].open.time &#x3D;&#x3D;&#x3D; &quot;0000&quot; &amp;&amp; periods[0].close.time &#x3D;&#x3D;&#x3D; &quot;2359&quot;){
+            // Si está abierto 24/7, generar la lista de fechas
+            let dates &#x3D; this.getDatesBetween(new Date(periods[0].open.date), new Date(periods[0].close.date));
+            for(let date of dates){
+              this.dateAndHoursList.push({date: date, open: &#x27;00:00&#x27;, close: &#x27;23:59&#x27;});
+            }
+          } else {
+            // Si hay horarios específicos para cada día
+            for(let period of periods){
+              this.dateAndHoursList.push({
+                date: new Date(period.open.date),
+                open: period.open.time.slice(0,2) + &#x27;:&#x27; + period.open.time.slice(2),
+                close: period.close.time.slice(0,2) + &#x27;:&#x27; + period.close.time.slice(2)
+              });
+            }
+          }
+
+          // Crear la lista de días para ion-datetime después de procesar los períodos
+          this.dayValues &#x3D; this.createDayValues(this.dateAndHoursList);
+          console.log(this.dayValues)
+        }
+
+        this.isLoading &#x3D; false;
+        console.log(&#x60;https://maps.googleapis.com/maps/api/place/details/json?place_id&#x3D;${this.placeId}&amp;key&#x3D;AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw&#x60;)
+      });
+  }
+  public shouldShowChip(chip: string): boolean {
+    return !hiddenChips.includes(chip);
+  }
+  selectTime(time: string) {
+    this.selectedTime &#x3D; time;
+  }
+  createDayValues(dateAndHoursList: {date: Date, open: string, close: string}[]): string {
+    const dayValuesSet &#x3D; new Set&lt;number&gt;();
+    for (let item of dateAndHoursList) {
+      dayValuesSet.add(item.date.getDate());
+    }
+
+    // Convertir el conjunto a una cadena y devolverlo
+    return Array.from(dayValuesSet).join(&#x27;,&#x27;);
+  }
+  onDateChange(event: any) {
+    // Convertir la fecha seleccionada a un objeto Date
+    const selectedDateObj &#x3D; new Date(event.detail.value);
+
+    // Buscar el objeto de fecha y horas que corresponde a la fecha seleccionada
+    const matchingDateAndHours &#x3D; this.dateAndHoursList.find(x &#x3D;&gt; {
+      const dateObj &#x3D; new Date(x.date);
+      return dateObj.getDate() &#x3D;&#x3D;&#x3D; selectedDateObj.getDate() &amp;&amp;
+        dateObj.getMonth() &#x3D;&#x3D;&#x3D; selectedDateObj.getMonth() &amp;&amp;
+        dateObj.getFullYear() &#x3D;&#x3D;&#x3D; selectedDateObj.getFullYear();
+    });
+
+    // Generar la lista de horas disponibles
+    if (matchingDateAndHours) {
+      this.timeOptions &#x3D; this.getTimeOptions(matchingDateAndHours.open, matchingDateAndHours.close);
+    } else {
+      this.timeOptions &#x3D; [];
+    }
+  }
+
+
+  public getTimeOptions(openTime: string, closeTime: string): string[] {
+    const open &#x3D; parseInt(openTime.slice(0, 2));
+    const close &#x3D; parseInt(closeTime.slice(0, 2));
+    const options: string[] &#x3D; [];
+
+    for (let i &#x3D; open; i &lt;&#x3D; close; i++) {
+      if (i &lt; 24) {
+        const hours &#x3D; i.toString().padStart(2, &#x27;0&#x27;);
+        options.push(&#x60;${hours}:00&#x60;);
+        options.push(&#x60;${hours}:30&#x60;);
+      }
+    }
+
+    return options;
+  }
+  getDatesBetween(startDate: Date, endDate: Date): Date[] {
+    const dateArray: Date[] &#x3D; [];
+    const currentDate: Date &#x3D; startDate;
+
+    while (currentDate &lt;&#x3D; endDate) {
+      dateArray.push(new Date(currentDate));  // Asegúrate de que sea una copia del objeto de la fecha
+      currentDate.setDate(currentDate.getDate() + 1);
+    }
+
+    return dateArray;
+  }
+  getPhotoUrl(photo_reference: string | undefined) {
+    const apiKey: string &#x3D; &#x27;AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw&#x27;
+    const maxWidth: number &#x3D; 800;
+    const photoUrl: string &#x3D; &#x60;https://maps.googleapis.com/maps/api/place/photo?maxwidth&#x3D;${maxWidth}&amp;photoreference&#x3D;${photo_reference}&amp;key&#x3D;${apiKey}&#x60;;
+    return photoUrl;
+
+  }
+
+
+  toggleLike(): void {
+    this.isLiked &#x3D; !this.isLiked;
+  }
+
+  callPlace(formatted_phone_number: string | undefined) {
+    if(formatted_phone_number !&#x3D;&#x3D; undefined){
+      this.callNumber.callNumber(formatted_phone_number, true)
+        .then( res &#x3D;&gt; console.log(&#x27;Calling&#x27;, res))
+        .catch( () &#x3D;&gt; console.log(&#x27;Call error&#x27;))
+    }
+  }
+
+  public redirectURLImage(profile_photo_url: string): string {
+    if (profile_photo_url !&#x3D;&#x3D; null){
+      return profile_photo_url.replace(&#x27;https://lh3.googleusercontent.com&#x27;, &#x27;/googleImages&#x27;);
+    }
+    return &#x27;/&#x27;;
+  }
+
+  public onSubmit() {
+    if(this.selectedDate){
+
+    this._dataService.setData(this.selectedTime, this.selectedDate, this.place?.result.name);
+    console.log(this._dataService.getData())
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ng-container *ngIf&#x3D;&quot;!isLoading&quot;&gt;
+&lt;!-- Header --&gt;
+&lt;ion-header [translucent]&#x3D;&quot;true&quot; class&#x3D;&quot;ion-no-border&quot;&gt;
+  &lt;ion-toolbar&gt;
+    &lt;!-- Back Button --&gt;
+    &lt;ion-buttons slot&#x3D;&quot;start&quot;&gt;
+      &lt;ion-button color&#x3D;&quot;color1&quot; routerLink&#x3D;&quot;/tabs/home&quot;&gt;
+        &lt;ion-icon name&#x3D;&quot;arrow-back&quot;&gt;&lt;/ion-icon&gt;
+      &lt;/ion-button&gt;
+    &lt;/ion-buttons&gt;
+    &lt;ion-title&gt;__Service_Details&lt;/ion-title&gt;
+  &lt;/ion-toolbar&gt;
+&lt;/ion-header&gt;
+
+&lt;ion-content [fullscreen]&#x3D;&quot;true&quot; id&#x3D;&quot;service-details&quot;&gt;
+  &lt;!-- Like/Dislike Button Option --&gt;
+  &lt;ion-fab vertical&#x3D;&quot;top&quot; horizontal&#x3D;&quot;end&quot;&gt;
+    &lt;ion-fab-button color&#x3D;&quot;light&quot; class&#x3D;&quot;ion-margin-top&quot; (click)&#x3D;&quot;toggleLike()&quot;&gt;
+      &lt;ion-icon [name]&#x3D;&quot;isLiked ? &#x27;heart&#x27; : &#x27;heart-outline&#x27;&quot; color&#x3D;&quot;color1&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/ion-fab-button&gt;
+    &lt;ion-fab-button color&#x3D;&quot;light&quot; class&#x3D;&quot;ion-margin-top&quot;&gt;
+      &lt;ion-icon color&#x3D;&quot;color1&quot; name&#x3D;&quot;share-social&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/ion-fab-button&gt;
+  &lt;/ion-fab&gt;
+  &lt;swiper-container pager&#x3D;&quot;true&quot;&gt;
+    &lt;swiper-slide *ngFor&#x3D;&quot;let item of place?.result?.photos&quot;&gt;
+
+      &lt;img [src]&#x3D;&quot;getPhotoUrl(item.photo_reference)&quot;/&gt;
+    &lt;/swiper-slide&gt;
+  &lt;/swiper-container&gt;
+
+  &lt;div class&#x3D;&quot;ion-padding&quot;&gt;
+    &lt;ng-container *ngFor&#x3D;&quot;let chip of place?.result?.types&quot;&gt;
+      &lt;ion-chip color&#x3D;&quot;primary&quot; *ngIf&#x3D;&quot;shouldShowChip(chip)&quot;&gt;
+        {{ chip }}
+      &lt;/ion-chip&gt;
+    &lt;/ng-container&gt;
+
+    &lt;!-- Service Name --&gt;
+    &lt;h2 class&#x3D;&quot;service-name&quot;&gt;{{place?.result?.name}}&lt;/h2&gt;
+
+    &lt;ion-row class&#x3D;&quot;row-1&quot;&gt;
+      &lt;!-- Location --&gt;
+      &lt;ion-col size&#x3D;&quot;12&quot;&gt;
+        &lt;ion-item lines&#x3D;&quot;none&quot; class&#x3D;&quot;ion-no-padding&quot;&gt;
+          &lt;ion-label&gt;
+            &lt;ion-icon name&#x3D;&quot;location&quot; slot&#x3D;&quot;start&quot; color&#x3D;&quot;medium&quot;&gt;&lt;/ion-icon&gt; &amp;nbsp;
+            &lt;ion-text color&#x3D;&quot;medium&quot; class&#x3D;&quot;ion-text-wrap&quot;&gt;{{place?.result?.formatted_address}}&lt;/ion-text&gt;
+          &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+      &lt;/ion-col&gt;
+
+    &lt;/ion-row&gt;
+
+    &lt;!-- Service Overview --&gt;
+    &lt;ion-row&gt;
+      &lt;ion-list-header class&#x3D;&quot;ion-no-padding&quot;&gt;
+        &lt;ion-label&gt;
+          &lt;ion-text color&#x3D;&quot;medium&quot;&gt;Reviews&lt;/ion-text&gt;
+        &lt;/ion-label&gt;
+      &lt;/ion-list-header&gt;
+    &lt;/ion-row&gt;
+
+    &lt;ion-accordion-group #accordionGroup&gt;
+      &lt;ion-accordion *ngFor&#x3D;&quot;let review of place?.result?.reviews&quot;&gt;
+        &lt;ion-item slot&#x3D;&quot;header&quot; color&#x3D;&quot;light&quot; *ngIf&#x3D;&quot;review.text&quot;&gt;
+
+          &lt;ion-thumbnail slot&#x3D;&quot;start&quot;&gt;
+            &lt;img class&#x3D;&quot;circular-image&quot; [src]&#x3D;&quot;redirectURLImage(review.profile_photo_url)&quot; alt&#x3D;&quot;Profile Photo&quot;&gt;
+          &lt;/ion-thumbnail&gt;
+          &lt;ion-label&gt;
+            &lt;h2&gt;{{ review.author_name + &#x27; - &#x27; + review.rating + &#x27;/5&#x27; }}&lt;/h2&gt;
+          &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+        &lt;div class&#x3D;&quot;ion-padding&quot; slot&#x3D;&quot;content&quot;&gt;{{review.text}}&lt;/div&gt;
+      &lt;/ion-accordion&gt;
+    &lt;/ion-accordion-group&gt;
+  &lt;/div&gt;
+&lt;ion-item-divider&gt;&lt;/ion-item-divider&gt;
+  &lt;div class&#x3D;&quot;ion-padding&quot;&gt;
+
+
+      &lt;ion-row&gt;
+        &lt;ion-list-header class&#x3D;&quot;ion-no-padding&quot;&gt;
+          &lt;ion-label&gt;
+            &lt;ion-text class&#x3D;&quot;service-name&quot;&gt;{{&#x27;Reservation zone:&#x27; }}&lt;/ion-text&gt;
+          &lt;/ion-label&gt;
+        &lt;/ion-list-header&gt;
+      &lt;/ion-row&gt;
+    &lt;div *ngIf&#x3D;&quot;dateAndHoursList &amp;&amp; dateAndHoursList.length &gt; 0&quot; class&#x3D;&quot;ion-padding&quot;&gt;
+      &lt;ion-datetime size &#x3D;&quot;cover&quot; [(ngModel)]&#x3D;&quot;selectedDate&quot; presentation&#x3D;&quot;date&quot; [dayValues]&#x3D;&quot;dayValues&quot; (ionChange)&#x3D;&quot;onDateChange($event)&quot;&gt;&lt;/ion-datetime&gt;
+
+    &lt;div class&#x3D;&quot;time-cards-container&quot;&gt;
+      &lt;ion-card *ngFor&#x3D;&quot;let time of timeOptions&quot; [ngClass]&#x3D;&quot;{ &#x27;selected&#x27;: selectedTime &#x3D;&#x3D;&#x3D; time }&quot; (click)&#x3D;&quot;selectTime(time)&quot;&gt;
+        &lt;ion-card-content [ngClass]&#x3D;&quot;{ &#x27;content-selected&#x27;: selectedTime &#x3D;&#x3D;&#x3D; time }&quot;&gt;
+          {{time}}
+        &lt;/ion-card-content&gt;
+      &lt;/ion-card&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;ng-template [ngIf]&#x3D;&quot;!dateAndHoursList || dateAndHoursList.length &#x3D;&#x3D;&#x3D; 0&quot; [ngIfElse]&#x3D;&quot;bookService&quot; class&#x3D;&quot;ion-padding&quot;&gt;
+    &lt;h3 class&#x3D;&quot;ion-padding&quot;&gt;__ No hay información de horario disponible&lt;/h3&gt;
+    &lt;ion-text class&#x3D;&quot;ion-padding&quot;&gt;__ Infórmate por teléfono&lt;/ion-text&gt;
+    &lt;ion-button color&#x3D;&quot;success&quot; *ngIf&#x3D;&quot;place?.result?.formatted_phone_number&quot; (click)&#x3D;&quot;callPlace(place?.result?.formatted_phone_number)&quot; expand&#x3D;&quot;full&quot;&gt;
+      &lt;ion-icon name&#x3D;&quot;call-outline&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt; &amp;nbsp;
+      &lt;ion-text class&#x3D;&quot;ion-text-wrap&quot;&gt;__ Call_Now&lt;/ion-text&gt;
+    &lt;/ion-button&gt;
+
+
+    &lt;ion-button color&#x3D;&quot;success&quot; *ngIf&#x3D;&quot;place?.result?.website&quot; expand&#x3D;&quot;full&quot;&gt;
+      &lt;ion-icon name&#x3D;&quot;call-outline&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-icon&gt; &amp;nbsp;
+      &lt;ion-text class&#x3D;&quot;ion-text-wrap&quot;&gt;__Visit Website &lt;/ion-text&gt;
+    &lt;/ion-button&gt;
+    &lt;a *ngIf&#x3D;&quot;place?.result?.website&quot; [href]&#x3D;&quot;place?.result?.website&quot; target&#x3D;&quot;_blank&quot;&gt;
+      Visit web
+    &lt;/a&gt;
+  &lt;/ng-template&gt;
+  &lt;ng-template #bookService class&#x3D;&quot;ion-padding&quot;&gt;
+    &lt;ion-button (click)&#x3D;&quot;onSubmit()&quot; type&#x3D;&quot;warning&quot; expand&#x3D;&quot;full&quot; [disabled]&#x3D;&quot;!selectedDate || selectedTime &#x3D;&#x3D;&#x3D; &#x27;&#x27;&quot;&gt;
+      Book Service
+    &lt;/ion-button&gt;
+  &lt;/ng-template&gt;
+&lt;/ion-content&gt;
+
+
+&lt;ion-footer class&#x3D;&quot;ion-no-border ion-padding&quot;&gt;
+&lt;/ion-footer&gt;
+&lt;/ng-container&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./service-details.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+ion-header {
+  z-index: auto;
+}
+
+ion-toolbar {
+
+}
+
+#service-details {
+  ion-fab{
+    padding-top: 60px;
+  }
+  .circular-image {
+    width: 40px; /* Tamaño deseado para la imagen */
+    height: 40px;
+    border-radius: 50%; /* Hace que la imagen tenga forma circular */
+    object-fit: cover; /* Ajusta la imagen para que se ajuste dentro del círculo */
+  }
+  .review-card {
+    max-width: 420px;
+    height: 200px;
+  }
+
+  .review-card .card-content p {
+    overflow: auto;
+    white-space: normal;
+  }
+
+  img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+
+  .service-name {
+    margin-top: 10px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .row-1 {
+    .service-price {
+      float: right;
+      margin-top: -16px;
+
+      h1 {
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+    }
+  }
+
+  #photos {
+
+    // #slider
+    ion-slides,
+    .swiper-container {
+      width: 100%;
+      height: 300px;
+    }
+
+    .swiper-slide {
+      background-size: cover !important;
+      background-position: center !important;
+      border-radius: 10px;
+    }
+  }
+  ion-datetime{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .time-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  ion-card {
+    flex: 1 0 auto;
+    margin: 5px;
+  }
+    .selected {
+      background-color: var(--ion-color-primary);
+
+      .content-selected{
+        color: white;
+
+      }
+    }
+  ion-slides {
+    --bullet-background-active: var(--ion-color-color1);
+  }
+
+  .share-icon {
+    padding-top: 16px;
+    float: right;
+  }
+
+  .location-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ng-container *ngIf="!isLoading"><!-- Header --><ion-header [translucent]="true" class="ion-no-border">  <ion-toolbar>    <!-- Back Button -->    <ion-buttons slot="start">      <ion-button color="color1" routerLink="/tabs/home">        <ion-icon name="arrow-back"></ion-icon>      </ion-button>    </ion-buttons>    <ion-title>__Service_Details</ion-title>  </ion-toolbar></ion-header><ion-content [fullscreen]="true" id="service-details">  <!-- Like/Dislike Button Option -->  <ion-fab vertical="top" horizontal="end">    <ion-fab-button color="light" class="ion-margin-top" (click)="toggleLike()">      <ion-icon [name]="isLiked ? \'heart\' : \'heart-outline\'" color="color1"></ion-icon>    </ion-fab-button>    <ion-fab-button color="light" class="ion-margin-top">      <ion-icon color="color1" name="share-social"></ion-icon>    </ion-fab-button>  </ion-fab>  <swiper-container pager="true">    <swiper-slide *ngFor="let item of place?.result?.photos">      <img [src]="getPhotoUrl(item.photo_reference)"/>    </swiper-slide>  </swiper-container>  <div class="ion-padding">    <ng-container *ngFor="let chip of place?.result?.types">      <ion-chip color="primary" *ngIf="shouldShowChip(chip)">        {{ chip }}      </ion-chip>    </ng-container>    <!-- Service Name -->    <h2 class="service-name">{{place?.result?.name}}</h2>    <ion-row class="row-1">      <!-- Location -->      <ion-col size="12">        <ion-item lines="none" class="ion-no-padding">          <ion-label>            <ion-icon name="location" slot="start" color="medium"></ion-icon> &nbsp;            <ion-text color="medium" class="ion-text-wrap">{{place?.result?.formatted_address}}</ion-text>          </ion-label>        </ion-item>      </ion-col>    </ion-row>    <!-- Service Overview -->    <ion-row>      <ion-list-header class="ion-no-padding">        <ion-label>          <ion-text color="medium">Reviews</ion-text>        </ion-label>      </ion-list-header>    </ion-row>    <ion-accordion-group #accordionGroup>      <ion-accordion *ngFor="let review of place?.result?.reviews">        <ion-item slot="header" color="light" *ngIf="review.text">          <ion-thumbnail slot="start">            <img class="circular-image" [src]="redirectURLImage(review.profile_photo_url)" alt="Profile Photo">          </ion-thumbnail>          <ion-label>            <h2>{{ review.author_name + \' - \' + review.rating + \'/5\' }}</h2>          </ion-label>        </ion-item>        <div class="ion-padding" slot="content">{{review.text}}</div>      </ion-accordion>    </ion-accordion-group>  </div><ion-item-divider></ion-item-divider>  <div class="ion-padding">      <ion-row>        <ion-list-header class="ion-no-padding">          <ion-label>            <ion-text class="service-name">{{\'Reservation zone:\' }}</ion-text>          </ion-label>        </ion-list-header>      </ion-row>    <div *ngIf="dateAndHoursList && dateAndHoursList.length > 0" class="ion-padding">      <ion-datetime size ="cover" [(ngModel)]="selectedDate" presentation="date" [dayValues]="dayValues" (ionChange)="onDateChange($event)"></ion-datetime>    <div class="time-cards-container">      <ion-card *ngFor="let time of timeOptions" [ngClass]="{ \'selected\': selectedTime === time }" (click)="selectTime(time)">        <ion-card-content [ngClass]="{ \'content-selected\': selectedTime === time }">          {{time}}        </ion-card-content>      </ion-card>    </div>    </div>  </div>  <ng-template [ngIf]="!dateAndHoursList || dateAndHoursList.length === 0" [ngIfElse]="bookService" class="ion-padding">    <h3 class="ion-padding">__ No hay información de horario disponible</h3>    <ion-text class="ion-padding">__ Infórmate por teléfono</ion-text>    <ion-button color="success" *ngIf="place?.result?.formatted_phone_number" (click)="callPlace(place?.result?.formatted_phone_number)" expand="full">      <ion-icon name="call-outline" slot="start"></ion-icon> &nbsp;      <ion-text class="ion-text-wrap">__ Call_Now</ion-text>    </ion-button>    <ion-button color="success" *ngIf="place?.result?.website" expand="full">      <ion-icon name="call-outline" slot="start"></ion-icon> &nbsp;      <ion-text class="ion-text-wrap">__Visit Website </ion-text>    </ion-button>    <a *ngIf="place?.result?.website" [href]="place?.result?.website" target="_blank">      Visit web    </a>  </ng-template>  <ng-template #bookService class="ion-padding">    <ion-button (click)="onSubmit()" type="warning" expand="full" [disabled]="!selectedDate || selectedTime === \'\'">      Book Service    </ion-button>  </ng-template></ion-content><ion-footer class="ion-no-border ion-padding"></ion-footer></ng-container></div>'
+    var COMPONENTS = [{'name': 'AnulationModalComponent', 'selector': 'app-anulation'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'AppointmentsPage', 'selector': 'app-appointments'},{'name': 'HomePage', 'selector': 'app-home'},{'name': 'LandingPage', 'selector': 'app-landing'},{'name': 'ModalComponent', 'selector': 'app-modal'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ServiceDetailsPage', 'selector': 'app-service-details'},{'name': 'SigninComponent', 'selector': 'app-signin'},{'name': 'TabsPage', 'selector': 'app-tabs'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ServiceDetailsPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ServiceDetailsPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

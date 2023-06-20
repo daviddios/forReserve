@@ -1,23 +1,22 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { By } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 import { TabsPage } from './tabs.page';
-import {Router} from "@angular/router";
 
 describe('TabsPage', () => {
   let component: TabsPage;
   let fixture: ComponentFixture<TabsPage>;
   let router: Router;
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [TabsPage],
-      imports: [RouterTestingModule],
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [RouterTestingModule, TabsPage],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(TabsPage);
@@ -33,8 +32,8 @@ describe('TabsPage', () => {
   it('should navigate to "home" tab', () => {
     spyOn(router, 'navigate');
 
-    const homeTabButton = fixture.debugElement.query(By.css('[data-test="home-tab-button"]'));
-    homeTabButton.triggerEventHandler('click', null);
+    const homeTabButton = fixture.debugElement.query(By.css('[data-test="home-tab-button"]')).nativeElement;
+    homeTabButton.click();
 
     expect(router.navigate).toHaveBeenCalledWith(['/tabs/home']);
   });

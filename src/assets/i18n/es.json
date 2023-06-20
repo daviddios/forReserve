@@ -1,8 +1,14 @@
 {
-  "SIGNIN": {
-    "TITLE": "REGISTRARSE",
-    "HI": "Hola",
-    "WELCOME_BACK": "Dar una buena acogida",
+  "LANDING": {
+    "TITLE": "Reserva todo lo que quieras",
+    "SIGN_IN": "INICIA SESION",
+    "SIGN_UP": "REGISTRARSE"
+  },
+  "LOGIN": {
+    "FIELDS_TITLE": "o inicia sesión con tu cuenta",
+    "TITLE": "Iniciar Sesión",
+    "PASSWORD": "Contraseña",
+    "FORGOT_PASSWORD": "¿Has olvidado tu contraseña?",
     "DONT_HAVE_AN_ACCOUNT": "No tengo una cuenta"
   },
   "SIGNUP": {

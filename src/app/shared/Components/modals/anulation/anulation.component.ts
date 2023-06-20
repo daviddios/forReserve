@@ -19,11 +19,11 @@ export class AnulationModalComponent implements OnInit {
   ngOnInit() { }
 
   dismissModal() {
-    this.popoverController.dismiss();
+    this.popoverController.dismiss().then();
   }
 
   cancelAppointmentConfirmed() {
     // Lógica para anular la cita
-    this.popoverController.dismiss({ confirmed: true });
+    this.popoverController.dismiss({ confirmed: true }).then();
   }
 }
