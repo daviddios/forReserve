@@ -1,0 +1,28 @@
+<ion-card class="ion-padding-start ion-padding-bottom" (click)="goToServicePage(item.place_id)">
+  <h3 class="name">{{item.name}}</h3>
+
+  <ion-item lines="none" class="ion-no-padding border" color="contrast">
+    <!-- Image -->
+    <ion-thumbnail>
+      <img *ngIf="item.photos?.[0]" [src]="getPhotoUrl(item.photos?.[0]?.photo_reference)" alt="{{item.types}} photo" />
+    </ion-thumbnail>
+
+    <ion-label class="ion-text-wrap ion-padding" color="dark">
+      <ion-text color="medium">
+        <ion-icon color="medium" name="location"></ion-icon>
+        {{ item.vicinity ?? item.formatted_address}}
+      </ion-text>
+      <br>
+      <ion-text color="medium" [ngStyle]="{ color: item.opening_hours?.open_now ? 'green' : 'red' }">
+        <ion-icon color="medium" name="time-outline"></ion-icon>
+        {{( item.opening_hours?.open_now ? "HOME.OPEN" : "HOME.CLOSE") | translate}}
+      </ion-text>
+    </ion-label>
+
+    <ion-icon name="chevron-forward-outline"></ion-icon>
+  </ion-item>
+  <ng-container *ngFor="let chip of item.types" class="ion-wrap ion-padding">
+    <ion-chip color="primary" *ngIf="shouldShowChip(chip)">{{ "CHIPS." + chip | translate | titlecase }}</ion-chip>
+  </ng-container>
+
+</ion-card>

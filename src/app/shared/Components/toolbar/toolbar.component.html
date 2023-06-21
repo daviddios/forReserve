@@ -1,0 +1,15 @@
+
+<ion-header [translucent]="false" class="ion-no-border">
+  <ion-toolbar color="light">
+    <ion-buttons class="ion-padding-start" slot="start" *ngIf="showBackButton">
+      <ion-button color="color1" routerLink="/tabs/home">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>{{title}}</ion-title>
+    <ion-select aria-placeholder="Language" interface="action-sheet" class="ion-padding-end" slot="end" [placeholder]="'LANGUAGE' | translate" [(ngModel)]="lang" (ionChange)="switchLanguage($event)">
+      <ion-select-option value="es">🇪🇸</ion-select-option>
+      <ion-select-option value="en">🇬🇧</ion-select-option>
+    </ion-select>
+  </ion-toolbar>
+</ion-header>
