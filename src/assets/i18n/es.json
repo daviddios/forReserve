@@ -40,7 +40,9 @@
   "APPOINTMENTS": {
     "TITLE": "Citas",
     "MODIFY": "Cambiar",
-    "CANCEL": "Anular"
+    "CANCEL": "Anular",
+    "FALSE": "NO",
+    "TRUE": "SI"
   },
   "PROFILE": {
     "TITLE": "Perfil",

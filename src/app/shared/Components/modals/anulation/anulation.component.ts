@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {IonicModule, PopoverController} from "@ionic/angular";
 import { CommonModule } from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
 
@@ -9,7 +10,7 @@ import { CommonModule } from "@angular/common";
   styleUrls: ['./anulation.component.scss'],
   standalone: true,
   imports: [
-    IonicModule, CommonModule
+    IonicModule, CommonModule, TranslateModule
   ]
 })
 export class AnulationModalComponent implements OnInit {

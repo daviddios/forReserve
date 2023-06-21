@@ -6,6 +6,10 @@
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
     <ion-title>{{"HOME.TITLE" | translate}}</ion-title>
+    <ion-select interface="action-sheet" class="ion-padding-end" slot="end" [placeholder]="'LANGUAGE' | translate" [(ngModel)]="lang" (ionChange)="switchLanguage($event)">
+      <ion-select-option value="es">🇪🇸</ion-select-option>
+      <ion-select-option value="en">🇬🇧</ion-select-option>
+    </ion-select>
   </ion-toolbar>
 </ion-header>
 
@@ -17,7 +21,7 @@
     <ion-grid>
       <ion-row class="ion-align-items-center ion-justify-content-center">
         <ion-col class="ion-align-self-center" size-md="6" size-lg="5" size-xs="12">
-          <ion-searchbar color="light" [placeholder]=" 'HOME.SEARCH' | translate"></ion-searchbar>
+          <ion-searchbar color="light" [placeholder]=" 'HOME.SEARCH' | translate" (ionChange)="searchServices($event)"></ion-searchbar>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -32,7 +36,7 @@
     <div class="flex-container">
       <ng-container *ngFor="let item of popularPlaces?.results">
         <div class="flex-card" *ngIf="!checkHiddenChips(item.types) || !item.types">
-          <ion-card class="ion-padding-start" (click)="goToServicePage(item.place_id)">
+          <ion-card class="ion-padding-start ion-padding-bottom" (click)="goToServicePage(item.place_id)">
                 <h3 class="name">{{item.name}}</h3>
 
             <ion-item lines="none" class="ion-no-padding border" color="contrast">
@@ -44,7 +48,7 @@
               <ion-label class="ion-text-wrap ion-padding" color="dark">
                 <ion-text color="medium">
                   <ion-icon color="medium" name="location"></ion-icon>
-                  {{ item.vicinity }}
+                  {{ item.vicinity ?? item.formatted_address}}
                 </ion-text>
                 <br>
                 <ion-text color="medium" [ngStyle]="{ color: item.opening_hours?.open_now ? 'green' : 'red' }">
@@ -55,7 +59,7 @@
 
               <ion-icon name="chevron-forward-outline"></ion-icon>
             </ion-item>
-                  <ng-container *ngFor="let chip of item.types" class="ion-wrap">
+                  <ng-container *ngFor="let chip of item.types" class="ion-wrap ion-padding">
                     <ion-chip color="primary" *ngIf="shouldShowChip(chip)">{{ "CHIPS." + chip | translate | titlecase }}</ion-chip>
                   </ng-container>
 

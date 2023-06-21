@@ -1,5 +1,5 @@
-import {Component, CUSTOM_ELEMENTS_SCHEMA, OnInit} from '@angular/core';
-import { IonicModule, IonicSlides } from '@ionic/angular';
+import {Component, CUSTOM_ELEMENTS_SCHEMA, OnInit, Renderer2} from '@angular/core';
+import {IonicModule, IonicSlides, Platform} from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { hiddenChips, hiddenServices } from '../../shared/constants/hiddens';
@@ -9,7 +9,7 @@ import { Geolocation } from '@capacitor/geolocation';
 import {PlaceInterface} from "../../shared/interfaces/place.interface";
 import {Observable} from "rxjs";
 import {HttpClient} from "@angular/common/http";
-import {TranslateModule} from "@ngx-translate/core";
+import {TranslateModule, TranslateService} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-home',
@@ -21,18 +21,20 @@ import {TranslateModule} from "@ngx-translate/core";
 })
 export class HomePage implements OnInit{
   public items: any;
-  public currentLocation: string;
+  public currentLocation: string = '';
   public popularPlaces: PlaceInterface | null = null;
   public coordinates: string = ''
-  public searchQuery: string = '';
-
+  public lang: string = 'es';
+  public isDarkMode: boolean = false
 
   constructor(
     public router: Router,
     private readonly dataService: DataService,
-    private _http: HttpClient
+    private _http: HttpClient,
+    private _translateService: TranslateService,
+    private _platform: Platform,
+    private _renderer: Renderer2
   ) {
-    this.currentLocation = '';
   }
   ngOnInit() {
     this._getLocation();
@@ -41,7 +43,6 @@ export class HomePage implements OnInit{
    public shouldShowChip(chip: string): boolean {
     return !hiddenChips.includes(chip);
   }
-
 
   private _getLocation() {
     if(!sessionStorage.getItem('coordinates')){
@@ -52,7 +53,6 @@ export class HomePage implements OnInit{
           const latitude = position.coords.latitude;
           const longitude = position.coords.longitude;
           const coordinates = (`${latitude}, ${longitude}`)
-          sessionStorage.setItem('coordinates', coordinates)
         },
         (error) => {
           console.error('Error getting current position:', error);
@@ -99,7 +99,23 @@ export class HomePage implements OnInit{
     return types.some(type => hiddenServices.includes(type));
   }
 
-  translateOpenNow() {
-    return 'this.open'
+  public searchServices(event: any) {
+    console.log(event.target.value)
+    const apiKey = 'AIzaSyDObktwCoCKAWnwnz9yvQnt92jtdPBYgLw'; // Reemplaza con tu propia clave de API de Google
+    const url = `/maps/api/place/textsearch/json?query=${event.target.value}&key=${apiKey}`;
+
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        this.popularPlaces = data;
+        console.log(data);
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
   }
+  public switchLanguage(event: any) {
+    this._translateService.use(event.target.value);
+  }
+
 }

@@ -4,10 +4,10 @@
       </ion-card-content>
       <ion-row>
         <ion-col>
-          <ion-button expand="block" color="light" (click)="dismissModal()">Cancelar</ion-button>
+          <ion-button expand="block" color="light" (click)="dismissModal()">{{"APPOINTMENTS.FALSE" | translate}}</ion-button>
         </ion-col>
         <ion-col>
-          <ion-button expand="block" color="danger" (click)="cancelAppointmentConfirmed()">Anular</ion-button>
+          <ion-button expand="block" color="danger" (click)="cancelAppointmentConfirmed()">{{"APPOINTMENTS.TRUE" | translate}}</ion-button>
         </ion-col>
       </ion-row>
     </ion-card>

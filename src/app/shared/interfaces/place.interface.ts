@@ -16,7 +16,8 @@ export interface Result {
   reference:             string;
   scope:                 Scope;
   types:                 string[];
-  vicinity:              string;
+  vicinity:              string | undefined;
+  formatted_address:     string;
   business_status?:      BusinessStatus;
   plus_code?:            PlusCode;
   rating?:               number;

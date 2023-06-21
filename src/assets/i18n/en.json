@@ -40,7 +40,9 @@
   "APPOINTMENTS": {
     "TITLE": "Appointments",
     "MODIFY": "Modify",
-    "CANCEL": "Cancel"
+    "CANCEL": "Cancel",
+    "FALSE": "NO",
+    "TRUE": "YES"
   },
   "PROFILE": {
     "TITLE": "Profile",

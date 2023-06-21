@@ -9,6 +9,7 @@ import { CommonModule } from "@angular/common";
 import { CallNumber } from "@awesome-cordova-plugins/call-number/ngx";
 import { DataService } from "../../shared/services/data.service";
 import {TranslateModule, TranslateService} from "@ngx-translate/core";
+import {window} from "rxjs";
 
 
 @Component({
@@ -38,8 +39,13 @@ export class ServiceDetailsPage implements OnInit {
   public selectedTime: string = '';
   public open: string = '';
   public close: string = ''
+  lang: any;
 
-  constructor(private route: ActivatedRoute, private http: HttpClient, private _dataService: DataService, private _translateService: TranslateService) { }
+  constructor(private route: ActivatedRoute,
+              private http: HttpClient,
+              private _dataService: DataService,
+              private _translateService: TranslateService,
+  ) { }
 
   ngOnInit(): void {
     this.placeId = this.route.snapshot.paramMap.get('place_id');
@@ -175,4 +181,6 @@ export class ServiceDetailsPage implements OnInit {
       console.log(this._dataService.getData())
     }
   }
+
+  protected readonly window = window;
 }
