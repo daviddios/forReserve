@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { ProfilePage } from './profile.page';
+import {TranslateModule} from "@ngx-translate/core";
 
 describe('ProfilePage', () => {
   let component: ProfilePage;
@@ -7,7 +8,7 @@ describe('ProfilePage', () => {
 
   beforeEach(waitForAsync(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProfilePage]
+      imports: [ProfilePage, TranslateModule.forRoot()]
     }).compileComponents();
 
     fixture = TestBed.createComponent(ProfilePage);

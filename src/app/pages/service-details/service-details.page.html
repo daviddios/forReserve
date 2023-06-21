@@ -1,16 +1,6 @@
 <ng-container *ngIf="!isLoading">
 <!-- Header -->
-<ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar color="light">
-    <!-- Back Button -->
-    <ion-buttons slot="start">
-      <ion-button color="color1" routerLink="/tabs/home">
-        <ion-icon name="arrow-back"></ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-title>{{"SERVICE_DETAILS.TITLE" | translate}}</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-toolbar [showBackButton]=true [title]="'SERVICE_DETAILS.TITLE' | translate" ></app-toolbar>
 
 <ion-content [fullscreen]="true" id="service-details">
   <!-- Like/Dislike Button Option -->

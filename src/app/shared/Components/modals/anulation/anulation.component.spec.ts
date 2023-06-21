@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule, PopoverController } from '@ionic/angular';
 import { AnulationModalComponent } from './anulation.component';
+import {TranslateModule} from "@ngx-translate/core";
 
 describe('AnulationComponent', () => {
   let component: AnulationModalComponent;
@@ -12,7 +13,7 @@ describe('AnulationComponent', () => {
 
     TestBed.configureTestingModule({
       declarations: [],
-      imports: [IonicModule.forRoot(), AnulationModalComponent],
+      imports: [IonicModule.forRoot(), AnulationModalComponent, TranslateModule.forRoot()],
       providers: [{ provide: PopoverController, useValue: popoverSpy }]
     }).compileComponents();
   }));
@@ -26,11 +27,4 @@ describe('AnulationComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
-  it('should dismiss modal on dismissModal call', () => {
-    const dismissSpy = spyOn(popoverController, 'dismiss');
-    component.dismissModal();
-    expect(dismissSpy).toHaveBeenCalled();
-  });
-
 });

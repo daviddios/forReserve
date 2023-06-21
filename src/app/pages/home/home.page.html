@@ -1,18 +1,6 @@
 
 <!-- Header -->
-<ion-header [translucent]="false" class="ion-no-border">
-  <ion-toolbar color="light">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{"HOME.TITLE" | translate}}</ion-title>
-    <ion-select interface="action-sheet" class="ion-padding-end" slot="end" [placeholder]="'LANGUAGE' | translate" [(ngModel)]="lang" (ionChange)="switchLanguage($event)">
-      <ion-select-option value="es">🇪🇸</ion-select-option>
-      <ion-select-option value="en">🇬🇧</ion-select-option>
-    </ion-select>
-  </ion-toolbar>
-</ion-header>
-
+<app-toolbar [title]="'HOME.TITLE' | translate"></app-toolbar>
 <!-- Contents -->
 <ion-content [fullscreen]="true" class="background">
   <img class="top-img" src="assets/images/home.jpg" />
@@ -36,34 +24,7 @@
     <div class="flex-container">
       <ng-container *ngFor="let item of popularPlaces?.results">
         <div class="flex-card" *ngIf="!checkHiddenChips(item.types) || !item.types">
-          <ion-card class="ion-padding-start ion-padding-bottom" (click)="goToServicePage(item.place_id)">
-                <h3 class="name">{{item.name}}</h3>
-
-            <ion-item lines="none" class="ion-no-padding border" color="contrast">
-              <!-- Image -->
-              <ion-thumbnail>
-                <img *ngIf="item.photos?.[0]" [src]="getPhotoUrl(item.photos?.[0]?.photo_reference)" alt="{{item.types}} photo" />
-              </ion-thumbnail>
-
-              <ion-label class="ion-text-wrap ion-padding" color="dark">
-                <ion-text color="medium">
-                  <ion-icon color="medium" name="location"></ion-icon>
-                  {{ item.vicinity ?? item.formatted_address}}
-                </ion-text>
-                <br>
-                <ion-text color="medium" [ngStyle]="{ color: item.opening_hours?.open_now ? 'green' : 'red' }">
-                  <ion-icon color="medium" name="time-outline"></ion-icon>
-                  {{( item.opening_hours?.open_now ? "HOME.OPEN" : "HOME.CLOSE") | translate}}
-                </ion-text>
-              </ion-label>
-
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-            </ion-item>
-                  <ng-container *ngFor="let chip of item.types" class="ion-wrap ion-padding">
-                    <ion-chip color="primary" *ngIf="shouldShowChip(chip)">{{ "CHIPS." + chip | translate | titlecase }}</ion-chip>
-                  </ng-container>
-
-        </ion-card>
+          <app-flex-card [item]="item"></app-flex-card>
     </div>
 
       </ng-container>

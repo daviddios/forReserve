@@ -6,21 +6,25 @@ import { CommonModule } from '@angular/common';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { DataService } from '../../shared/services/data.service';
 import {of} from "rxjs";
-import {TranslateModule} from "@ngx-translate/core";
+import {TranslateModule, TranslateService} from "@ngx-translate/core";
 import {RouterTestingModule} from "@angular/router/testing";
+import {Geolocation} from "@capacitor/geolocation";
 
 
 describe('HomePage', () => {
   let component: HomePage;
   let fixture: ComponentFixture<HomePage>;
   let httpMock: HttpTestingController;
+  let translateService: TranslateService;
+  let geolocation: Geolocation;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [IonicModule.forRoot(), RouterTestingModule, HttpClientTestingModule, HomePage, TranslateModule.forRoot()],
-      providers: [DataService],
+      providers: [DataService, Geolocation],
     }).compileComponents();
 
+    // translateService = TestBed.inject(TranslateService);
     fixture = TestBed.createComponent(HomePage);
     component = fixture.componentInstance;
     httpMock = TestBed.inject(HttpTestingController);
@@ -35,6 +39,38 @@ describe('HomePage', () => {
     expect(component).toBeTruthy();
   });
 
+  it('should get current location', () => {
+    spyOn(geolocation, 'getCurrentPosition').and.callFake(() =>
+      Promise.resolve({
+        coords: {
+          latitude: 10,
+          longitude: 20,
+        },
+      })
+    )})
+
+  it('should search services', () => {
+    const mockResponse: any = {
+      // mocked response data
+    };
+
+    spyOn(window, 'fetch').and.callFake(() =>
+      Promise.resolve({
+        json: () => Promise.resolve(mockResponse),
+      }) as Promise<Response>
+    );
+
+    const event = {
+      target: {
+        value: 'search term',
+      },
+    };
+
+    component.searchServices(event);
+
+    expect(window.fetch).toHaveBeenCalled();
+    expect(component.popularPlaces).toEqual(mockResponse);
+  });
 
   it('should fetch nearby popular services', () => {
     // Simular la respuesta de la solicitud HTTP
@@ -182,3 +218,4 @@ describe('HomePage', () => {
 
 });
 })
+

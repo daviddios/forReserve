@@ -1,14 +1,5 @@
 <!-- Header -->
-<ion-header [translucent]="true" class="ion-no-border">
-  <ion-toolbar color="light">
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-
-    <!-- Page Title -->
-    <ion-title>{{"PROFILE.TITLE" | translate}}</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-toolbar [title]="'PROFILE.TITLE' | translate"></app-toolbar>
 
 <!-- Contents -->
 <ion-content [fullscreen]="true" class="background">

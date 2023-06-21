@@ -1,8 +1,16 @@
-export interface Locations {
-  location: Location[];
+/**
+
+ Interfaz para la ubicación.
+ */
+export interface Location {
+  id: string;
+  name: string;
 }
 
-export interface Location {
-  id:   string;
-  name: string;
+/**
+
+ Interfaz para las ubicaciones.
+ */
+export interface Locations {
+  location: Location[];
 }

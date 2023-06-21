@@ -5,6 +5,8 @@ import { By } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
 import { TabsPage } from './tabs.page';
+import {TranslateModule} from "@ngx-translate/core";
+import {IonicModule} from "@ionic/angular";
 
 describe('TabsPage', () => {
   let component: TabsPage;
@@ -13,7 +15,7 @@ describe('TabsPage', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule, TabsPage],
+      imports: [RouterTestingModule, TabsPage, TranslateModule.forRoot(), IonicModule.forRoot()],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   });

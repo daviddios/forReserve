@@ -9,7 +9,4 @@ import {Injectable} from "@angular/core";
 export class MockService {
   constructor(private http: HttpClient) {}
 
-  public getUserLocations(): Observable<Location[]> {
-    return this.http.get<Location[]>('../../assets/mocks/locations.json')
-  }
 }

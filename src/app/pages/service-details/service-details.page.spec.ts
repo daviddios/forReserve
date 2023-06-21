@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ServiceDetailsPage } from './service-details.page';
 import { DataService } from '../../shared/services/data.service';
 import { RouterTestingModule } from "@angular/router/testing";
+import {TranslateModule} from "@ngx-translate/core";
 
 
 describe('ServiceDetailsPage', () => {
@@ -17,7 +18,7 @@ describe('ServiceDetailsPage', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [IonicModule.forRoot(), HttpClientTestingModule, RouterTestingModule, ServiceDetailsPage],
+      imports: [IonicModule.forRoot(), HttpClientTestingModule, RouterTestingModule, ServiceDetailsPage, TranslateModule.forRoot()],
       providers: [CallNumber, DataService],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
       declarations: [],

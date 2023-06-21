@@ -1,7 +1,10 @@
-import { Component, EnvironmentInjector, inject } from '@angular/core';
+import { Component, EnvironmentInjector, Inject } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
-import {TranslateModule} from "@ngx-translate/core";
+import { TranslateModule } from '@ngx-translate/core';
+/*
 
+Genera el menu de navegación principal
+ */
 @Component({
   selector: 'app-tabs',
   templateUrl: 'tabs.page.html',
@@ -10,7 +13,7 @@ import {TranslateModule} from "@ngx-translate/core";
   imports: [IonicModule, TranslateModule],
 })
 export class TabsPage {
-  public environmentInjector = inject(EnvironmentInjector);
+  public environmentInjector = Inject(EnvironmentInjector);
 
   constructor() {}
 }

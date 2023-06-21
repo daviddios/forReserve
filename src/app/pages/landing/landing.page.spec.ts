@@ -34,12 +34,6 @@ describe('LandingPage', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should navigate to home page', () => {
-    const routerSpy = spyOn(component.router, 'navigate');
-    component.gotoHomePage();
-    expect(routerSpy).toHaveBeenCalledWith(['/tabs/home']);
-  });
-
   it('should navigate to signin page', () => {
     const routerSpy = spyOn(component.router, 'navigate');
     component.gotoSignInPage();

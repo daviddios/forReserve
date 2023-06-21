@@ -28,14 +28,14 @@ describe('SigninComponent', () => {
   });
 
   it('should navigate to home page', () => {
-    const routerSpy = spyOn(component['router'], 'navigate');
+    const routerSpy = spyOn(component['_router'], 'navigate');
     component.gotoHomePage();
     expect(routerSpy).toHaveBeenCalledWith(['/tabs/home']);
   });
 
 
   it('should navigate to forget password page', () => {
-    const routerSpy = spyOn(component['router'], 'navigate');
+    const routerSpy = spyOn(component['_router'], 'navigate');
     component.gotoForgetPasswordPage();
     expect(routerSpy).toHaveBeenCalledWith(['/forget-password']);
   });
