@@ -1,14 +1,22 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit, Renderer2 } from '@angular/core';
-import { IonicModule, Platform } from '@ionic/angular';
-import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
-import { hiddenChips, hiddenServices } from '../../shared/constants/hiddens';
-import { Router } from '@angular/router';
-import { DataService } from '../../shared/services/data.service';
-import { PlaceInterface } from '../../shared/interfaces/place.interface';
-import { Observable } from 'rxjs';
-import { HttpClient } from '@angular/common/http';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import {
+  AfterViewInit,
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  CUSTOM_ELEMENTS_SCHEMA,
+  OnInit,
+  Renderer2
+} from '@angular/core';
+import {IonicModule, Platform} from '@ionic/angular';
+import {FormsModule} from '@angular/forms';
+import {CommonModule} from '@angular/common';
+import {hiddenChips, hiddenServices} from '../../shared/constants/hiddens';
+import {Router} from '@angular/router';
+import {DataService} from '../../shared/services/data.service';
+import {PlaceInterface} from '../../shared/interfaces/place.interface';
+import {Observable} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import {TranslateModule, TranslateService} from '@ngx-translate/core';
 import {ToolbarComponent} from "../../shared/Components/toolbar/toolbar.component";
 import {FlexCardComponent} from "../../shared/Components/flex-card/flex-card.component";
 
@@ -22,6 +30,7 @@ import {FlexCardComponent} from "../../shared/Components/flex-card/flex-card.com
   standalone: true,
   imports: [IonicModule, FormsModule, CommonModule, TranslateModule, ToolbarComponent, FlexCardComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
+
 })
 
 
@@ -40,7 +49,7 @@ export class HomePage implements OnInit {
   /**
    * Lugares populares.
    */
-  public popularPlaces: PlaceInterface | null = null;
+  public popularPlaces: PlaceInterface;
 
   /**
    * Coordenadas.
@@ -56,8 +65,16 @@ export class HomePage implements OnInit {
     private _http: HttpClient,
     private _translateService: TranslateService,
     private _platform: Platform,
-    private _renderer: Renderer2
-  ) {}
+    private _renderer: Renderer2,
+    private _cdr: ChangeDetectorRef
+  ) {
+    this.popularPlaces = {
+      html_attributions: [],
+      next_page_token: '',
+      results: [],
+      status: 'string',
+    }
+  }
 
   /**
    * Método que se ejecuta al inicializar el componente.
@@ -104,6 +121,7 @@ export class HomePage implements OnInit {
    * @returns Una promesa que se resuelve con los servicios populares.
    */
   public getNearbyPopularServices(): Promise<PlaceInterface> {
+
     return new Promise<PlaceInterface>((resolve, reject) => {
       this.getPopularServices().subscribe({
         next: (resp) => {

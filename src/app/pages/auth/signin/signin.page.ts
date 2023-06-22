@@ -20,11 +20,10 @@ import { TranslateModule } from "@ngx-translate/core";
     TranslateModule,
   ]
 })
-export class SigninComponent implements OnInit {
+export class SigninComponent {
 
   constructor(private _router: Router) { }
 
-  ngOnInit() { }
 
   /**
    * Navega a la página de inicio.

@@ -28,13 +28,14 @@ export class AppointmentsPage implements OnInit, OnDestroy {
     public popoverController: PopoverController,
     public toastController: ToastController,
     private _dataService: DataService
-  ) {}
+  ) {
+  }
 
   /**
    * Método que se ejecuta al inicializar el componente.
    */
   ngOnInit(): void {
-    this.dataSubscription = this._dataService.getData().subscribe((data) => {
+    this.dataSubscription = this._dataService.getData().subscribe((data: any) => {
       this.userAppointments = data.appointments;
     });
   }
@@ -54,12 +55,12 @@ export class AppointmentsPage implements OnInit, OnDestroy {
   public async cancelAppointment(item: any): Promise<void> {
     const popover = await this.popoverController.create({
       component: AnulationModalComponent,
-      componentProps: { appointment: item },
+      componentProps: {appointment: item},
       cssClass: 'popover'
     });
     await popover.present();
 
-    const { data } = await popover.onDidDismiss();
+    const {data} = await popover.onDidDismiss();
 
     if (data && data.confirmed) {
       const index = this.userAppointments.findIndex((a) => a.name === item.name);
