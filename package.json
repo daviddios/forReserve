@@ -60,6 +60,7 @@
     "@capacitor/cli": "5.0.5",
     "@compodoc/compodoc": "^1.1.21",
     "@ionic/angular-toolkit": "^9.0.0",
+    "@ionic/cli": "^7.1.1",
     "@schematics/angular": "^16.0.0",
     "@types/jasmine": "~4.3.0",
     "@types/node": "^12.20.55",
